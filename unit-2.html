@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Unit 2 · Paraphrasing Prompt Frames and Instructions · IELTS Harper Portal</title>
+<style>
+/* IELTS Harper Portal look (same tokens as the Speaking band descriptors page). */
+:root{
+  --page:#f7f5f2; --card:#ffffff; --line:#e7e5e4; --line-strong:#d6d3d1;
+  --ink:#1c1917; --muted:#57534e; --heading:#f96c1b;
+  --brand:#c2410c; --brand-hover:#9a3412; --on-brand:#ffffff; --brand-soft:#fff7ed;
+  --hl:#ffedd5;
+  --ok:#065f46; --ok-soft:#ecfdf5; --no:#991b1b; --no-soft:#fef2f2;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --page:#171311; --card:#221c19; --line:#3a302b; --line-strong:#4f433c;
+    --ink:#f5f0eb; --muted:#b8aca3; --brand-soft:#3a2416; --hl:#5a3418;
+    --ok:#6ee7b7; --ok-soft:#12302a; --no:#fca5a5; --no-soft:#3b1d1d;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+a{color:var(--brand)}
+button,textarea,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+/* top bar, as in the portal */
+.topbar{background:var(--card);border-bottom:1px solid var(--line)}
+.topbar .wrap{padding-top:12px;padding-bottom:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--heading);font-weight:700;font-size:1.15rem;text-decoration:none;margin-right:auto}
+.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--brand);color:var(--on-brand);font-size:.85rem;font-weight:800}
+.topbar-link{color:var(--ink);font-weight:600;font-size:.9rem;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:6px 12px}
+.topbar-link:hover{background:var(--brand-soft)}
+
+/* masthead */
+header.mast .wrap{padding-top:28px}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand);background:var(--brand-soft);border-radius:999px;padding:3px 10px;margin:0 0 10px}
+h1{color:var(--heading);font-weight:700;font-size:clamp(1.5rem,3.6vw,2.1rem);line-height:1.2;margin:0 0 8px}
+.standfirst{margin:0;color:var(--muted)}
+.standfirst.small{font-size:.9rem;font-style:italic}
+.progress-all{margin-top:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
+.bar{flex:1;min-width:160px;height:8px;background:var(--line);border-radius:999px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--brand);width:0}
+
+/* section tabs */
+nav.tabs{position:sticky;top:0;z-index:40;background:var(--page);border-bottom:1px solid var(--line);margin-top:20px}
+nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+nav.tabs a{border:1px solid transparent;border-radius:12px;padding:8px 14px;white-space:nowrap;color:var(--muted);font-size:.93rem;font-weight:600;text-decoration:none}
+nav.tabs a:hover{background:var(--brand-soft);color:var(--ink)}
+nav.tabs a[aria-current="page"]{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+main{padding:28px 0 80px}
+h2{color:var(--heading);font-weight:700;font-size:1.45rem;margin:0 0 6px}
+h3{font-weight:700;font-size:1.12rem;margin:30px 0 10px}
+h4{font-weight:700;font-size:1rem;margin:0 0 8px}
+.lede{color:var(--muted);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:14px}
+.card p{margin:0 0 8px}.card p:last-child{margin-bottom:0}
+ul.plain{margin:4px 0 12px;padding-left:22px}
+ul.plain li{margin-bottom:6px}
+
+/* unit sub-navigation and level filter */
+.subnav{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 12px;margin:14px 0 18px}
+.chip{border:1px solid var(--line-strong);background:var(--card);border-radius:999px;padding:6px 14px;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--muted)}
+.chip:hover{background:var(--brand-soft);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.chip small{font-weight:500;opacity:.85}
+.sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+.filter-label{font-size:.82rem;color:var(--muted);margin-left:auto}
+.lv{color:var(--brand);letter-spacing:1px;font-size:.8rem;white-space:nowrap}
+
+/* tables */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:14px}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{background:var(--brand);color:var(--on-brand);font-weight:700;font-size:.85rem}
+td.phrase{font-weight:700;white-space:nowrap}
+td.muted{color:var(--muted)}
+.speak{border:1px solid var(--line-strong);background:var(--card);border-radius:999px;width:28px;height:28px;cursor:pointer;font-size:.8rem;vertical-align:middle;margin-left:6px;padding:0;line-height:1}
+.speak:hover{background:var(--brand-soft)}
+.speak.on{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+
+/* boxes */
+.boxes{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.box h4{color:var(--brand)}
+.mistake{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.mistake:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.bad{color:var(--no)}.good{color:var(--ok)}
+.bad::before{content:"✗ ";font-weight:700}.good::before{content:"✓ ";font-weight:700}
+.note{color:var(--muted);font-size:.92rem}
+.sample{margin-bottom:10px}
+.sample .q{font-weight:700}
+.formula{background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:8px;padding:10px 14px;margin:0 0 12px}
+
+/* exercise items */
+.item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:12px}
+.item.done{border-color:var(--ok)}
+.item-head{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.num{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:8px;background:var(--brand-soft);color:var(--brand);font-weight:800;font-size:.85rem}
+.cue{font-weight:700;font-size:1.05rem;flex:1;min-width:200px}
+.examiner{color:var(--muted);font-weight:600;font-size:.85rem;margin-right:4px}
+.lines{margin:8px 0 0 38px;font-size:.95rem}
+.lines div{margin-bottom:3px}
+.label{display:inline-block;min-width:78px;color:var(--muted);font-size:.85rem;font-weight:600}
+.hint{color:var(--muted);font-style:italic}
+.work{margin:12px 0 0 38px}
+textarea{width:100%;min-height:58px;resize:vertical;border:1px solid var(--line-strong);border-radius:10px;padding:8px 10px;background:var(--page)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center}
+.btn{border:1px solid var(--line-strong);background:var(--card);border-radius:10px;padding:6px 12px;cursor:pointer;font-size:.88rem;font-weight:600}
+.btn:hover{background:var(--brand-soft)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.btn.primary:hover{background:var(--brand-hover)}
+.btn[aria-pressed="true"]{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.answer{margin-top:10px;border-top:1px dashed var(--line-strong);padding-top:10px}
+.answer .main{font-weight:600}
+.answer .alt{margin-top:6px}
+.empty{color:var(--muted);font-style:italic}
+
+/* question bank */
+.search{width:100%;max-width:420px;border:1px solid var(--line-strong);border-radius:12px;padding:8px 12px;background:var(--card);margin-bottom:14px}
+
+footer{color:var(--muted);font-size:.85rem;padding:20px 0 40px;border-top:1px solid var(--line)}
+@media (max-width:600px){.lines,.work{margin-left:0}.filter-label{margin-left:0;width:100%}}
+@media print{
+  .topbar,nav.tabs,.subnav,.actions,.speak,textarea,.progress-all,footer{display:none!important}
+  section[hidden]{display:block!important}
+  .answer[hidden]{display:block!important}
+  body{background:#fff}
+  .item,.card{break-inside:avoid}
+}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.opts{display:grid;gap:6px;margin:10px 0 0 38px}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;background:var(--page)}
+.opt:hover{background:var(--brand-soft)}
+.opt input{margin-top:5px;accent-color:var(--brand)}
+.opt b{min-width:1.2em}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--no);background:var(--no-soft)}
+.verdict{font-weight:700;margin-bottom:4px}
+.verdict.ok{color:var(--ok)}.verdict.no{color:var(--no)}
+.mine{background:var(--page);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:8px;white-space:pre-wrap}
+.part-title{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+.read-cue{font-size:1.08rem}
+.send-box{margin:0 0 14px}
+.send-box:empty{display:none}
+.send-msg{margin:0;padding:10px 14px;border:1px dashed var(--line-strong);border-radius:12px;background:var(--card);font-size:.92rem;color:var(--muted)}
+.send-msg .btn{margin-left:6px}
+.teacher-note{border-left:4px solid var(--brand);background:var(--brand-soft);border-radius:10px;padding:10px 14px;margin-bottom:8px;white-space:pre-wrap}
+.teacher-note b{color:var(--brand);display:block;margin-bottom:2px}
+.fb{border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:10px 14px;margin:0 0 10px;background:var(--card)}
+.fb.great{border-left-color:var(--ok)}.fb.needs_work{border-left-color:var(--no)}
+.fb-head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.fb-head b{color:var(--ink)}
+.fb-tag{font-size:.75rem;font-weight:700;border-radius:999px;padding:1px 9px;background:var(--brand-soft);color:var(--brand)}
+.fb.great .fb-tag{background:var(--ok-soft);color:var(--ok)}.fb.needs_work .fb-tag{background:var(--no-soft);color:var(--no)}
+.fb ul{margin:6px 0 0;padding-left:20px}.fb li{margin-bottom:3px}
+.fb .wrong{color:var(--no);text-decoration:line-through}.fb .right{color:var(--ok);font-weight:600}
+.fb-small{font-size:.8rem;color:var(--muted);margin-top:6px}
+/* Writing: criterion colours (TR red, CC orange, LR blue, GRA purple), corrections, exam prompts */
+.tag{display:inline-block;font-size:.72rem;font-weight:800;border-radius:6px;padding:0 6px;color:#1c1917;font-style:normal}
+.tag.TR{background:#F4CCCC}.tag.CC{background:#FCE5CD}.tag.LR{background:#CFE2F3}.tag.GRA{background:#D9D2E9}
+s{color:var(--no)}
+.prompt{margin:8px 0 0 38px;border-left:3px solid var(--line-strong);padding:4px 12px;color:var(--ink);font-size:.95rem}
+.ref{font-size:.75rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;margin-left:6px}
+.wc{font-size:.8rem;color:var(--muted)}
+@media (max-width:600px){.prompt{margin-left:0}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="https://ieltsharper.github.io/portal/"><span class="brand-mark" aria-hidden="true">IH</span>IELTS Harper Portal</a>
+    <a class="topbar-link" href="https://ieltsharper.github.io/portal/">&larr; Back to the portal</a>
+  </div>
+</div>
+<header class="mast">
+  <div class="wrap">
+    <div class="hero">
+      <p class="eyebrow">Writing Task 2 · Sentences</p>
+      <h1 id="title"></h1>
+      <div id="cover"></div>
+      <div class="progress-all"><span id="progressText"></span><div class="bar" aria-hidden="true"><span id="progressBar"></span></div>
+        <button class="btn" id="reset" type="button">Clear my work</button></div>
+    </div>
+  </div>
+</header>
+<nav class="tabs" aria-label="Sections"><div class="wrap" id="tabs"></div></nav>
+<main><div class="wrap" id="main"></div></main>
+<footer><div class="wrap">Your answers are saved in this browser. If you are signed in to IELTS Harper Portal, each finished exercise is sent to your teacher for feedback.</div></footer>
+
+<script type="application/json" id="data">{"cover": ["Sentence Writing Workbook", "Unit 2 · Paraphrasing Prompt Frames and Instructions"], "nav": [{"href": "index.html", "label": "All units", "current": false}, {"href": "unit-0.html", "label": "Unit 0", "current": false}, {"href": "unit-1.html", "label": "Unit 1", "current": false}, {"href": "unit-2.html", "label": "Unit 2", "current": true}, {"href": "unit-3.html", "label": "Unit 3", "current": false}, {"href": "unit-4.html", "label": "Unit 4", "current": false}, {"href": "unit-5.html", "label": "Unit 5", "current": false}, {"href": "unit-6.html", "label": "Unit 6", "current": false}, {"href": "unit-7.html", "label": "Unit 7", "current": false}, {"href": "unit-8.html", "label": "Unit 8", "current": false}, {"href": "unit-9.html", "label": "Unit 9", "current": false}, {"href": "unit-10.html", "label": "Unit 10", "current": false}, {"href": "unit-11.html", "label": "Unit 11", "current": false}, {"href": "unit-12.html", "label": "Unit 12", "current": false}, {"href": "unit-13.html", "label": "Unit 13", "current": false}, {"href": "unit-14.html", "label": "Unit 14", "current": false}, {"href": "unit-15.html", "label": "Unit 15", "current": false}, {"href": "unit-16.html", "label": "Unit 16", "current": false}, {"href": "unit-17.html", "label": "Unit 17", "current": false}, {"href": "unit-18.html", "label": "Unit 18", "current": false}, {"href": "unit-19.html", "label": "Unit 19", "current": false}, {"href": "unit-20.html", "label": "Unit 20", "current": false}, {"href": "unit-21.html", "label": "Unit 21", "current": false}, {"href": "unit-22.html", "label": "Unit 22", "current": false}, {"href": "unit-23.html", "label": "Unit 23", "current": false}, {"href": "unit-24.html", "label": "Unit 24", "current": false}, {"href": "unit-25.html", "label": "Unit 25", "current": false}, {"href": "final-review.html", "label": "Final Review", "current": false}], "units": [{"num": 2, "name": "Paraphrasing Prompt Frames and Instructions", "intro": [], "theory": [{"type": "sub", "text": "Mục đích"}, {"type": "p", "html": "Phần mở bài chỉ cần hai câu: <b>(1)<\/b> diễn đạt lại đề bài bằng lời của bạn; <b>(2)<\/b> một câu nêu quan điểm (position sentence) trả lời đúng yêu cầu của đề. Ở Band 7, bài viết phải có quan điểm rõ ràng xuyên suốt, và giám khảo sẽ tìm quan điểm đó trước tiên ở phần mở bài."}, {"type": "p", "html": "Mỗi đề bài gồm một <b>khung<\/b> (một sự thật hoặc xu hướng, một quan điểm, hoặc hai quan điểm trái chiều) và một <b>yêu cầu<\/b> (<i>To what extent do you agree or disagree?<\/i>…). Bảng 1 đưa ra cách paraphrase đáng tin cậy cho từng loại khung. Bảng 2 đưa ra câu nêu quan điểm cho từng dạng đề."}, {"type": "p", "html": "Câu nêu quan điểm phải <b>dứt khoát<\/b>. <i>This essay will discuss both views<\/i> không cho người đọc biết bạn nghĩ gì; <i>… before concluding that I agree with the latter<\/i> thì có. Hãy paraphrase cả các từ nội dung của đề (Unit 1): các khung câu chỉ thay thế cho phần <i>Some people believe that …<\/i>."}, {"type": "sub", "text": "Bảng 1 — Paraphrase đề bài"}, {"type": "p", "html": "Giữ đúng phạm vi của đề: nếu đề viết <i>many people<\/i>, hãy dùng <i>It is widely believed that …<\/i>, không dùng <i>by some<\/i>."}, {"type": "table", "head": ["Dạng đề", "Khung câu", "Ví dụ"], "rows": [{"level": 0, "cells": ["Sự thật / xu hướng", "It is true that + S + V", "Overseas travel is becoming cheaper. → <i>It is true that international travel has become increasingly affordable.<\/i>"]}, {"level": 0, "cells": ["Sự thật / xu hướng", "[thing] has gained increasing popularity among [group]", "More people work from home. → <i>Remote working has gained increasing popularity.<\/i>"]}, {"level": 0, "cells": ["Một quan điểm", "It is believed / argued / suggested by some that + S + V", "Some people believe older people should keep working. → <i>It is suggested by some that older people should continue working.<\/i>"]}, {"level": 0, "cells": ["Một quan điểm", "One school of thought holds that + S + V", "→ <i>One school of thought holds that stricter penalties for driving offences are the only way to make roads safer.<\/i>"]}, {"level": 0, "cells": ["Hai quan điểm trái chiều", "Some people argue that S1 + V1, while others believe that S2 + V2", "→ <i>Some people argue that children should begin school very young, while others believe that they should wait until they are older.<\/i>"]}, {"level": 0, "cells": ["Hai quan điểm trái chiều", "While one school of thought holds that S1 + V1, others maintain that S2 + V2", "→ <i>While one school of thought holds that hosting international sports events benefits the host country, others maintain that the costs are greater.<\/i>"]}, {"level": 0, "cells": ["Hai quan điểm trái chiều", "Opinions are divided on whether + S + V", "→ <i>Opinions are divided on whether technology is widening or narrowing the gap between rich and poor.<\/i>"]}]}, {"type": "sub", "text": "Bảng 2 — Câu nêu quan điểm theo dạng đề"}, {"type": "table", "head": ["Dạng đề", "Khung câu nêu quan điểm", "Dùng khi …"], "rows": [{"level": 0, "cells": ["Đồng ý / Không đồng ý", "I firmly agree with this view. / I fully share this view.", "bạn hoàn toàn đồng ý"]}, {"level": 0, "cells": ["Đồng ý / Không đồng ý", "I disagree with this view, despite acknowledging the reasons for it. / While acknowledging the benefits of + noun phrase, I largely disagree with this view.", "bạn hoàn toàn hoặc phần lớn không đồng ý"]}, {"level": 0, "cells": ["Đồng ý / Không đồng ý (đề đưa ra giải pháp)", "While acknowledging the benefits that this could bring, I believe it is not a universally applicable solution.", "đề đề xuất một biện pháp chỉ hiệu quả trong một số trường hợp"]}, {"level": 0, "cells": ["Thảo luận hai quan điểm", "This essay will examine both views before concluding that I agree with the latter / former. / While there are justifications for both perspectives, I agree with the former / latter. / While the former approach can offer advantages, I maintain that the latter is superior.", "bạn ủng hộ một trong hai quan điểm"]}, {"level": 0, "cells": ["Lợi ích – bất lợi", "While this admittedly has certain benefits, I would argue that the drawbacks are more significant. / Although X offers certain benefits, I believe these are outweighed by its drawbacks.", "bất lợi lớn hơn (đảo các danh từ nếu bạn có quan điểm ngược lại)"]}, {"level": 0, "cells": ["Phát triển tích cực hay tiêu cực", "Despite certain concerns surrounding this trend, I believe it is a beneficial one.", "bạn đánh giá xu hướng là tích cực (dùng <i>a harmful one<\/i> nếu tiêu cực)"]}, {"level": 0, "cells": ["Nguyên nhân + giải pháp", "This essay will first outline the underlying causes of this phenomenon before suggesting some viable measures to tackle it.", "đề hỏi tại sao và cần làm gì"]}, {"level": 0, "cells": ["Vấn đề + giải pháp", "This trend has caused several problems, but I believe there are viable measures that could be taken to tackle them.", "đề hỏi về tác động/vấn đề và giải pháp"]}, {"level": 0, "cells": ["Nguyên nhân + tác động", "This essay will argue that this trend is driven mainly by [nguyên nhân chính] and that its most serious effect is [tác động chính].", "đề hỏi tại sao và tác động là gì"]}, {"level": 0, "cells": ["Đề hai câu hỏi", "There are two main reasons behind this trend, and in my opinion, this is a negative / positive development overall.", "ví dụ <i>Why is this happening? Is it positive or negative?<\/i>: trả lời cả hai phần"]}]}, {"type": "sub", "text": "Câu mẫu"}, {"type": "samples", "items": ["Some people believe that children should start school at five. → <b>One school of thought holds that<\/b> children should begin formal education at the age of five.", "Many people think technology makes us less sociable. → <b>It is widely believed that<\/b> technology is making people less sociable.", "More and more people work from home. → <b>It is true that<\/b> a growing number of people now work from home.", "Agree/disagree, mostly disagree: <b>While acknowledging the benefits of<\/b> investing in railways, <b>I largely disagree<\/b> that roads should be given lower priority.", "Discuss both views: <b>This essay will examine both views before concluding that I agree with the latter.<\/b>", "Advantages/disadvantages: <b>Although<\/b> this trend <b>offers certain benefits, I believe these are outweighed by its drawbacks.<\/b>", "Causes/solutions: <b>This essay will first outline the underlying causes of this phenomenon before suggesting some viable measures to tackle it.<\/b>"]}, {"type": "mistakes", "items": [{"bad": "While one school of thought holds that saving money brings various benefits, especially for the younger generation. <span class=\"tag GRA\">GRA<\/span>", "good": "While one school of thought holds that saving money brings various benefits, <b>I believe this is not always realistic for everyone.<\/b>", "note": "Mệnh đề bắt đầu bằng <i>While<\/i> là mệnh đề phụ. Nếu không có mệnh đề chính, câu bị thiếu thành phần (fragment)."}, {"bad": "I am totally agree with this opinion. <span class=\"tag GRA\">GRA<\/span>", "good": "I <b>firmly agree<\/b> with this view.", "note": "<i>agree<\/i> là động từ nên không dùng <i>am<\/i>. <i>Totally<\/i> cũng mang tính thân mật."}, {"bad": "It is believed by some that university should be free. (Prompt: Many people believe …) <span class=\"tag TR\">TR<\/span>", "good": "It is <b>widely<\/b> believed that university should be free.", "note": "<i>many people<\/i> ≠ <i>some<\/i>: hãy chọn khung câu giữ đúng phạm vi của đề."}, {"bad": "This essay will discuss both views. <span class=\"tag TR\">TR<\/span>", "good": "This essay will examine both views <b>before concluding that I agree with the latter.<\/b>", "note": "\"Give your own opinion\" là một phần yêu cầu của đề. Quan điểm phải xuất hiện ngay ở mở bài."}, {"bad": "There are some relative measures which should be carried out. <span class=\"tag TR\">TR<\/span> <span class=\"tag LR\">LR<\/span>", "good": "This essay will first outline the underlying causes of this problem <b>before suggesting some viable measures to tackle it.<\/b>", "note": "Câu nêu quan điểm mơ hồ, và <i>relative<\/i> phải là <i>relevant<\/i>. Hãy nói rõ bạn sẽ làm gì trong bài."}, {"bad": "This trend has both positive and negative sides. <span class=\"tag TR\">TR<\/span>", "good": "<b>Despite certain concerns surrounding this trend, I believe it is a beneficial one.<\/b>", "note": "Câu hỏi <i>positive or negative<\/i> đòi hỏi một câu trả lời rõ ràng."}]}, {"type": "choose", "items": [{"h": "<b>the former hay the latter?<\/b>", "html": "<i>the former<\/i> = quan điểm thứ nhất trong hai quan điểm; <i>the latter<\/i> = quan điểm thứ hai. Chỉ dùng khi vừa nhắc đến đúng hai quan điểm."}, {"h": "<b>by some hay widely?<\/b>", "html": "<i>It is believed by some that …<\/i> = một số người; <i>It is widely believed that …<\/i> = nhiều người. Hãy chọn cho khớp với <i>some / many<\/i> trong đề."}, {"h": "<b>outweigh: so sánh mức độ, không phải số lượng<\/b>", "html": "Trả lời câu hỏi <i>Do the advantages outweigh …?<\/i> bằng <i>outweigh / are more significant than<\/i>. <i>There are more advantages<\/i> nói về số lượng, không phải mức độ quan trọng."}, {"h": "<b>Đồng ý một phần?<\/b>", "html": "Tránh viết <i>I partly agree and partly disagree<\/i> mà không nói rõ đồng ý phần nào. Nếu đồng ý một phần, hãy nêu giới hạn: <i>I agree that X, but only when Y<\/i> / <i>While acknowledging the benefits of X, I largely disagree …<\/i> — và giữ nguyên quan điểm đó đến cuối bài."}]}], "exercises": [{"title": "Exercise 1 — Rewrite with the given sentence frames", "intro": ["<i>Rewrite each prompt, or write the opinion sentence as described, using the given sentence frames (Table 1 and Table 2).<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Some people believe that university education should be free.", "hint": "It is believed by some that …", "answer": "It is believed by some that university education should be free of charge.", "alt": "One school of thought holds that higher education should be free.", "kind": "write"}, {"level": 1, "n": 1, "cue": "Some people think that children should start school at the age of five.", "hint": "One school of thought holds that …", "answer": "One school of thought holds that children should begin school at the age of five.", "alt": "It is suggested by some that children should start school at five.", "kind": "write"}, {"level": 1, "n": 2, "cue": "Some people believe that zoos should be closed, while others think they are useful.", "hint": "Some people argue that …, while others believe that …", "answer": "Some people argue that zoos should be closed, while others believe that they serve a useful purpose.", "alt": "While one school of thought holds that zoos should be shut down, others maintain that they are beneficial.", "kind": "write"}, {"level": 1, "n": 3, "cue": "Prompt: Smoking should be banned in all public places. Your view: you fully agree.", "hint": "I firmly agree …", "answer": "I firmly agree that smoking should be prohibited in all public places.", "alt": "I also hold the view that smoking should be banned in all public places.", "kind": "write"}, {"level": 1, "n": 4, "cue": "Discuss both views. Your view: you support the second view.", "hint": "This essay will examine both views before concluding that …", "answer": "This essay will examine both views before concluding that I agree with the latter.", "alt": "While there are justifications for both perspectives, I agree with the latter.", "kind": "write"}, {"level": 1, "n": 5, "cue": "Do the advantages outweigh the disadvantages? Your view: the disadvantages are greater.", "hint": "While this admittedly has certain benefits, I would argue that …", "answer": "While this admittedly has certain benefits, I would argue that the drawbacks are more significant.", "alt": "Although this trend offers certain benefits, I believe these are outweighed by its drawbacks.", "kind": "write"}, {"level": 1, "n": 6, "cue": "Is this a positive or negative development? Your view: positive.", "hint": "Despite certain concerns surrounding …, I believe …", "answer": "Despite certain concerns surrounding this trend, I believe it is a beneficial one.", "alt": "Despite certain concerns, I believe this is a largely positive development.", "kind": "write"}, {"level": 2, "n": 7, "cue": "More and more people are working from home.", "hint": "It is true that …", "answer": "It is true that a growing number of people now work from home.", "alt": "It is true that working from home has become increasingly common.", "kind": "write"}, {"level": 2, "n": 8, "cue": "Some people think that technology makes people less sociable.", "hint": "It is argued by some that …", "answer": "It is argued by some that technology is making people less sociable.", "alt": "One school of thought holds that technology reduces people's social interaction.", "kind": "write"}, {"level": 2, "n": 9, "cue": "What are the causes of this problem, and what can be done to solve it?", "hint": "This essay will first outline … before suggesting …", "answer": "This essay will first outline the underlying causes of this problem before suggesting some viable measures to tackle it.", "alt": "This essay will examine why this problem occurs before proposing some practical solutions.", "kind": "write"}, {"level": 2, "n": 10, "cue": "Why is this happening? Is it a positive or negative development? Your view: two main causes; negative.", "hint": "There are two main reasons behind …, and in my opinion …", "answer": "There are two main reasons behind this trend, and in my opinion, this is a negative development overall.", "alt": "This trend has two main causes, and I believe it is a negative development overall.", "kind": "write"}, {"level": 2, "n": 11, "cue": "Prompt: Governments should spend money on railways rather than roads. Your view: you largely disagree.", "hint": "While acknowledging the benefits of …, I largely disagree …", "answer": "While acknowledging the benefits of investing in railways, I largely disagree that roads should be given lower priority.", "alt": "While acknowledging the benefits of railways, I largely disagree that they should take priority over roads.", "kind": "write"}, {"level": 2, "n": 12, "cue": "Some people say that the best way to reduce crime is longer prison sentences. Others believe there are better alternatives.", "hint": "While one school of thought holds that …, others maintain that …", "answer": "While one school of thought holds that longer prison sentences are the most effective way to reduce crime, others maintain that alternative methods work better.", "alt": "Some people argue that longer sentences are the best deterrent, while others believe that alternative approaches are more effective.", "kind": "write"}, {"level": 2, "n": 13, "cue": "Some think studying history has little value; others think it helps us understand the present. Your view: the second.", "hint": "While there are justifications for both perspectives, …", "answer": "While there are justifications for both perspectives, I agree with the latter.", "alt": "While there are justifications for both perspectives, I believe that studying history helps us understand the present.", "kind": "write"}, {"level": 3, "n": 14, "cue": "Some people believe that the government should provide free housing for those who cannot afford it. Your view: it works only in some cases.", "hint": "Two sentences: a frame from Table 1 + a frame for a prompt that proposes a solution (<i>proposed solution<\/i>)", "answer": "It is believed by some that the state should provide free homes for those who cannot afford housing. While acknowledging the benefits that this could bring, I believe it is not a universally applicable solution.", "alt": "One school of thought holds that free housing should be given to those who cannot afford a home. While this could help some families, I believe it is not a universally applicable solution.", "kind": "write"}, {"level": 3, "n": 15, "cue": "Rote learning is still used in many education systems. Do the advantages outweigh the disadvantages? Your view: the advantages.", "hint": "Two sentences: a fact/trend frame + an opinion sentence", "answer": "It is true that memorisation remains a common teaching method in many school systems. Although it has certain drawbacks, I believe these are outweighed by its benefits.", "alt": "Rote learning is still widely used in schools, and while it admittedly has some weaknesses, I would argue that its advantages are more significant.", "kind": "write"}, {"level": 3, "n": 16, "cue": "Some cities have introduced congestion charges. Is this a positive or negative development? Your view: positive.", "hint": "Two sentences: a fact/trend frame + an opinion sentence", "answer": "It is true that several cities now charge drivers to enter congested areas. Despite certain concerns surrounding this policy, I believe it is a beneficial one.", "alt": "A number of cities have begun charging motorists to enter busy areas, and despite some concerns, I believe this is a positive development.", "kind": "write"}, {"level": 3, "n": 17, "cue": "Many children find it difficult to concentrate at school. Why? What can be done?", "hint": "Two sentences: a fact/trend frame + an opinion sentence", "answer": "It is true that many children struggle to stay focused in class. This essay will first outline the underlying causes of this problem before suggesting some viable measures to improve their concentration.", "alt": "Many pupils find it hard to pay attention at school, and this essay will explain why before proposing some solutions.", "kind": "write"}, {"level": 3, "n": 18, "cue": "More people are interested in finding out about their family history. Why? Is this positive or negative?", "hint": "Two sentences: <i>has gained increasing popularity<\/i> + an opinion sentence for a two-question prompt", "answer": "Tracing one's family history has gained increasing popularity in recent years. There are two main reasons behind this trend, and in my opinion, it is a positive development overall.", "alt": "It is true that more people are researching their ancestry. This is largely due to easier access to online records, and I believe it is a positive development.", "kind": "write"}, {"level": 3, "n": 19, "cue": "Some believe parents should read stories to their children; others think children should learn to read stories by themselves.", "hint": "Two sentences: <i>Opinions are divided on whether …<\/i> + an opinion sentence", "answer": "Opinions are divided on whether parents should read stories to their children or whether children should learn to read stories by themselves. While there are justifications for both perspectives, I agree with the former.", "alt": "Some people argue that parents should read to their children, while others believe that children should learn to read independently. In my view, being read to matters more in the early years.", "kind": "write"}]}, {"title": "Exercise 2 — Translate, then rewrite", "intro": ["<i>Translate each sentence into natural English. Then rewrite your translation using the given structure. ● sentences give keywords; ●● and ●●● sentences give only the structure.<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Một số người cho rằng học sinh nên được học về quản lý tài chính ở trường.", "kind": "translate", "rewriteWith": "<b>It is suggested by some that (keywords: <i>financial management, be taught<\/i>)<\/b>", "translation": "Some people think that students should learn about financial management at school.", "answer": "<b>It is suggested by some that financial management should be taught at school.<\/b>", "alt": "One school of thought holds that schools should teach students how to manage money."}, {"level": 1, "n": 1, "cue": "Tôi hoàn toàn đồng ý với quan điểm này.", "kind": "translate", "rewriteWith": "<b>I firmly agree … (keywords: <i>firmly, view<\/i>)<\/b>", "translation": "I completely agree with this opinion.", "answer": "<b>I firmly agree with this view.<\/b>", "alt": "I also hold this view."}, {"level": 1, "n": 2, "cue": "Một số người cho rằng các kỳ thi là cần thiết, trong khi những người khác tin rằng chúng gây áp lực không cần thiết cho học sinh.", "kind": "translate", "rewriteWith": "<b>Some people argue that …, while others believe that … (keywords: <i>examinations, unnecessary pressure<\/i>)<\/b>", "translation": "Some people think exams are necessary, but others believe they put unnecessary pressure on students.", "answer": "<b>Some people argue that examinations are necessary, while others believe that they place unnecessary pressure on students.<\/b>", "alt": "While one school of thought holds that exams are essential, others maintain that they put students under needless pressure."}, {"level": 1, "n": 3, "cue": "Mặc dù xu hướng này có một số lợi ích, tôi tin rằng những bất lợi của nó lớn hơn.", "kind": "translate", "rewriteWith": "<b>Although … offers certain benefits, … outweighed by … (keywords: <i>certain benefits, outweighed, drawbacks<\/i>)<\/b>", "translation": "Although this trend has some benefits, I believe its disadvantages are bigger.", "answer": "<b>Although this trend offers certain benefits, I believe these are outweighed by its drawbacks.<\/b>", "alt": "While this admittedly has certain benefits, I would argue that the drawbacks are more significant."}, {"level": 1, "n": 4, "cue": "Bài viết này trước hết sẽ phân tích những nguyên nhân sâu xa của hiện tượng này, sau đó đề xuất một số biện pháp khả thi để giải quyết nó.", "kind": "translate", "rewriteWith": "<b>This essay will first outline … before suggesting … (keywords: <i>underlying causes, viable measures, tackle<\/i>)<\/b>", "translation": "This essay will first analyse the deep causes of this phenomenon and then propose some feasible measures to solve it.", "answer": "<b>This essay will first outline the underlying causes of this phenomenon before suggesting some viable measures to tackle it.<\/b>", "alt": "This essay will examine the main causes of this problem and suggest some practical solutions."}, {"level": 1, "n": 5, "cue": "Việc sống một mình ngày càng được giới trẻ ưa chuộng.", "kind": "translate", "rewriteWith": "<b>… has gained increasing popularity among … (keywords: <i>living alone, young people<\/i>)<\/b>", "translation": "Living alone is becoming more and more popular with young people.", "answer": "<b>Living alone has gained increasing popularity among young people.<\/b>", "alt": "It is true that a growing number of young people are choosing to live on their own."}, {"level": 1, "n": 6, "cue": "Mặc dù có một số lo ngại xung quanh xu hướng này, tôi tin rằng nó mang lại lợi ích.", "kind": "translate", "rewriteWith": "<b>Despite certain concerns surrounding …, I believe it is a beneficial one<\/b>", "translation": "Although there are some concerns about this trend, I believe it is beneficial.", "answer": "<b>Despite certain concerns surrounding this trend, I believe it is a beneficial one.<\/b>", "alt": "Despite some concerns, I believe this is a largely positive development."}, {"level": 2, "n": 7, "cue": "Nhiều người tin rằng chính phủ nên tăng thuế đối với thực phẩm không lành mạnh.", "kind": "translate", "rewriteWith": "<b>It is widely believed that (keep the meaning of <i>many people<\/i>)<\/b>", "translation": "Many people believe the government should increase taxes on unhealthy food.", "answer": "<b>It is widely believed that governments should raise taxes on unhealthy food.<\/b>", "alt": "Many are of the opinion that unhealthy food should be taxed more heavily."}, {"level": 2, "n": 8, "cue": "Bài viết này sẽ xem xét cả hai quan điểm trước khi kết luận rằng tôi đồng ý với quan điểm thứ hai.", "kind": "translate", "rewriteWith": "<b>This essay will examine both views before concluding that …<\/b>", "translation": "This essay will look at both opinions and then conclude that I agree with the second one.", "answer": "<b>This essay will examine both views before concluding that I agree with the latter.<\/b>", "alt": "This essay will examine both opinions before concluding that I support the second."}, {"level": 2, "n": 9, "cue": "Mặc dù quan điểm này có phần hợp lý, tôi phần lớn không đồng ý với nó.", "kind": "translate", "rewriteWith": "<b>I … disagree with this view, despite acknowledging …<\/b>", "translation": "Although this view is partly reasonable, I mostly disagree with it.", "answer": "<b>I largely disagree with this view, despite acknowledging the reasons for it.<\/b>", "alt": "While this view has some merit, I largely disagree with it."}, {"level": 2, "n": 10, "cue": "Mặc dù làm việc từ xa có một số bất lợi, tôi tin rằng chúng không đáng kể bằng những lợi ích mà nó mang lại.", "kind": "translate", "rewriteWith": "<b>Although … has certain drawbacks, … outweighed by its benefits<\/b>", "translation": "Although working from home has some disadvantages, I believe they are less significant than its benefits.", "answer": "<b>Although remote working has certain drawbacks, I believe these are outweighed by its benefits.<\/b>", "alt": "In my view, the advantages of remote working clearly outweigh its disadvantages."}, {"level": 2, "n": 11, "cue": "Một trường phái cho rằng mạng xã hội gắn kết mọi người, trong khi những người khác cho rằng nó khiến con người cô đơn hơn.", "kind": "translate", "rewriteWith": "<b>While one school of thought holds that …, others maintain that …<\/b>", "translation": "Some people say social media brings people together, while others say it makes people lonelier.", "answer": "<b>While one school of thought holds that social media brings people closer together, others maintain that it leaves people feeling lonelier.<\/b>", "alt": "Some people argue that social media connects people, while others believe that it increases loneliness."}, {"level": 2, "n": 12, "cue": "Có hai nguyên nhân chính dẫn đến xu hướng này, và theo tôi, đây nhìn chung là một bước phát triển tiêu cực.", "kind": "translate", "rewriteWith": "<b>There are two main reasons behind …, and in my opinion …<\/b>", "translation": "There are two main causes of this trend, and in my opinion, it is generally a negative development.", "answer": "<b>There are two main reasons behind this trend, and in my opinion, this is a negative development overall.<\/b>", "alt": "This trend has two main causes, and I believe it is largely negative."}, {"level": 2, "n": 13, "cue": "Dù thừa nhận lợi ích của việc miễn học phí đại học, tôi phần lớn không đồng ý với quan điểm này.", "kind": "translate", "rewriteWith": "<b>While acknowledging the benefits of …, I largely disagree …<\/b>", "translation": "Although I accept the benefits of free university education, I mostly disagree with this view.", "answer": "<b>While acknowledging the benefits of free university education, I largely disagree with this view.<\/b>", "alt": "I disagree that university should be free for everyone, despite acknowledging the benefits it could bring."}, {"level": 3, "n": 14, "cue": "Một số người cho rằng các công ty nên chịu trách nhiệm về rác thải nhựa mà họ tạo ra, và tôi hoàn toàn đồng ý với quan điểm này.", "kind": "translate", "rewriteWith": "<b>Table 1 + Table 2 (two sentences)<\/b>", "translation": "Some people think companies should be responsible for the plastic waste they create, and I completely agree.", "answer": "<b>It is argued by some that companies should take responsibility for the plastic waste they produce. I firmly agree with this view.<\/b>", "alt": "One school of thought holds that businesses should be accountable for the plastic waste they generate, a view I also hold."}, {"level": 3, "n": 15, "cue": "Việc mua hàng hiệu ngày càng phổ biến, và theo tôi, điều này chủ yếu là do ảnh hưởng của mạng xã hội.", "kind": "translate", "rewriteWith": "<b>… has gained increasing popularity + the answer<\/b>", "translation": "Buying branded products is becoming more popular, and in my opinion this is mainly because of social media.", "answer": "<b>Branded goods have gained increasing popularity, and I believe this is largely due to the influence of social media.<\/b>", "alt": "It is true that more people are buying well-known brands, a trend driven largely by social media."}, {"level": 3, "n": 16, "cue": "Một số người cho rằng người cao tuổi nên nghỉ hưu sớm để nhường việc cho người trẻ, nhưng tôi không đồng ý với quan điểm này, dù tôi hiểu lý do của nó.", "kind": "translate", "rewriteWith": "<b>Table 1 + <i>I disagree …, despite acknowledging …<\/i><\/b>", "translation": "Some people believe older people should retire early to give jobs to young people, but I disagree, although I understand why.", "answer": "<b>It is suggested by some that older people should retire early to make way for younger workers. I disagree with this view, despite acknowledging the reasons for it.<\/b>", "alt": "One school of thought holds that older employees should step aside for the young, a view I disagree with despite understanding its reasoning."}, {"level": 3, "n": 17, "cue": "Bài viết này trước hết sẽ phân tích vì sao ngày càng ít người đọc sách, sau đó đề xuất một số cách để khuyến khích thói quen đọc.", "kind": "translate", "rewriteWith": "<b>This essay will first outline … before suggesting …<\/b>", "translation": "This essay will first analyse why fewer and fewer people read books and then suggest some ways to encourage reading.", "answer": "<b>This essay will first outline why fewer people now read books before suggesting some viable ways to encourage a reading habit.<\/b>", "alt": "This essay will examine the reasons for the decline in reading before proposing measures to reverse it."}, {"level": 3, "n": 18, "cue": "Mặc dù có một số lo ngại xung quanh việc trẻ em sử dụng máy tính ở trường, tôi tin rằng đây là một bước phát triển có lợi.", "kind": "translate", "rewriteWith": "<b>Despite certain concerns surrounding …<\/b>", "translation": "Although there are some concerns about children using computers at school, I believe this is a beneficial development.", "answer": "<b>Despite certain concerns surrounding the use of computers in schools, I believe it is a beneficial development.<\/b>", "alt": "Although it raises some concerns, I consider children's use of computers at school a largely positive development."}, {"level": 3, "n": 19, "cue": "Tôi không đồng ý rằng các môn nghệ thuật nên bị loại khỏi chương trình học, dù tôi hiểu lý do của quan điểm này.", "kind": "translate", "rewriteWith": "<b>I disagree …, despite acknowledging …<\/b>", "translation": "I do not agree that arts subjects should be removed from the curriculum, although I understand the reasons for this view.", "answer": "<b>I disagree that arts subjects should be removed from the curriculum, despite acknowledging the reasons for this view.<\/b>", "alt": "I disagree that arts subjects should be dropped from the curriculum, despite acknowledging why some people hold this view."}]}, {"title": "Exercise 3 — Find and correct the errors", "intro": ["<i>Some sentences are correct; others have one or more errors. (a) Name the criterion for each error (TR, CC, LR or GRA). (b) Write the correction. (c) Tick ✓ if the sentence is correct.<\/i>"], "items": [{"level": 1, "n": 0, "kind": "fix", "cue": "I am totally agree with this opinion.", "answer": "I <s>am totally agree<\/s><b> COMPLETELY AGREE<\/b> with this opinion.", "notes": ["<span class=\"tag GRA\">GRA<\/span> <i>agree<\/i> là động từ nên không dùng <i>am<\/i>; <i>totally<\/i> mang tính thân mật."]}, {"level": 1, "n": 1, "kind": "fix", "cue": "Some people believe that children should learn a second language at the age of three, while others thinks it is too early.", "answer": "Some people believe that children should learn a second language at the age of three, while <s>others thinks<\/s><b> OTHERS THINK<\/b> it is too early.", "notes": ["<span class=\"tag GRA\">GRA<\/span> Hòa hợp chủ – vị: <i>others<\/i> là số nhiều."]}, {"level": 1, "n": 2, "kind": "fix", "cue": "It is argued by some that public libraries are no longer necessary.", "answer": "<b>✓ <\/b>It is argued by some that public libraries are no longer necessary.", "notes": ["Đúng: <i>It is argued by some that …<\/i> là cách paraphrase <i>Some people believe that …<\/i>."]}, {"level": 1, "n": 3, "kind": "fix", "cue": "While one school of thought holds that keeping funds for later use may bring various benefits for people, especially the younger generation.", "answer": "While one school of thought holds that keeping funds for later use may bring various benefits for people, <s>especially the younger generation.<\/s><b> ESPECIALLY THE YOUNGER GENERATION, I BELIEVE THIS IS NOT ALWAYS REALISTIC FOR EVERYONE.<\/b>", "notes": ["<span class=\"tag GRA\">GRA<\/span> Câu thiếu thành phần (fragment): mệnh đề <i>While<\/i> cần một mệnh đề chính."]}, {"level": 1, "n": 4, "kind": "fix", "cue": "(Discuss both views) This essay will discuss both views.", "answer": "(Discuss both views) <s>This essay will discuss both views.<\/s><b> THIS ESSAY WILL EXAMINE BOTH VIEWS BEFORE CONCLUDING THAT I AGREE WITH THE LATTER.<\/b>", "notes": ["<span class=\"tag TR\">TR<\/span> Câu không nêu ý kiến, trong khi đề yêu cầu."]}, {"level": 1, "n": 5, "kind": "fix", "cue": "In my opinion, I think that this is a negative development.", "answer": "<s>In my opinion, I think that<\/s><b> IN MY OPINION,<\/b> this is a negative development.", "notes": ["<span class=\"tag LR\">LR<\/span> Thừa: <i>In my opinion<\/i> và <i>I think<\/i> có cùng nghĩa."]}, {"level": 1, "n": 6, "kind": "fix", "cue": "Many people argue that technology has made our lives more convenience.", "answer": "Many people argue that technology has made our lives more <s>convenience<\/s><b> CONVENIENT<\/b>.", "notes": ["<span class=\"tag LR\">LR<\/span> Từ loại: sau <i>more<\/i> cần tính từ."]}, {"level": 2, "n": 7, "kind": "fix", "cue": "(Advantages/disadvantages) This essay will discuss the advantages and disadvantages of this trend.", "answer": "(Advantages/disadvantages) <s>This essay will discuss the advantages and disadvantages of this trend.<\/s><b> ALTHOUGH THIS TREND OFFERS CERTAIN BENEFITS, I BELIEVE THESE ARE OUTWEIGHED BY ITS DRAWBACKS.<\/b>", "notes": ["<span class=\"tag TR\">TR<\/span> Đề hỏi bên nào lớn hơn; câu này không trả lời."]}, {"level": 2, "n": 8, "kind": "fix", "cue": "(Causes/solutions) I will explain why this happens, and there are some relative measures which should be carried out.", "answer": "(Causes/solutions) I will explain why this happens, and <s>there are some relative measures which should be carried out<\/s><b> I WILL THEN SUGGEST SOME VIABLE MEASURES TO TACKLE IT<\/b>.", "notes": ["<span class=\"tag TR\">TR<\/span> Quan điểm mơ hồ (và <i>relative<\/i> phải là <i>relevant<\/i>). Hãy nói rõ bạn sẽ đề xuất gì."]}, {"level": 2, "n": 9, "kind": "fix", "cue": "While one school of thought holds that zoos protect endangered species, others maintain that keeping animals in captivity is cruel.", "answer": "<b>✓ <\/b>While one school of thought holds that zoos protect endangered species, others maintain that keeping animals in captivity is cruel.", "notes": ["Đúng: khung hai quan điểm <i>While one school of thought holds that …, others maintain that …<\/i>."]}, {"level": 2, "n": 10, "kind": "fix", "cue": "It is suggest by some that young people today are less polite than previous generations.", "answer": "It is <s>suggest<\/s><b> SUGGESTED<\/b> by some that young people today are less polite than previous generations.", "notes": ["<span class=\"tag GRA\">GRA<\/span> Khung tường thuật bị động <i>It is suggested by some that …<\/i> cần quá khứ phân từ."]}, {"level": 2, "n": 11, "kind": "fix", "cue": "(Prompt: distance learning cannot provide the same benefits as studying in person) Nowadays, technology is developing rapidly and has many effects on our lives.", "answer": "(Prompt: distance learning cannot provide the same benefits as studying in person) <s>Nowadays, technology is developing rapidly and has many effects on our lives.<\/s><b> IT IS SOMETIMES ARGUED THAT DISTANCE LEARNING CANNOT OFFER THE SAME BENEFITS AS STUDYING ON CAMPUS.<\/b>", "notes": ["<span class=\"tag TR\">TR<\/span> Câu mở đầu chung chung, dùng được cho bất kỳ bài nào. Hãy paraphrase đúng đề này."]}, {"level": 2, "n": 12, "kind": "fix", "cue": "Although this development raises some concerns, I believe it is largely positive.", "answer": "<b>✓ <\/b>Although this development raises some concerns, I believe it is largely positive.", "notes": ["Đúng: câu trả lời dứt khoát cho dạng đề tích cực/tiêu cực."]}, {"level": 2, "n": 13, "kind": "fix", "cue": "Some people claim that university should be free, while other believe that students should pay.", "answer": "Some people claim that university should be free, while <s>other believe<\/s><b> OTHERS BELIEVE<\/b> that students should pay.", "notes": ["<span class=\"tag GRA\">GRA<\/span> <i>others<\/i> là đại từ số nhiều, nghĩa là <i>những người khác<\/i>."]}, {"level": 3, "n": 14, "kind": "fix", "cue": "(Prompt: governments should spend more on public services than on the arts) I partly agree and partly disagree with this statement because both sides have advantages.", "answer": "(Prompt: governments should spend more on public services than on the arts) <s>I partly agree and partly disagree with this statement because both sides have advantages.<\/s><b> I LARGELY AGREE WITH THIS VIEW, ALTHOUGH I BELIEVE A MODEST ARTS BUDGET IS STILL WORTHWHILE.<\/b>", "notes": ["<span class=\"tag TR\">TR<\/span> Không có quan điểm rõ ràng. Hãy nói bạn chấp nhận phần nào và ở mức độ nào."]}, {"level": 3, "n": 15, "kind": "fix", "cue": "(Discuss both views) While there are justifications for both perspectives, I agree with the latter.", "answer": "<b>✓ <\/b>(Discuss both views) While there are justifications for both perspectives, I agree with the latter.", "notes": ["Đúng: quan điểm rõ ràng cho dạng đề thảo luận."]}, {"level": 3, "n": 16, "kind": "fix", "cue": "It is true that the number of people who choose to live alone has been increasing in recent decades in many countries all over the world.", "answer": "It is true that the number of people who choose to live alone has been increasing in recent decades <s>in many countries all over the world<\/s><b> IN MANY COUNTRIES<\/b>.", "notes": ["<span class=\"tag LR\">LR<\/span> Thừa: <i>all over the world<\/i> lặp lại ý của <i>many countries<\/i>."]}, {"level": 3, "n": 17, "kind": "fix", "cue": "(Positive/negative development) This trend has both positive and negative sides, which will be discussed in this essay.", "answer": "(Positive/negative development) <s>This trend has both positive and negative sides, which will be discussed in this essay.<\/s><b> DESPITE CERTAIN CONCERNS SURROUNDING THIS TREND, I BELIEVE IT IS A BENEFICIAL ONE.<\/b>", "notes": ["<span class=\"tag TR\">TR<\/span> Đề yêu cầu bạn đánh giá; hãy đưa ra câu trả lời rõ ràng."]}, {"level": 3, "n": 18, "kind": "fix", "cue": "It is often argued that the news media focus too heavily on negative stories, a view with which I largely agree.", "answer": "<b>✓ <\/b>It is often argued that the news media focus too heavily on negative stories, a view with which I largely agree.", "notes": ["Đúng: paraphrase và quan điểm được gộp trong một câu."]}, {"level": 3, "n": 19, "kind": "fix", "cue": "Some people believe that students should be allowed to evaluate their teachers. Others believe that this could lead to a loss of respect, I agree with the latter view.", "answer": "Some people believe that students should be allowed to evaluate their teachers. Others believe that this could lead to a loss of respect<s>, I agree with the latter view.<\/s><b> . I AGREE WITH THE LATTER VIEW.<\/b>", "notes": ["<span class=\"tag GRA\">GRA<\/span> Lỗi nối câu bằng dấu phẩy (comma splice): hai mệnh đề chính cần dấu chấm (hoặc dấu chấm phẩy)."]}]}, {"title": "Exercise 4 — Apply to real exam prompts", "intro": ["<i>Write a two-sentence introduction for each prompt: (1) restate the prompt in your own words, using a frame from Table 1; (2) one opinion sentence from Table 2.<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Education · Agree/disagree", "prompt": "<i>Some people believe that it is no longer necessary to teach children handwriting skills. To what extent do you agree or disagree?<\/i>", "hint": "<i>It is believed by some that …<\/i> + <i>I disagree with this view, despite acknowledging …<\/i>", "answer": "It is believed by some that children no longer need to learn handwriting. I disagree with this view, despite acknowledging the growing importance of typing.", "kind": "write"}, {"level": 1, "n": 1, "cue": "Education · Agree/disagree", "prompt": "<i>University students should pay the full cost of their education themselves. To what extent do you agree or disagree?<\/i>", "hint": "<i>It is argued by some that …<\/i> + <i>While acknowledging the benefits of …, I largely disagree …<\/i>", "answer": "It is argued by some that university students should cover the entire cost of their studies. While acknowledging the benefits of this for public finances, I largely disagree with this view.", "kind": "write"}, {"level": 1, "n": 2, "cue": "Economy, money and trade · Agree/disagree", "prompt": "<i>As well as making money, businesses also have social responsibilities. To what extent do you agree or disagree?<\/i>", "hint": "<i>It is argued by some that …<\/i> + <i>I firmly agree …<\/i>", "answer": "It is argued by some that businesses have social responsibilities as well as the aim of making money. I firmly agree with this view.", "kind": "write"}, {"level": 1, "n": 3, "cue": "Media and communication · Agree/disagree", "prompt": "<i>Mobile phones should be banned in public places such as libraries, public transport and shops. To what extent do you agree or disagree?<\/i>", "hint": "<i>It is suggested by some that …<\/i> + a frame for a prompt that proposes a solution (<i>proposed solution<\/i>)", "answer": "It is suggested by some that mobile phones should be prohibited in public places such as libraries, buses and shops. While acknowledging the benefits that this could bring, I believe it is not a universally applicable solution.", "kind": "write"}, {"level": 1, "n": 4, "cue": "Food and health · Agree/disagree", "prompt": "<i>Some people believe that public money should be spent on promoting healthy lifestyles rather than on treating people who are ill. To what extent do you agree or disagree?<\/i>", "hint": "<i>One school of thought holds that …<\/i> + an opinion sentence", "answer": "One school of thought holds that public funds should go towards promoting healthy lifestyles rather than treating illness. I also hold this view, as prevention reduces the need for costly treatment.", "kind": "write"}, {"level": 1, "n": 5, "cue": "Crime, punishment and law · Agree/disagree", "prompt": "<i>The best way to reduce crime is to educate prisoners so that they can find work after they are released. To what extent do you agree or disagree?<\/i>", "hint": "<i>One school of thought holds that …<\/i> + a frame for a prompt that proposes a solution (<i>proposed solution<\/i>)", "answer": "One school of thought holds that educating prisoners so that they can find work after release is the most effective way to cut crime. While acknowledging the benefits that this could bring, I believe it is not a universally applicable solution.", "kind": "write"}, {"level": 1, "n": 6, "cue": "Work · Agree/disagree", "prompt": "<i>Senior managers in a company should receive much higher salaries than other employees. To what extent do you agree or disagree?<\/i>", "hint": "<i>It is argued by some that …<\/i> + an opinion sentence", "answer": "It is argued by some that senior managers deserve far higher salaries than other staff. I disagree with this view, despite acknowledging the reasons for it.", "kind": "write"}, {"level": 2, "n": 7, "cue": "Government, politics and diplomacy · Agree/disagree", "prompt": "<i>Some people believe that governments should pay for healthcare and education, while others think these are the responsibility of individuals. To what extent do you agree or disagree?<\/i>", "hint": "<i>Some people argue that …, while others believe that …<\/i> + an opinion sentence", "answer": "Some people argue that governments should fund healthcare and education, while others believe these are individual responsibilities. I firmly agree with the first view.", "kind": "write"}, {"level": 2, "n": 8, "cue": "Education · Discuss both views", "prompt": "<i>Some people believe that schools should group students according to their academic ability, while others think students of different abilities should study together. Discuss both views and give your own opinion.<\/i>", "hint": "<i>Some people argue that …, while others believe that …<\/i> + a discussion frame", "answer": "Some people argue that schools should group students by academic ability, while others believe that mixed-ability classes are better. This essay will examine both views before concluding that I agree with the latter.", "kind": "write"}, {"level": 2, "n": 9, "cue": "Age, generation and gender · Discuss both views", "prompt": "<i>In many families, both parents work. Some people believe that grandparents are the best people to look after young children, while others think childcare centres are better. Discuss both views and give your own opinion.<\/i>", "hint": "<i>While one school of thought holds that …, others maintain that …<\/i> + a discussion frame", "answer": "While one school of thought holds that grandparents are the best carers for young children, others maintain that childcare centres are preferable. This essay will examine both views before concluding that I agree with the former.", "kind": "write"}, {"level": 2, "n": 10, "cue": "Environment · Discuss both views", "prompt": "<i>Some people believe that industrial growth is necessary to reduce poverty, while others argue that it causes serious environmental problems. Discuss both views and give your own opinion.<\/i>", "hint": "<i>While one school of thought holds that …, others maintain that …<\/i> + a discussion frame", "answer": "While one school of thought holds that industrial growth is essential for reducing poverty, others maintain that it causes serious environmental damage. This essay will examine both views before concluding that the latter is more convincing.", "kind": "write"}, {"level": 2, "n": 11, "cue": "Lifestyle · Discuss both views", "prompt": "<i>Some people believe that personal happiness depends mainly on economic success, while others think it depends on many different factors. Discuss both views and give your own opinion.<\/i>", "hint": "<i>Opinions are divided on whether …<\/i> + a discussion frame", "answer": "Opinions are divided on whether personal happiness depends mainly on economic success or on a range of other factors. This essay will examine both views before concluding that I agree with the latter.", "kind": "write"}, {"level": 2, "n": 12, "cue": "Age, generation and gender · Discuss both views", "prompt": "<i>Some people believe that women should have the same opportunities as men to work in the police and armed forces, while others think women are not suitable for these jobs. Discuss both views and give your own opinion.<\/i>", "hint": "Table 1 + Table 2", "answer": "Some people argue that women should have equal opportunities to serve in the police and armed forces, while others believe these roles are unsuitable for women. Considering the arguments for both perspectives, I agree with the former.", "kind": "write"}, {"level": 2, "n": 13, "cue": "Socio-cultural and global issues · Causes/problems/solutions", "prompt": "<i>In many societies, antisocial behaviour and a lack of respect for others are becoming more common. What are the causes of this problem, and what solutions can you suggest?<\/i>", "hint": "<i>It is true that …<\/i> + a cause/solution frame", "answer": "It is true that antisocial behaviour and disrespect for others are becoming more common in many societies. This essay will first outline the underlying causes of this phenomenon before suggesting some viable measures to tackle it.", "kind": "write"}, {"level": 3, "n": 14, "cue": "Work · Causes/problems/solutions", "prompt": "<i>Many people try to achieve a balance between work and other parts of their lives, but few succeed. Why is this difficult, and what can be done to achieve a better work-life balance?<\/i>", "hint": "Two sentences: one frame from Table 1 + one opinion sentence from Table 2. Choose the frame yourself.", "answer": "It is true that, although many people try to balance work with the rest of their lives, few succeed. This essay will first outline why this is so difficult before suggesting some viable measures to achieve a healthier balance.", "kind": "write"}, {"level": 3, "n": 15, "cue": "Economy, money and trade · Advantages/disadvantages", "prompt": "<i>It has become easy for people to obtain credit cards, but some users have difficulty repaying their debts. Do the advantages of easy access to credit cards outweigh the disadvantages?<\/i>", "hint": "Two sentences: one frame from Table 1 + one opinion sentence from Table 2. Choose the frame yourself.", "answer": "It is true that credit cards have become easy to obtain, although some holders struggle to repay their debts. While this admittedly has certain benefits, I would argue that the drawbacks are more significant.", "kind": "write"}, {"level": 3, "n": 16, "cue": "Age, generation and gender · Advantages/disadvantages", "prompt": "<i>In many countries, women are entitled to take maternity leave after giving birth. Do the advantages of maternity leave outweigh the disadvantages?<\/i>", "hint": "Two sentences: one frame from Table 1 + one opinion sentence from Table 2. Choose the frame yourself.", "answer": "It is true that, in many countries, women are legally entitled to maternity leave after giving birth. Although this policy has certain drawbacks for employers, I believe these are outweighed by its benefits.", "kind": "write"}, {"level": 3, "n": 17, "cue": "Education · Positive/negative development", "prompt": "<i>Some fast-food restaurants and supermarkets provide money to schools in order to promote their products. Is this a positive or negative development?<\/i>", "hint": "Two sentences: one frame from Table 1 + one opinion sentence from Table 2. Choose the frame yourself.", "answer": "It is true that some fast-food chains and supermarkets now fund schools as a way of promoting their products. Despite the financial support this provides, I believe it is a harmful development.", "kind": "write"}, {"level": 3, "n": 18, "cue": "Work · Positive/negative development", "prompt": "<i>In some countries, it is illegal for employers to reject job applicants because of their age. Is this a positive or negative development?<\/i>", "hint": "Two sentences: one frame from Table 1 + one opinion sentence from Table 2. Choose the frame yourself.", "answer": "It is true that, in some countries, employers are now legally banned from rejecting job applicants because of their age. Despite certain concerns surrounding this law, I believe it is a beneficial one.", "kind": "write"}, {"level": 3, "n": 19, "cue": "Education · Two-part question", "prompt": "<i>In some countries, schools arrange unpaid work placements so that students can gain experience. How beneficial is this for students and for the companies or organisations involved?<\/i>", "hint": "Two sentences: one frame from Table 1 + one opinion sentence from Table 2. Choose the frame yourself.", "answer": "It is true that schools in some countries arrange unpaid work placements for students. In my view, these placements benefit students greatly, while the benefits for employers are more limited.", "kind": "write"}]}, {"title": "Exercise 5 — Choose the best opinion sentence", "intro": ["<i>Read each prompt and choose the opinion sentence that answers the task most directly.<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Children should start school at the age of four. To what extent do you agree or disagree?", "kind": "choice", "options": [{"letter": "A", "text": "This essay will discuss whether children should start school at four."}, {"letter": "B", "text": "I disagree that children should start school as young as four."}, {"letter": "C", "text": "There are many opinions about when children should start school."}], "correct": "B", "note": "Chỉ B nêu quan điểm; A chỉ báo trước nội dung, C nói chung chung."}, {"level": 1, "n": 1, "cue": "Some say exams are the best way to assess students; others prefer coursework. Discuss both views and give your opinion.", "kind": "choice", "options": [{"letter": "A", "text": "While both methods have merit, I believe coursework gives a fairer picture of students' abilities."}, {"letter": "B", "text": "This essay will discuss both views."}, {"letter": "C", "text": "Exams and coursework are both used in schools."}], "correct": "A", "note": "Chỉ A đưa ra ý kiến như đề yêu cầu; B không nêu quan điểm, C chỉ nêu sự thật."}, {"level": 1, "n": 2, "cue": "Many people now shop online. Do the advantages outweigh the disadvantages?", "kind": "choice", "options": [{"letter": "A", "text": "In my view, the convenience of online shopping outweighs its drawbacks."}, {"letter": "B", "text": "Online shopping has advantages and disadvantages."}, {"letter": "C", "text": "I will discuss the advantages and disadvantages of online shopping."}], "correct": "A", "note": "Chỉ A nói bên nào lớn hơn (<i>outweigh<\/i>); B và C không trả lời câu hỏi."}, {"level": 1, "n": 3, "cue": "More people are choosing to live alone. Is this a positive or negative development?", "kind": "choice", "options": [{"letter": "A", "text": "This is both positive and negative."}, {"letter": "B", "text": "Living alone is becoming popular."}, {"letter": "C", "text": "Despite certain concerns, I believe this is a largely positive development."}], "correct": "C", "note": "C đưa ra đánh giá rõ ràng; A nước đôi, B chỉ nhắc lại xu hướng."}, {"level": 1, "n": 4, "cue": "Many people do not recycle. Why is this? What can be done?", "kind": "choice", "options": [{"letter": "A", "text": "This essay will examine the main reasons for this and suggest some practical solutions."}, {"letter": "B", "text": "Recycling is very important for the environment."}, {"letter": "C", "text": "I completely agree that people should recycle."}], "correct": "A", "note": "A đáp ứng cả hai phần của yêu cầu; B lạc đề, C trả lời một câu hỏi mà đề không hỏi."}, {"level": 1, "n": 5, "cue": "Many young people leave the countryside for cities. Why? Is this positive or negative?", "kind": "choice", "options": [{"letter": "A", "text": "This trend is mainly driven by better job prospects in cities, and I believe it is largely negative for rural areas."}, {"letter": "B", "text": "There are reasons and effects of this trend."}, {"letter": "C", "text": "I will answer both questions in this essay."}], "correct": "A", "note": "A trả lời ngắn gọn cả hai câu hỏi; B và C không nêu nội dung cụ thể."}, {"level": 1, "n": 6, "cue": "Advertising should be banned. To what extent do you agree or disagree?", "kind": "choice", "options": [{"letter": "A", "text": "I agree with this to some extent and disagree to some extent."}, {"letter": "B", "text": "While some forms of advertising should be restricted, I disagree that it should be banned entirely."}, {"letter": "C", "text": "Advertising is everywhere nowadays."}], "correct": "B", "note": "B cho thấy chính xác người viết đồng ý đến mức nào; A mơ hồ, C lạc đề."}, {"level": 2, "n": 7, "cue": "Some think governments should fund space exploration; others think the money should be spent on problems on Earth. Discuss both views and give your opinion.", "kind": "choice", "options": [{"letter": "A", "text": "Space exploration is expensive."}, {"letter": "B", "text": "Both views are correct."}, {"letter": "C", "text": "This essay will discuss both views before explaining why I believe funding should focus on problems on Earth."}], "correct": "C", "note": "C hứa hẹn thảo luận và nêu rõ ý kiến; A lạc đề, B không chọn bên."}, {"level": 2, "n": 8, "cue": "University students should pay the full cost of their education. To what extent do you agree or disagree?", "kind": "choice", "options": [{"letter": "A", "text": "Some students pay and some do not."}, {"letter": "B", "text": "I disagree, as this would deter talented students from poorer families."}, {"letter": "C", "text": "This essay will look at this issue."}], "correct": "B", "note": "B nêu quan điểm và lý do; A và C không trả lời câu hỏi."}, {"level": 2, "n": 9, "cue": "Some students take a gap year. Do the advantages outweigh the disadvantages?", "kind": "choice", "options": [{"letter": "A", "text": "A gap year has benefits."}, {"letter": "B", "text": "Although a gap year can delay graduation, I believe its benefits are greater."}, {"letter": "C", "text": "Many students take a gap year these days."}], "correct": "B", "note": "B cân nhắc hai mặt và kết luận lợi ích lớn hơn; A và C không so sánh."}, {"level": 2, "n": 10, "cue": "Traffic congestion is worsening. What problems does it cause, and what are the solutions?", "kind": "choice", "options": [{"letter": "A", "text": "Traffic congestion has many causes."}, {"letter": "B", "text": "I strongly agree that traffic is a problem."}, {"letter": "C", "text": "This essay will explain the main problems caused by congestion and propose some solutions."}], "correct": "C", "note": "Đề hỏi vấn đề và giải pháp; C khớp đề, A nói về nguyên nhân, B trả lời một câu hỏi mà đề không hỏi."}, {"level": 2, "n": 11, "cue": "Fewer people read newspapers. Is this a positive or negative development?", "kind": "choice", "options": [{"letter": "A", "text": "I agree that fewer people read newspapers."}, {"letter": "B", "text": "This essay will discuss newspapers."}, {"letter": "C", "text": "In my view, this is a negative development, as it may reduce people's access to in-depth reporting."}], "correct": "C", "note": "C đánh giá xu hướng và đưa ra lý do; A và B không đánh giá."}, {"level": 2, "n": 12, "cue": "Older people should keep working for longer. To what extent do you agree or disagree?", "kind": "choice", "options": [{"letter": "A", "text": "Older people have both advantages and disadvantages at work."}, {"letter": "B", "text": "There are many older workers nowadays."}, {"letter": "C", "text": "I agree with this view, but only for those who are healthy and wish to continue working."}], "correct": "C", "note": "C đồng ý có giới hạn một cách chính xác; A và B không nêu quan điểm."}, {"level": 2, "n": 13, "cue": "Some say children should obey their parents; others think they should make their own decisions. Discuss both views and give your opinion.", "kind": "choice", "options": [{"letter": "A", "text": "Children should obey their parents and make their own decisions."}, {"letter": "B", "text": "While both views have merit, I believe children should be given a gradually increasing say in decisions as they grow older."}, {"letter": "C", "text": "This essay will discuss obedience."}], "correct": "B", "note": "A tự mâu thuẫn; B là một ý kiến rõ ràng, cân bằng; C lạc đề."}, {"level": 3, "n": 14, "cue": "Many people buy well-known brands. Why is this the case? Is it positive or negative?", "kind": "choice", "options": [{"letter": "A", "text": "This is largely driven by advertising and social status, and I believe it is mainly a negative trend."}, {"letter": "B", "text": "People buy brands for many reasons, which have both positive and negative effects."}, {"letter": "C", "text": "I disagree with buying brands."}], "correct": "A", "note": "A trả lời cả hai câu hỏi; B nước đôi, C trả lời một câu hỏi mà đề không hỏi."}, {"level": 3, "n": 15, "cue": "Technology makes it easier to solve crimes, so crime rates will fall. To what extent do you agree or disagree?", "kind": "choice", "options": [{"letter": "A", "text": "I agree with this statement."}, {"letter": "B", "text": "I agree that technology helps police solve crimes, but I do not believe this alone will reduce crime rates."}, {"letter": "C", "text": "Technology is useful for the police."}], "correct": "B", "note": "Đề có hai nhận định; B phản hồi chính xác từng nhận định; A đồng ý cả phần chưa được chứng minh, C không nêu quan điểm."}, {"level": 3, "n": 16, "cue": "Do the disadvantages of peer pressure outweigh the advantages?", "kind": "choice", "options": [{"letter": "A", "text": "Peer pressure has advantages."}, {"letter": "B", "text": "I believe that peer pressure has more advantages."}, {"letter": "C", "text": "In my view, the advantages of peer pressure outweigh its disadvantages."}], "correct": "C", "note": "C dùng <i>outweigh<\/i> đúng (so sánh mức độ); B nói về số lượng (<i>more advantages<\/i>); A không so sánh."}, {"level": 3, "n": 17, "cue": "Some cities have introduced congestion charges. Is this a positive or negative development?", "kind": "choice", "options": [{"letter": "A", "text": "I believe this is a positive development, provided the money raised is spent on public transport."}, {"letter": "B", "text": "Congestion charges are positive and negative."}, {"letter": "C", "text": "I believe congestion charges are expensive."}], "correct": "A", "note": "A đánh giá xu hướng, kèm một điều kiện hợp lý; B nước đôi, C lạc đề."}, {"level": 3, "n": 18, "cue": "Some say happiness depends on money; others say it depends on many factors. Discuss both views and give your opinion.", "kind": "choice", "options": [{"letter": "A", "text": "While money can contribute to happiness, I believe that relationships and health matter more."}, {"letter": "B", "text": "Money and happiness are related."}, {"letter": "C", "text": "I agree with both views."}], "correct": "A", "note": "A thể hiện rõ quan điểm nghiêng về bên nào; B chung chung, C nước đôi."}, {"level": 3, "n": 19, "cue": "In many countries, older people are not treated with enough respect. Why is this happening, and what problems can it cause?", "kind": "choice", "options": [{"letter": "A", "text": "This essay will suggest some solutions."}, {"letter": "B", "text": "This essay will explain why this is happening and outline the problems it can cause."}, {"letter": "C", "text": "Older people should be respected."}], "correct": "B", "note": "Đề hỏi nguyên nhân và vấn đề, không hỏi giải pháp; A sai yêu cầu, C không trả lời câu hỏi."}]}], "after": []}], "parts": [], "guide": [], "index": []}</script>
+<script type="application/json" id="audio">{}</script>
+<script>
+(function(){
+'use strict';
+var D = JSON.parse(document.getElementById('data').textContent);
+var STORE = 'wt2-2';
+var state = load();
+function blank(){ return {draft:{}, sub:{}, choice:{}, seen:{}, sent:{}, dirty:{}, fb:{}}; }
+function load(){ try { var s = JSON.parse(localStorage.getItem(STORE)); return s && s.sub ? s : blank(); } catch(e){ return blank(); } }
+function save(){ try { localStorage.setItem(STORE, JSON.stringify(state)); } catch(e){} }
+
+var $ = function(s, r){ return (r||document).querySelector(s); };
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function dots(n){ return n ? '<span class="lv" title="Level ' + n + '">' + '●'.repeat(n) + '</span>' : ''; }
+function textOf(html){ var t = document.createElement('div'); t.innerHTML = html; return t.textContent; }
+
+/* ---------- recorded audio for the English examples (audio/<id>.mp3, made by make_audio.py) ---------- */
+var AUDIO = JSON.parse(document.getElementById('audio').textContent);
+var player = new Audio(), playing = null;
+function speakBtn(text){
+  var id = AUDIO[text];
+  if (!id) return '';
+  return '<button type="button" class="speak" data-audio="' + id + '" aria-label="Listen: ' + esc(text) + '" title="Listen">🔊</button>';
+}
+function stopAudio(){ player.pause(); if (playing) playing.classList.remove('on'); playing = null; }
+player.addEventListener('ended', stopAudio);
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-audio]'); if (!b) return;
+  var again = playing === b;
+  stopAudio();
+  if (again) return;
+  player.src = 'audio/' + b.getAttribute('data-audio') + '.mp3';
+  playing = b; b.classList.add('on');
+  player.play().catch(stopAudio);
+});
+
+/* ---------- progress ---------- */
+function ids(u){ var out = []; u.exercises.forEach(function(ex, k){ ex.items.forEach(function(it){ out.push(u.num + '-' + (k + 1) + '-' + it.n); }); }); return out; }
+function isDone(id){ return !!(state.sub[id] || state.choice[id] || state.seen[id]); }
+var ALL = [].concat.apply([], D.units.map(ids));
+function updateProgress(){
+  var n = ALL.filter(isDone).length;
+  $('#progressText').textContent = 'Done: ' + n + '/' + ALL.length + ' items';
+  $('#progressBar').style.width = (100 * n / ALL.length) + '%';
+}
+$('#reset').addEventListener('click', function(){
+  if (!confirm('Clear everything you wrote, submitted and chose in this browser?')) return;
+  state = blank(); save(); render();
+});
+
+/* ---------- header and tabs ---------- */
+// One page per unit; D.nav lists every page (index + units) for the tab bar.
+$('#title').textContent = D.cover[0];
+$('#cover').innerHTML = D.cover.slice(1).map(function(c, i, a){
+  return '<p class="standfirst' + (i === a.length - 1 ? ' small' : '') + '">' + esc(c) + '</p>';
+}).join('');
+$('#tabs').innerHTML = D.nav.map(function(t){ return '<a href="' + t.href + '"' + (t.current ? ' aria-current="page"' : '') + '>' + esc(t.label) + '</a>'; }).join('');
+function unitTitle(u){ return u.num === 'review' ? u.name : 'Unit ' + u.num + ' · ' + u.name; }
+
+function route(){
+  return {tab: {unit: D.units[0]}, part: location.hash.replace('#', '') || 'ly-thuyet'};
+}
+var filter = 0;
+
+/* ---------- index page: all units with progress, then the guide ---------- */
+function renderBlocks(list){
+  var s = '', card = '', open = false;
+  function flush(){ if (open) { card += '</ul>'; open = false; } if (card) s += '<div class="card">' + card + '</div>'; card = ''; }
+  list.forEach(function(b){
+    if (b.type === 'h1') { flush(); s += '<h2 style="margin-top:28px">' + esc(b.text) + '</h2>'; }
+    else if (b.type === 'h') { flush(); card = '<h4>' + b.html + '</h4>'; }
+    else if (b.type === 'li') { if (!open) { card += '<ul class="plain">'; open = true; } card += '<li>' + b.html + '</li>'; }
+    else if (b.type === 'table') { flush(); s += renderTable(b); }
+    else { if (open) { card += '</ul>'; open = false; } card += '<p>' + b.html + '</p>'; }
+  });
+  flush();
+  return s;
+}
+function renderIndex(){
+  var s = '<h2>Units</h2>';
+  D.parts.forEach(function(p){
+    s += '<p class="part-title">' + esc(p.title) + '</p><div class="boxes">' + p.units.map(function(n){
+      var u = D.index.find(function(x){ return x.num === n; }), done = 0;
+      try { var st = JSON.parse(localStorage.getItem(u.store)) || {}; done = Object.keys(Object.assign({}, st.sub, st.choice)).length; } catch(e){}
+      return '<a class="card" style="text-decoration:none;color:inherit;display:block;margin:0" href="' + u.href + '"><h4 style="color:var(--heading)">' + esc(unitTitle(u)) + '</h4><span class="note">Done: ' + Math.min(done, u.count) + '/' + u.count + '</span></a>';
+    }).join('') + '</div>';
+  });
+  return s + renderBlocks(D.guide);
+}
+
+/* ---------- theory ---------- */
+function renderTable(b){
+  var vocab = b.head[0] === 'Cụm từ' || b.head[0] === 'Phrase', speakLast = vocab || /câu trả lời mở rộng|extended answer/i.test(b.head[b.head.length - 1]);
+  var rows = b.rows.filter(function(r){ return !filter || !r.level || r.level === filter; });
+  return '<div class="tablewrap"><table><thead><tr>' + b.head.map(function(h){ return '<th scope="col">' + esc(h) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+    rows.map(function(r){
+      return '<tr>' + r.cells.map(function(c, i){
+        if (i === 0 && vocab) return '<td class="phrase">' + dots(r.level) + ' ' + c + '</td>';
+        if (i === r.cells.length - 1 && speakLast) return '<td>' + c + speakBtn(textOf(c)) + '</td>';
+        return '<td' + (vocab && i === 1 ? ' class="muted"' : '') + '>' + c + '</td>';
+      }).join('') + '</tr>';
+    }).join('') + '</tbody></table></div>';
+}
+function sampleSpeech(html){
+  var t = textOf(html), i = t.indexOf(' → ');
+  if (i >= 0) t = t.slice(i + 3);
+  return t.replace(/\s*\([^)]*\)\s*$/, '').replace(/\s*\/[^\/\s]+\/\s*/g, ' ');
+}
+function renderTheory(u){
+  var s = '', boxes = [];
+  u.theory.concat(u.intro, u.after).forEach(function(b){
+    if (b.type === 'sub') s += '<h3>' + esc(b.text) + '</h3>';
+    else if (b.type === 'p') s += '<p>' + b.html + '</p>';
+    else if (b.type === 'table') s += renderTable(b);
+    else if (b.type === 'samples') s += '<div class="card">' + b.items.map(function(x){ return '<div class="sample">' + x + speakBtn(sampleSpeech(x)) + '</div>'; }).join('') + '</div>';
+    else if (b.type === 'mistakes') boxes.push('<div class="card box"><h4>Lỗi cần tránh</h4>' + b.items.map(function(m){
+      return '<div class="mistake"><div class="bad">' + m.bad + '</div><div class="good">' + m.good + '</div><div class="note">' + m.note + '</div></div>';
+    }).join('') + '</div>');
+    else if (b.type === 'choose') boxes.push('<div class="card box"><h4>Chọn cho đúng</h4>' + b.items.map(function(c){
+      return '<div class="mistake"><div>' + c.h + '</div><div class="note">' + c.html + '</div></div>';
+    }).join('') + '</div>');
+    else if (b.type === 'sounds') boxes.push('<div class="card box"><h4>Âm cần luyện</h4>' + b.lines.map(function(l){ return '<p>' + l + '</p>'; }).join('') + '<p class="note">' + b.tip + '</p></div>');
+  });
+  // The first "Mục đích" block goes in a card.
+  s = s.replace(/^<h3>Mục đích<\/h3>((?:<p>[\s\S]*?<\/p>)+)/, '<div class="card"><h4>Mục đích</h4>$1</div>');
+  if (boxes.length) s += '<div class="boxes" style="margin-top:20px">' + boxes.join('') + '</div>';
+  return s;
+}
+
+/* ---------- exercises ---------- */
+var LINES = [['rewriteWith', 'Rewrite with'], ['hint', 'Hint']];
+// The corrected sentence without the struck-through mistakes (error-correction keys).
+function refText(h){ return textOf(String(h).replace(/<s>[\s\S]*?<\/s>/g, '')).replace(/\s+/g, ' ').trim(); }
+function notesHtml(it){
+  return (it.ref ? '<div style="margin-top:6px"><span class="ref">' + esc(it.ref) + '</span></div>' : '') +
+    (it.notes || []).concat(it.note ? [it.note] : []).map(function(n){ return '<div class="note" style="margin-top:6px">' + n + '</div>'; }).join('');
+}
+function answerHtml(it, id){
+  var s = '';
+  if (state.sub[id]) s += '<div class="note">Your answer:</div><div class="mine" lang="en">' + esc(state.sub[id]) + '</div>' + feedbackHtml(it, id);
+  if (it.translation) s += '<div class="main"><span class="label">Translation:</span> ' + it.translation + '</div>';
+  s += '<div class="main">' + (it.suggest ? '<span class="label">Suggestion:</span> ' : it.translation ? '<span class="label">Rewrite:</span> ' : '<span class="label">Answer:</span> ') + it.answer + '</div>';
+  if (it.alt) s += '<div class="alt"><span class="label">Also accepted:</span> ' + it.alt + '</div>';
+  return s + notesHtml(it);
+}
+/* ---------- feedback on Submit: Gemini through the portal, or free quick checks ---------- */
+var checking = {};
+function feedbackHtml(it, id){
+  var f = (state.fb || {})[id];
+  if (checking[id]) return '<div class="fb"><div class="fb-head"><b>Feedback</b><span class="fb-small">Checking your answer…</span></div></div>';
+  if (!f || f.for !== state.sub[id]) return '';
+  if (f.kind === 'ai') {
+    var r = f.data, tag = {great: 'Great', good: 'Good', needs_work: 'Needs work'}[r.verdict] || 'Good';
+    var s = '<div class="fb ' + esc(r.verdict) + '" lang="en"><div class="fb-head"><b>Feedback</b><span class="fb-tag">' + tag + '</span></div><div>' + esc(r.feedback) + '</div>';
+    if (r.corrections.length) s += '<ul>' + r.corrections.map(function(c){
+      return '<li><span class="wrong">' + esc(c.wrong) + '</span> → <span class="right">' + esc(c.right) + '</span>' + (c.why ? ' <span class="fb-small">(' + esc(c.why) + ')</span>' : '') + '</li>';
+    }).join('') + '</ul>';
+    if (r.improved) s += '<div style="margin-top:6px"><span class="label">Better:</span> ' + esc(r.improved) + '</div>';
+    return s + '<div class="fb-small">AI feedback; it can be wrong. Your teacher&rsquo;s comment is the final word.</div></div>';
+  }
+  var c = f.data;
+  return '<div class="fb" lang="en"><div class="fb-head"><b>Quick checks</b></div><ul>' + c.list.map(function(x){
+    return '<li>' + (x.ok ? '✓ ' : '✗ ') + esc(x.text) + '</li>';
+  }).join('') + '</ul>' + (c.why ? '<div class="fb-small">' + esc(c.why) + '</div>' : '') + '</div>';
+}
+function words(t){ return (t.match(/[A-Za-z']+/g) || []); }
+function sentences(t){ return t.split(/[.!?]+(?:\s|$)/).filter(function(x){ return x.trim(); }).length; }
+function quickChecks(it, id){
+  var a = state.sub[id], low = ' ' + a.toLowerCase().replace(/[^a-z' ]+/g, ' ').replace(/\s+/g, ' ') + ' ', list = [];
+  // Lenient: each word of the phrase may change its ending (make → making, affect → affects).
+  var has = function(p){
+    var ws = p.toLowerCase().replace(/[^a-z' ]+/g, ' ').trim().split(/\s+/).filter(Boolean);
+    if (!ws.length) return true;
+    var re = new RegExp(' ' + ws.map(function(w){ return (w.length > 3 ? w.slice(0, Math.max(3, w.length - 2)) : w) + "[a-z']*"; }).join(" (?:[a-z']+ )?"));
+    return re.test(low);
+  };
+  var mine = it.kind === 'translate' ? a.replace(/^[\s\S]*\nRewrite:\s*/, '') : a;
+  // "Start with: …" / "Bắt đầu: …" in the hint: the answer should begin that way.
+  var start = textOf(it.hint || '').match(/Start(?: with)?:\s*([^…\.;]+)/i);
+  if (start) list.push({ok: has(start[1].replace(/\.\.\.|…/g, '')), text: 'Starts with “' + start[1].trim() + '…”'});
+  if (it.kind === 'fix') {
+    var orig = textOf(it.cue).replace(/\s+/g, ' ').trim(), right = refText(it.answer);
+    var same = function(x, y){ return x.toLowerCase().replace(/[^a-z]+/g, '') === y.toLowerCase().replace(/[^a-z]+/g, ''); };
+    if (/^correct\.?$/i.test(mine.trim())) list.push({ok: same(orig, right), text: same(orig, right) ? 'Yes, this sentence was already correct' : 'This sentence has at least one mistake'});
+    else list.push({ok: !same(mine, orig), text: 'You changed the sentence (fixed something)'});
+  }
+  var n = words(mine).length, ref = words(refText(it.answer)).length;
+  if (ref) list.push({ok: n >= ref * 0.6 && n <= ref * 1.6, text: 'Length: ' + n + ' words (the answer has about ' + ref + ')'});
+  if (/\b\w+n't\b|\b(i'm|it's|they're|we're|you're|that's|there's)\b/i.test(mine)) list.push({ok: false, text: 'No contractions in academic writing (do not, it is …)'});
+  list.push({ok: /^[A-Z"“]/.test(mine.trim()) && /[.!?]["”]?$/.test(mine.trim()), text: 'Starts with a capital letter and ends with a full stop'});
+  return list;
+}
+function assess(it, id){
+  var a = state.sub[id];
+  var done = function(kind, data){ state.fb = state.fb || {}; state.fb[id] = {for: a, kind: kind, data: data}; save(); delete checking[id]; if (document.querySelector('.item[data-id="' + id + '"]')) rerenderItem(id); };
+  var fallback = function(why){ done('checks', {list: quickChecks(it, id), why: why}); };
+  if (!API_URL || !token()) return fallback('Sign in to the portal to get AI feedback.');
+  var p = id.split('-'), u = D.units.find(function(x){ return String(x.num) === p[0]; }), ex = u.exercises[+p[1] - 1];
+  checking[id] = 1; rerenderItem(id);
+  apiCall('workbook.assess', {url: location.href.split('#')[0], subject: 'writing', instruction: textOf(ex.intro.join(' ')).slice(0, 600), prompt: promptOf(it),
+    reference: (it.translation ? 'Translation: ' + textOf(it.translation) + '\nRewrite: ' : '') + refText(it.answer) + (it.alt ? '\nAlso accepted: ' + textOf(it.alt) : ''), answer: a})
+    .then(function(res){
+      if (res.ok) return done('ai', res.result);
+      fallback({not_configured: 'AI feedback is not switched on yet.', limit: 'Daily AI feedback limit reached; try again tomorrow.',
+        busy: 'AI feedback is busy right now; submit again in a minute.', error: 'AI feedback is not available right now.'}[res.reason] || '');
+    })
+    .catch(function(e){ fallback(e.code === 'unauthorized' ? 'Sign in to the portal to get AI feedback.' : e.code === 'forbidden' ? 'AI feedback is only for students of this class.' : 'AI feedback is not available right now.'); });
+}
+// Multiple choice: "choice" items have lettered options; "pick" items choose a phrase in brackets.
+function optionsOf(it){
+  return it.kind === 'pick' ? it.picks[0].map(function(p, k){ return {letter: String.fromCharCode(65 + k), text: p}; }) : it.options;
+}
+function correctOf(it){
+  if (it.kind !== 'pick') return it.correct;
+  return optionsOf(it).find(function(o){ return o.text === it.answer; }).letter;
+}
+function choiceResult(it, id){
+  var pick = state.choice[id], ok = pick === correctOf(it);
+  return '<div class="verdict ' + (ok ? 'ok">✓ Correct' : 'no">✗ Not quite. Answer: ' + (it.kind === 'pick' ? esc(it.answer) : it.correct)) + '</div>' + notesHtml(it);
+}
+function renderItem(it, id, i){
+  var head = '<span class="cue">' + (it.kind === 'pick' ? it.cue.replace(/\(\s*[^()]*?\/[^()]*?\s*\)/, '( … )') : it.cue) + '</span>';
+  var lines = LINES.filter(function(l){ return it[l[0]]; }).map(function(l){
+    return '<div><span class="label">' + l[1] + ':</span> ' + (l[0] === 'hint' ? '<span class="hint">' + it.hint + '</span>' : it[l[0]]) + '</div>';
+  }).join('');
+  var s = '<div class="item' + (isDone(id) ? ' done' : '') + '" data-id="' + id + '">' +
+    '<div class="item-head"><span class="num">' + (i + 1) + '</span>' + dots(it.level) + head + '</div>' +
+    (it.prompt ? '<div class="prompt" lang="en">' + it.prompt + '</div>' : '') +
+    (lines ? '<div class="lines">' + lines + '</div>' : '');
+  if (it.kind === 'choice' || it.kind === 'pick') {
+    var pick = state.choice[id], right = correctOf(it);
+    s += '<div class="opts" role="radiogroup" aria-label="Choose one">' + optionsOf(it).map(function(o){
+      var cls = pick ? (o.letter === right ? ' right' : o.letter === pick ? ' wrong' : '') : '';
+      return '<label class="opt' + cls + '"><input type="radio" name="c-' + id + '" value="' + o.letter + '"' + (pick === o.letter ? ' checked' : '') + '>' + (it.kind === 'pick' ? '' : '<b>' + o.letter + '</b>') + '<span>' + o.text + '</span></label>';
+    }).join('') + '</div><div class="work"><div class="actions"><button type="button" class="btn primary" data-choose="' + id + '"' + (pick ? '' : ' disabled') + '>' + (pick ? 'Submit again' : 'Submit') + '</button></div>' +
+      '<div class="answer" id="a-' + id + '"' + (pick ? '' : ' hidden') + '>' + (pick ? choiceResult(it, id) : '') + '</div></div>';
+  } else if (it.kind === 'translate') {
+    var subT = !!state.sub[id], prev = splitTranslate(state.sub[id] || '');
+    var d1 = state.draft[id + '~t'] != null ? state.draft[id + '~t'] : prev[0], d2 = state.draft[id] != null ? state.draft[id] : prev[1];
+    s += '<div class="work"><label class="note" for="t-' + id + '~t">Your translation</label>' +
+      '<textarea id="t-' + id + '~t" data-text="' + id + '~t" rows="2" spellcheck="true" lang="en">' + esc(d1) + '</textarea>' +
+      '<label class="note" for="t-' + id + '">Rewrite it with the structure</label>' +
+      '<textarea id="t-' + id + '" data-text="' + id + '" rows="2" spellcheck="true" lang="en">' + esc(d2) + '</textarea>' +
+      '<div class="actions"><button type="button" class="btn primary" data-submit="' + id + '"' + (d1.trim() && d2.trim() ? '' : ' disabled') + '>' + (subT ? 'Submit again' : 'Submit') + '</button>' +
+      (subT ? '' : '<span class="note">Submit both to see the answer.</span>') + '</div>' +
+      '<div class="answer" id="a-' + id + '"' + (subT ? '' : ' hidden') + '>' + (subT ? answerHtml(it, id) : '') + '</div></div>';
+  } else if (it.kind === 'read') {
+    var seen = !!state.seen[id];
+    s += '<div class="work"><div class="actions"><button type="button" class="btn primary" data-see="' + id + '" aria-expanded="' + seen + '">' + (seen ? 'Hide answer' : 'Show answer') + '</button></div>' +
+      '<div class="answer" id="a-' + id + '"' + (seen ? '' : ' hidden') + '>' + answerHtml(it, id) + '</div></div>';
+  } else {
+    var draft = state.draft[id] != null ? state.draft[id] : (state.sub[id] || '');
+    var sub = !!state.sub[id];
+    s += '<div class="work"><label class="note" for="t-' + id + '">' + (it.kind === 'fix' ? 'Write the corrected sentence (or type <b>Correct</b> if there is no mistake)' : 'Write your answer') + '</label>' +
+      '<textarea id="t-' + id + '" data-text="' + id + '" rows="2" spellcheck="true" lang="en">' + esc(draft) + '</textarea>' +
+      '<div class="actions"><button type="button" class="btn primary" data-submit="' + id + '"' + (draft.trim() ? '' : ' disabled') + '>' + (sub ? 'Submit again' : 'Submit') + '</button>' +
+      (sub ? '' : '<span class="note">Submit your answer to see ' + (it.suggest ? 'a suggestion' : 'the answer') + '.</span>') + '</div>' +
+      '<div class="answer" id="a-' + id + '"' + (sub ? '' : ' hidden') + '>' + (sub ? answerHtml(it, id) : '') + '</div></div>';
+  }
+  return s + '</div>';
+}
+function splitTranslate(sub){
+  var m = /^Translation:\s*([\s\S]*?)\nRewrite:\s*([\s\S]*)$/.exec(sub);
+  return m ? [m[1], m[2]] : ['', sub];
+}
+function findItem(id){
+  var p = id.split('-'), u = D.units.find(function(x){ return String(x.num) === p[0]; });
+  return u.exercises[+p[1] - 1].items.find(function(it){ return it.n === +p[2]; });
+}
+function renderExercise(u, k){
+  var ex = u.exercises[k - 1];
+  var s = '<h3>' + esc(ex.title) + '</h3>' + ex.intro.map(function(p){ return '<p class="lede">' + p + '</p>'; }).join('') +
+    (ex.legend ? '<div class="card">' + ex.legend.map(function(o){ return '<div><b>' + o.letter + '</b> ' + o.text + '</div>'; }).join('') + '</div>' : ''), shown = 0;
+  s += '<div class="send-box" data-ex="' + u.num + '-' + k + '">' + sendBox(u.num + '-' + k) + '</div>';
+  ex.items.forEach(function(it, i){
+    if (filter && it.level !== filter) return;
+    shown++;
+    s += renderItem(it, u.num + '-' + k + '-' + it.n, i);
+  });
+  if (!shown) s += '<p class="empty">No items at this level.</p>';
+  s += '<div class="send-box" data-ex="' + u.num + '-' + k + '">' + sendBox(u.num + '-' + k) + '</div>';
+  return s;
+}
+
+/* ---------- sending finished exercises to the teacher (IELTS Harper Portal) ---------- */
+// This page and the portal are on the same site, so the student's portal sign-in is readable here.
+var API_URL = 'https://script.google.com/macros/s/AKfycbwKm1zvqca2-WO20f49M4mNW2qn9Aq4uxJZ3_bnQrErWPL5TN4jHycXZUQBDJ1W7wWg/exec', PORTAL = 'https://ieltsharper.github.io/portal/';
+var send = {}; // exercise key -> {status: 'sending'|'error'|'forbidden'|'login', message}
+var comments = {}; // exercise key -> {comment, commentAt}
+state.sent = state.sent || {}; state.dirty = state.dirty || {};
+function token(){ try { return localStorage.getItem('portal.session'); } catch(e){ return null; } }
+function apiCall(action, payload){
+  return fetch(API_URL, {method: 'POST', headers: {'Content-Type': 'text/plain;charset=utf-8'},
+    body: JSON.stringify({action: action, token: token(), payload: payload}), redirect: 'follow', credentials: 'omit'})
+    .then(function(r){ return r.json(); })
+    .then(function(env){ if (env.ok) return env.data; var e = new Error(env.error.message); e.code = env.error.code; throw e; });
+}
+function exParts(key){ var p = key.split('-'), u = D.units.find(function(x){ return String(x.num) === p[0]; }); return {u: u, k: +p[1], ex: u.exercises[+p[1] - 1]}; }
+function sendable(ex){ return ex.items.some(function(it){ return it.kind !== 'read'; }); }
+function finished(key){ var x = exParts(key); return x.ex.items.every(function(it){ var id = key + '-' + it.n; return state.sub[id] || state.choice[id]; }); }
+function doneCount(key){ var x = exParts(key); return x.ex.items.filter(function(it){ var id = key + '-' + it.n; return state.sub[id] || state.choice[id]; }).length; }
+function promptOf(it){
+  var head = textOf(it.cue) + (it.prompt ? '\nExam prompt: ' + textOf(it.prompt) : '');
+  var lines = LINES.filter(function(l){ return it[l[0]]; }).map(function(l){ return l[1] + ': ' + textOf(it[l[0]]); });
+  return [head].concat(lines).join('\n');
+}
+function payloadFor(key){
+  var x = exParts(key);
+  return {
+    url: location.href.split('#')[0], lessonTitle: D.cover[0], exercise: key,
+    exerciseTitle: unitTitle(x.u) + ' · ' + x.ex.title,
+    answers: x.ex.items.map(function(it){
+      var id = key + '-' + it.n;
+      if (it.kind === 'choice' || it.kind === 'pick') {
+        var opt = function(l){ var o = optionsOf(it).find(function(o){ return o.letter === l; }); return (it.kind === 'pick' ? '' : l + '. ') + (o ? textOf(o.text) : ''); };
+        return {prompt: promptOf(it), answer: opt(state.choice[id]), model: opt(correctOf(it)), correct: state.choice[id] === correctOf(it)};
+      }
+      return {prompt: promptOf(it), answer: state.sub[id], model: (it.translation ? 'Translation: ' + textOf(it.translation) + '\nRewrite: ' : '') + refText(it.answer) +(it.alt ? '\nAlso accepted: ' + textOf(it.alt) : ''), correct: null};
+    })
+  };
+}
+function sendBox(key){
+  var x = exParts(key);
+  if (!sendable(x.ex) || !API_URL) return '';
+  var c = comments[key], s = send[key] || {}, out = '';
+  if (c && c.comment) out += '<div class="teacher-note"><b>Teacher&rsquo;s feedback</b><div>' + esc(c.comment) + '</div></div>';
+  var msg;
+  if (!token() || s.status === 'login') msg = '<a href="' + PORTAL + '" target="_blank" rel="noopener">Sign in to the portal</a> so your work is sent to your teacher when you finish.';
+  else if (s.status === 'sending') msg = 'Sending to your teacher…';
+  else if (s.status === 'forbidden') msg = 'This exercise is not open to your portal account yet, so it cannot be sent to your teacher.';
+  else if (s.status === 'error') msg = 'Not sent yet (' + esc(s.message) + '). <button type="button" class="btn" data-send="' + key + '">Try again</button>';
+  else if (state.sent[key] && state.dirty[key]) msg = 'You changed your answers after sending. <button type="button" class="btn primary" data-send="' + key + '">Send again to your teacher</button>';
+  else if (state.sent[key]) msg = '✓ Sent to your teacher on ' + esc(new Date(state.sent[key]).toLocaleString('en-GB')) + '.' + (c && c.comment ? '' : ' Your teacher will give feedback in the portal.');
+  else msg = 'Done: ' + doneCount(key) + '/' + x.ex.items.length + '. When you finish them all, this exercise is sent to your teacher automatically.';
+  return out + '<p class="send-msg">' + msg + '</p>';
+}
+function refreshSendBoxes(key){
+  document.querySelectorAll('.send-box[data-ex="' + key + '"]').forEach(function(b){ b.innerHTML = sendBox(key); });
+}
+function sendExercise(key){
+  if (!API_URL || !token()) { refreshSendBoxes(key); return; }
+  send[key] = {status: 'sending'}; refreshSendBoxes(key);
+  apiCall('workbook.submit', payloadFor(key)).then(function(row){
+    state.sent[key] = row.submittedAt; delete state.dirty[key]; save();
+    send[key] = {}; comments[key] = {comment: row.comment, commentAt: row.commentAt};
+  }).catch(function(e){
+    send[key] = e.code === 'unauthorized' ? {status: 'login'} : e.code === 'forbidden' ? {status: 'forbidden'} : {status: 'error', message: e.message || 'network error'};
+  }).then(function(){ refreshSendBoxes(key); });
+}
+function afterAnswer(id){
+  var key = id.split('-').slice(0, 2).join('-');
+  if (!sendable(exParts(key).ex)) return;
+  if (state.sent[key]) { state.dirty[key] = 1; save(); refreshSendBoxes(key); return; }
+  if (finished(key)) sendExercise(key); else refreshSendBoxes(key);
+}
+function loadComments(){
+  if (!D.units.length) return;
+  if (!API_URL || !token()) return;
+  apiCall('workbook.mine', {url: location.href.split('#')[0]}).then(function(rows){
+    rows.forEach(function(r){
+      comments[r.exercise] = {comment: r.comment, commentAt: r.commentAt};
+      if (!state.sent[r.exercise]) { state.sent[r.exercise] = r.submittedAt; save(); }
+    });
+    document.querySelectorAll('.send-box').forEach(function(b){ b.innerHTML = sendBox(b.getAttribute('data-ex')); });
+    // Exercises finished before signing in are sent now.
+    D.units.forEach(function(u){ u.exercises.forEach(function(ex, k){
+      var key = u.num + '-' + (k + 1);
+      if (sendable(ex) && !state.sent[key] && finished(key)) sendExercise(key);
+    }); });
+  }).catch(function(){});
+}
+
+function renderUnit(u, part){
+  var parts = [['ly-thuyet', u.theory.length ? 'A. Theory' : 'Introduction']].concat(u.exercises.map(function(_, k){ return ['bai-tap-' + (k + 1), 'Exercise ' + (k + 1)]; }));
+  if (!parts.some(function(p){ return p[0] === part; })) part = 'ly-thuyet';
+  var s = '<h2>' + esc(unitTitle(u)) + '</h2>';
+  s += '<div class="subnav" role="group" aria-label="Unit sections">' + parts.map(function(p){
+    var n = p[0] === 'ly-thuyet' ? '' : (function(){ var k = +p[0].slice(-1), all = u.exercises[k - 1].items.map(function(it){ return u.num + '-' + k + '-' + it.n; }); return ' <small>' + all.filter(isDone).length + '/' + all.length + '</small>'; })();
+    return '<a class="chip" style="text-decoration:none" href="#' + p[0] + '" aria-pressed="' + (p[0] === part) + '">' + p[1] + n + '</a>';
+  }).join('') + '<span class="filter-label">Level:</span>' +
+    [[0, 'All'], [1, '● 5.0-6.0'], [2, '●● 6.0-6.5'], [3, '●●● 7.0-7.5']].map(function(f){
+      return '<button type="button" class="chip" data-filter="' + f[0] + '" aria-pressed="' + (filter === f[0]) + '">' + f[1] + '</button>';
+    }).join('') + '</div>';
+  s += part === 'ly-thuyet' ? renderTheory(u) : renderExercise(u, +part.slice(-1));
+  var i = parts.findIndex(function(p){ return p[0] === part; });
+  if (i < parts.length - 1) s += '<p style="text-align:right"><a class="btn primary" style="text-decoration:none;display:inline-block" href="#' + parts[i + 1][0] + '">Next: ' + parts[i + 1][1] + ' →</a></p>';
+  return s;
+}
+
+function render(){
+  var r = route();
+  document.querySelectorAll('#tabs a').forEach(function(a){
+    if (a.getAttribute('href') === '#' + r.tab.id) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+  });
+  var m = $('#main');
+  if (!D.units.length) { m.innerHTML = renderIndex(); $('.progress-all').style.display = 'none'; return; }
+  m.innerHTML = renderUnit(r.tab.unit, r.part);
+  updateProgress();
+}
+function rerenderItem(id){
+  var old = document.querySelector('.item[data-id="' + id + '"]'), p = id.split('-');
+  var tmp = document.createElement('div');
+  var item = findItem(id);
+  tmp.innerHTML = renderItem(item, id, D.units.find(function(x){ return String(x.num) === p[0]; }).exercises[+p[1] - 1].items.indexOf(item));
+  old.replaceWith(tmp.firstChild);
+  updateProgress();
+  var chip = document.querySelector('.subnav a[aria-pressed="true"] small');
+  if (chip) { var ex = D.units.find(function(x){ return String(x.num) === p[0]; }).exercises[+p[1] - 1];
+    chip.textContent = ex.items.filter(function(it){ return isDone(p[0] + '-' + p[1] + '-' + it.n); }).length + '/' + ex.items.length; }
+}
+
+/* ---------- events ---------- */
+var lastTab = route().tab.id;
+window.addEventListener('hashchange', function(){
+  render();
+  var t = route().tab.id;
+  window.scrollTo(0, t === lastTab ? Math.min(window.scrollY, $('nav.tabs').offsetTop) : 0);
+  lastTab = t;
+});
+$('#main').addEventListener('click', function(e){
+  var b, id;
+  if ((b = e.target.closest('[data-filter]'))) { filter = +b.getAttribute('data-filter'); var y = window.scrollY; render(); window.scrollTo(0, y); return; }
+  if ((b = e.target.closest('[data-submit]'))) {
+    id = b.getAttribute('data-submit');
+    var t = document.getElementById('t-' + id).value.trim(), tt = document.getElementById('t-' + id + '~t');
+    if (!t || (tt && !tt.value.trim())) return;
+    if (tt) { t = 'Translation: ' + tt.value.trim() + '\nRewrite: ' + t; delete state.draft[id + '~t']; }
+    var changed = state.sub[id] !== t;
+    state.sub[id] = t; delete state.draft[id]; save(); rerenderItem(id);
+    var a = document.getElementById('a-' + id); if (a) a.scrollIntoView({block: 'nearest'});
+    var f = (state.fb || {})[id];
+    if (!f || f.for !== t || f.kind !== 'ai') assess(findItem(id), id);
+    if (changed) afterAnswer(id);
+    return;
+  }
+  if ((b = e.target.closest('[data-choose]'))) {
+    id = b.getAttribute('data-choose');
+    var r = document.querySelector('input[name="c-' + id + '"]:checked');
+    if (!r) return;
+    var changedChoice = state.choice[id] !== r.value;
+    state.choice[id] = r.value; save(); rerenderItem(id);
+    if (changedChoice) afterAnswer(id);
+    return;
+  }
+  if ((b = e.target.closest('[data-send]'))) { sendExercise(b.getAttribute('data-send')); return; }
+  if ((b = e.target.closest('[data-see]'))) {
+    id = b.getAttribute('data-see');
+    if (state.seen[id]) delete state.seen[id]; else state.seen[id] = 1;
+    save(); rerenderItem(id);
+  }
+});
+$('#main').addEventListener('change', function(e){
+  var t = e.target;
+  if (t.matches('input[type="radio"]')) {
+    var id = t.name.slice(2), btn = document.querySelector('[data-choose="' + id + '"]');
+    if (btn) btn.disabled = false;
+  }
+});
+$('#main').addEventListener('input', function(e){
+  var t = e.target;
+  if (t.matches('[data-text]')) {
+    var id = t.getAttribute('data-text');
+    state.draft[id] = t.value; save();
+    var base = id.replace(/~t$/, ''), btn = document.querySelector('[data-submit="' + base + '"]');
+    var all = [document.getElementById('t-' + base), document.getElementById('t-' + base + '~t')].filter(Boolean);
+    if (btn) btn.disabled = !all.every(function(x){ return x.value.trim(); });
+  }
+});
+render();
+loadComments();
+})();
+</script>
+</body>
+</html>

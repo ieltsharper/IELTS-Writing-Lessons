@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Unit 23 · Coherence and Cohesion Errors · IELTS Harper Portal</title>
+<style>
+/* IELTS Harper Portal look (same tokens as the Speaking band descriptors page). */
+:root{
+  --page:#f7f5f2; --card:#ffffff; --line:#e7e5e4; --line-strong:#d6d3d1;
+  --ink:#1c1917; --muted:#57534e; --heading:#f96c1b;
+  --brand:#c2410c; --brand-hover:#9a3412; --on-brand:#ffffff; --brand-soft:#fff7ed;
+  --hl:#ffedd5;
+  --ok:#065f46; --ok-soft:#ecfdf5; --no:#991b1b; --no-soft:#fef2f2;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --page:#171311; --card:#221c19; --line:#3a302b; --line-strong:#4f433c;
+    --ink:#f5f0eb; --muted:#b8aca3; --brand-soft:#3a2416; --hl:#5a3418;
+    --ok:#6ee7b7; --ok-soft:#12302a; --no:#fca5a5; --no-soft:#3b1d1d;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+a{color:var(--brand)}
+button,textarea,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+/* top bar, as in the portal */
+.topbar{background:var(--card);border-bottom:1px solid var(--line)}
+.topbar .wrap{padding-top:12px;padding-bottom:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--heading);font-weight:700;font-size:1.15rem;text-decoration:none;margin-right:auto}
+.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--brand);color:var(--on-brand);font-size:.85rem;font-weight:800}
+.topbar-link{color:var(--ink);font-weight:600;font-size:.9rem;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:6px 12px}
+.topbar-link:hover{background:var(--brand-soft)}
+
+/* masthead */
+header.mast .wrap{padding-top:28px}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand);background:var(--brand-soft);border-radius:999px;padding:3px 10px;margin:0 0 10px}
+h1{color:var(--heading);font-weight:700;font-size:clamp(1.5rem,3.6vw,2.1rem);line-height:1.2;margin:0 0 8px}
+.standfirst{margin:0;color:var(--muted)}
+.standfirst.small{font-size:.9rem;font-style:italic}
+.progress-all{margin-top:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
+.bar{flex:1;min-width:160px;height:8px;background:var(--line);border-radius:999px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--brand);width:0}
+
+/* section tabs */
+nav.tabs{position:sticky;top:0;z-index:40;background:var(--page);border-bottom:1px solid var(--line);margin-top:20px}
+nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+nav.tabs a{border:1px solid transparent;border-radius:12px;padding:8px 14px;white-space:nowrap;color:var(--muted);font-size:.93rem;font-weight:600;text-decoration:none}
+nav.tabs a:hover{background:var(--brand-soft);color:var(--ink)}
+nav.tabs a[aria-current="page"]{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+main{padding:28px 0 80px}
+h2{color:var(--heading);font-weight:700;font-size:1.45rem;margin:0 0 6px}
+h3{font-weight:700;font-size:1.12rem;margin:30px 0 10px}
+h4{font-weight:700;font-size:1rem;margin:0 0 8px}
+.lede{color:var(--muted);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:14px}
+.card p{margin:0 0 8px}.card p:last-child{margin-bottom:0}
+ul.plain{margin:4px 0 12px;padding-left:22px}
+ul.plain li{margin-bottom:6px}
+
+/* unit sub-navigation and level filter */
+.subnav{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 12px;margin:14px 0 18px}
+.chip{border:1px solid var(--line-strong);background:var(--card);border-radius:999px;padding:6px 14px;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--muted)}
+.chip:hover{background:var(--brand-soft);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.chip small{font-weight:500;opacity:.85}
+.sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+.filter-label{font-size:.82rem;color:var(--muted);margin-left:auto}
+.lv{color:var(--brand);letter-spacing:1px;font-size:.8rem;white-space:nowrap}
+
+/* tables */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:14px}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{background:var(--brand);color:var(--on-brand);font-weight:700;font-size:.85rem}
+td.phrase{font-weight:700;white-space:nowrap}
+td.muted{color:var(--muted)}
+.speak{border:1px solid var(--line-strong);background:var(--card);border-radius:999px;width:28px;height:28px;cursor:pointer;font-size:.8rem;vertical-align:middle;margin-left:6px;padding:0;line-height:1}
+.speak:hover{background:var(--brand-soft)}
+.speak.on{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+
+/* boxes */
+.boxes{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.box h4{color:var(--brand)}
+.mistake{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.mistake:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.bad{color:var(--no)}.good{color:var(--ok)}
+.bad::before{content:"✗ ";font-weight:700}.good::before{content:"✓ ";font-weight:700}
+.note{color:var(--muted);font-size:.92rem}
+.sample{margin-bottom:10px}
+.sample .q{font-weight:700}
+.formula{background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:8px;padding:10px 14px;margin:0 0 12px}
+
+/* exercise items */
+.item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:12px}
+.item.done{border-color:var(--ok)}
+.item-head{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.num{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:8px;background:var(--brand-soft);color:var(--brand);font-weight:800;font-size:.85rem}
+.cue{font-weight:700;font-size:1.05rem;flex:1;min-width:200px}
+.examiner{color:var(--muted);font-weight:600;font-size:.85rem;margin-right:4px}
+.lines{margin:8px 0 0 38px;font-size:.95rem}
+.lines div{margin-bottom:3px}
+.label{display:inline-block;min-width:78px;color:var(--muted);font-size:.85rem;font-weight:600}
+.hint{color:var(--muted);font-style:italic}
+.work{margin:12px 0 0 38px}
+textarea{width:100%;min-height:58px;resize:vertical;border:1px solid var(--line-strong);border-radius:10px;padding:8px 10px;background:var(--page)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center}
+.btn{border:1px solid var(--line-strong);background:var(--card);border-radius:10px;padding:6px 12px;cursor:pointer;font-size:.88rem;font-weight:600}
+.btn:hover{background:var(--brand-soft)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.btn.primary:hover{background:var(--brand-hover)}
+.btn[aria-pressed="true"]{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.answer{margin-top:10px;border-top:1px dashed var(--line-strong);padding-top:10px}
+.answer .main{font-weight:600}
+.answer .alt{margin-top:6px}
+.empty{color:var(--muted);font-style:italic}
+
+/* question bank */
+.search{width:100%;max-width:420px;border:1px solid var(--line-strong);border-radius:12px;padding:8px 12px;background:var(--card);margin-bottom:14px}
+
+footer{color:var(--muted);font-size:.85rem;padding:20px 0 40px;border-top:1px solid var(--line)}
+@media (max-width:600px){.lines,.work{margin-left:0}.filter-label{margin-left:0;width:100%}}
+@media print{
+  .topbar,nav.tabs,.subnav,.actions,.speak,textarea,.progress-all,footer{display:none!important}
+  section[hidden]{display:block!important}
+  .answer[hidden]{display:block!important}
+  body{background:#fff}
+  .item,.card{break-inside:avoid}
+}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.opts{display:grid;gap:6px;margin:10px 0 0 38px}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;background:var(--page)}
+.opt:hover{background:var(--brand-soft)}
+.opt input{margin-top:5px;accent-color:var(--brand)}
+.opt b{min-width:1.2em}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--no);background:var(--no-soft)}
+.verdict{font-weight:700;margin-bottom:4px}
+.verdict.ok{color:var(--ok)}.verdict.no{color:var(--no)}
+.mine{background:var(--page);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:8px;white-space:pre-wrap}
+.part-title{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+.read-cue{font-size:1.08rem}
+.send-box{margin:0 0 14px}
+.send-box:empty{display:none}
+.send-msg{margin:0;padding:10px 14px;border:1px dashed var(--line-strong);border-radius:12px;background:var(--card);font-size:.92rem;color:var(--muted)}
+.send-msg .btn{margin-left:6px}
+.teacher-note{border-left:4px solid var(--brand);background:var(--brand-soft);border-radius:10px;padding:10px 14px;margin-bottom:8px;white-space:pre-wrap}
+.teacher-note b{color:var(--brand);display:block;margin-bottom:2px}
+.fb{border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:10px 14px;margin:0 0 10px;background:var(--card)}
+.fb.great{border-left-color:var(--ok)}.fb.needs_work{border-left-color:var(--no)}
+.fb-head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.fb-head b{color:var(--ink)}
+.fb-tag{font-size:.75rem;font-weight:700;border-radius:999px;padding:1px 9px;background:var(--brand-soft);color:var(--brand)}
+.fb.great .fb-tag{background:var(--ok-soft);color:var(--ok)}.fb.needs_work .fb-tag{background:var(--no-soft);color:var(--no)}
+.fb ul{margin:6px 0 0;padding-left:20px}.fb li{margin-bottom:3px}
+.fb .wrong{color:var(--no);text-decoration:line-through}.fb .right{color:var(--ok);font-weight:600}
+.fb-small{font-size:.8rem;color:var(--muted);margin-top:6px}
+/* Writing: criterion colours (TR red, CC orange, LR blue, GRA purple), corrections, exam prompts */
+.tag{display:inline-block;font-size:.72rem;font-weight:800;border-radius:6px;padding:0 6px;color:#1c1917;font-style:normal}
+.tag.TR{background:#F4CCCC}.tag.CC{background:#FCE5CD}.tag.LR{background:#CFE2F3}.tag.GRA{background:#D9D2E9}
+s{color:var(--no)}
+.prompt{margin:8px 0 0 38px;border-left:3px solid var(--line-strong);padding:4px 12px;color:var(--ink);font-size:.95rem}
+.ref{font-size:.75rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;margin-left:6px}
+.wc{font-size:.8rem;color:var(--muted)}
+@media (max-width:600px){.prompt{margin-left:0}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="https://ieltsharper.github.io/portal/"><span class="brand-mark" aria-hidden="true">IH</span>IELTS Harper Portal</a>
+    <a class="topbar-link" href="https://ieltsharper.github.io/portal/">&larr; Back to the portal</a>
+  </div>
+</div>
+<header class="mast">
+  <div class="wrap">
+    <div class="hero">
+      <p class="eyebrow">Writing Task 2 · Sentences</p>
+      <h1 id="title"></h1>
+      <div id="cover"></div>
+      <div class="progress-all"><span id="progressText"></span><div class="bar" aria-hidden="true"><span id="progressBar"></span></div>
+        <button class="btn" id="reset" type="button">Clear my work</button></div>
+    </div>
+  </div>
+</header>
+<nav class="tabs" aria-label="Sections"><div class="wrap" id="tabs"></div></nav>
+<main><div class="wrap" id="main"></div></main>
+<footer><div class="wrap">Your answers are saved in this browser. If you are signed in to IELTS Harper Portal, each finished exercise is sent to your teacher for feedback.</div></footer>
+
+<script type="application/json" id="data">{"cover": ["Sentence Writing Workbook", "Unit 23 · Coherence and Cohesion Errors"], "nav": [{"href": "index.html", "label": "All units", "current": false}, {"href": "unit-0.html", "label": "Unit 0", "current": false}, {"href": "unit-1.html", "label": "Unit 1", "current": false}, {"href": "unit-2.html", "label": "Unit 2", "current": false}, {"href": "unit-3.html", "label": "Unit 3", "current": false}, {"href": "unit-4.html", "label": "Unit 4", "current": false}, {"href": "unit-5.html", "label": "Unit 5", "current": false}, {"href": "unit-6.html", "label": "Unit 6", "current": false}, {"href": "unit-7.html", "label": "Unit 7", "current": false}, {"href": "unit-8.html", "label": "Unit 8", "current": false}, {"href": "unit-9.html", "label": "Unit 9", "current": false}, {"href": "unit-10.html", "label": "Unit 10", "current": false}, {"href": "unit-11.html", "label": "Unit 11", "current": false}, {"href": "unit-12.html", "label": "Unit 12", "current": false}, {"href": "unit-13.html", "label": "Unit 13", "current": false}, {"href": "unit-14.html", "label": "Unit 14", "current": false}, {"href": "unit-15.html", "label": "Unit 15", "current": false}, {"href": "unit-16.html", "label": "Unit 16", "current": false}, {"href": "unit-17.html", "label": "Unit 17", "current": false}, {"href": "unit-18.html", "label": "Unit 18", "current": false}, {"href": "unit-19.html", "label": "Unit 19", "current": false}, {"href": "unit-20.html", "label": "Unit 20", "current": false}, {"href": "unit-21.html", "label": "Unit 21", "current": false}, {"href": "unit-22.html", "label": "Unit 22", "current": false}, {"href": "unit-23.html", "label": "Unit 23", "current": true}, {"href": "unit-24.html", "label": "Unit 24", "current": false}, {"href": "unit-25.html", "label": "Unit 25", "current": false}, {"href": "final-review.html", "label": "Final Review", "current": false}], "units": [{"num": 23, "name": "Coherence and Cohesion Errors", "intro": [], "theory": [{"type": "sub", "text": "Mục đích"}, {"type": "p", "html": "Coherence and Cohesion đánh giá việc các câu <b>nối với nhau có logic không<\/b>. Ở Band 6, người viết thường dùng từ nối một cách máy móc hoặc sai nghĩa, và quy chiếu (<i>it, they, this<\/i>) không rõ ràng. Ở Band 7, các ý được sắp xếp logic, từ nối được dùng chính xác và linh hoạt, và người viết dùng <b>quy chiếu và thay thế<\/b> thay vì lặp từ."}, {"type": "p", "html": "Ba nhóm lỗi chính: <b>(1)<\/b> từ nối sai nghĩa (<i>Otherwise<\/i> khi muốn bổ sung ý, <i>In other words<\/i> khi nêu hệ quả mới, <i>By contrast<\/i> khi không có đối lập); <b>(2)<\/b> chuỗi từ nối máy móc (<i>In addition … Moreover … Also …<\/i>) thay vì nối ý bằng quy chiếu; <b>(3)<\/b> quy chiếu mơ hồ và câu chồng chất mệnh đề khiến người đọc không theo kịp."}, {"type": "p", "html": "Nguyên tắc <b>thông tin cũ → thông tin mới<\/b>: mỗi câu nên bắt đầu bằng điều người đọc đã biết (thường là một danh từ tóm tắt câu trước: <i>This trend, Such regulations, These measures<\/i>) và kết thúc bằng thông tin mới. Đây là cách nối câu tự nhiên nhất, không cần từ nối."}, {"type": "sub", "text": "Lỗi mạch lạc và liên kết"}, {"type": "table", "head": ["Lỗi", "Dấu hiệu", "Cách sửa", "Ví dụ: trước → sau"], "rows": [{"level": 0, "cells": ["<i>Even more<\/i> làm từ nối", "Muốn bổ sung ý", "<i>Moreover / Furthermore<\/i>", "Even more, it reduces costs. → Moreover, it reduces costs."]}, {"level": 0, "cells": ["<i>Otherwise<\/i> sai nghĩa", "Muốn bổ sung ý, không phải nêu điều kiện", "<i>Moreover / In addition<\/i>", "Otherwise, comparisons cause jealousy. → Moreover, …"]}, {"level": 0, "cells": ["<i>In other words<\/i> sai nghĩa", "Câu sau nêu hệ quả mới, không nhắc lại", "<i>As a result / Consequently<\/i>", "In other words, rural businesses grew. → As a result, …"]}, {"level": 0, "cells": ["<i>Besides<\/i> sai chức năng", "Chuyển sang đối tượng khác", "<i>As for<\/i> + N", "Besides, online courses … → As for online courses, …"]}, {"level": 0, "cells": ["<i>By contrast / On the contrary<\/i> sai", "Không có đối lập thật sự", "<i>Meanwhile / Similarly / Nevertheless<\/i>", "By contrast, spending also stayed the same. → Similarly, …"]}, {"level": 0, "cells": ["Chuỗi nối máy móc", "<i>In addition … Moreover … Also …<\/i> liên tiếp", "Nối bằng quy chiếu: <i>This growing dependence …<\/i>", "In addition … Moreover … Also … → This growing dependence means that …"]}, {"level": 0, "cells": ["Quy chiếu mơ hồ", "<i>it / they / this<\/i> không rõ chỉ gì", "Danh từ tóm tắt: <i>such regulations, this trend<\/i>", "If this method works, they can help … → If effective, such regulations can help …"]}, {"level": 0, "cells": ["Lặp từ", "Cùng một danh từ ở đầu mỗi câu", "Đại từ, từ đồng nghĩa, danh từ tóm tắt", "Tourism … Tourism … Tourism … → Tourism … It … This revenue …"]}, {"level": 0, "cells": ["Câu chồng chất", "4–5 mệnh đề nối liền (<i>which … that … if … as long as<\/i>)", "Một ý chính + một mệnh đề phụ; tách câu", "… in order to … if … as long as … → Open communication allows …, which boosts productivity."]}, {"level": 0, "cells": ["Thông tin mới → cũ", "Câu bắt đầu bằng ý mới, không nối với câu trước", "Bắt đầu bằng thông tin cũ (theme), kết thúc bằng thông tin mới (rheme)", "Stress leads to illness. Long hours cause stress. → Long hours cause stress, which can lead to illness."]}]}, {"type": "sub", "text": "Câu mẫu"}, {"type": "samples", "items": ["Technology makes work faster. <b>Moreover<\/b>, it reduces costs.", "The government invested heavily in rural roads. <b>As a result<\/b>, rural businesses grew.", "Traditional universities have existed for centuries. <b>As for online courses<\/b>, they are a much more recent development.", "If effective, <b>such regulations<\/b> can help children avoid harmful content.", "One prominent advantage is that <b>AI<\/b> can take over repetitive tasks that are dangerous.", "Many people rely heavily on technology. <b>This growing dependence<\/b> means that many can no longer remember phone numbers.", "The number of cars has increased. <b>This rise<\/b> has made congestion worse.", "Long working hours often lead to stress, <b>which in turn<\/b> can cause health problems."]}, {"type": "mistakes", "items": [{"bad": "Even more, relying too much on technology reduces creativity. <span class=\"tag CC\">CC<\/span>", "good": "<b>Moreover,<\/b> relying too much on technology reduces creativity.", "note": "<i>Even more<\/i> không phải là từ nối; dùng <i>Moreover / Furthermore<\/i>."}, {"bad": "Close friendships can create tensions. Otherwise, these comparisons can cause jealousy. <span class=\"tag CC\">CC<\/span>", "good": "Close friendships can create tensions. <b>Moreover,<\/b> comparisons between colleagues can cause jealousy.", "note": "<i>Otherwise<\/i> = nếu không thì (điều kiện); ở đây người viết muốn bổ sung ý."}, {"bad": "Traditional universities have existed for centuries. Besides, the online courses are a much more recent development. <span class=\"tag CC\">CC<\/span>", "good": "Traditional universities have existed for centuries. <b>As for online courses, they are<\/b> a much more recent development.", "note": "Khi chuyển sang một đối tượng khác, dùng <i>As for<\/i> + danh từ."}, {"bad": "If this method is effective, they can help children to avoid harmful content. <span class=\"tag CC\">CC<\/span>", "good": "If this method is effective, <b>such regulations can help children avoid<\/b> harmful content.", "note": "<i>they<\/i> không rõ chỉ ai; dùng danh từ tóm tắt <i>such regulations<\/i>."}, {"bad": "One prominent advantage is that it can replace human repetitive tasks. <span class=\"tag CC\">CC<\/span>", "good": "One prominent advantage is that <b>AI can take over repetitive tasks<\/b>.", "note": "<i>it<\/i> mơ hồ; nêu rõ danh từ."}, {"bad": "Many people rely on technology. In addition, they use apps for everything. Even more, they cannot remember phone numbers. People also rarely read maps. <span class=\"tag CC\">CC<\/span>", "good": "Many people rely on technology and use apps for everything. <b>This growing dependence means that many can no longer remember phone numbers or read maps.<\/b>", "note": "Chuỗi từ nối máy móc; nối ý bằng danh từ tóm tắt <i>This growing dependence<\/i>."}]}, {"type": "choose", "items": [{"h": "<b>Moreover, Furthermore, In addition, Besides<\/b>", "html": "<i>Moreover / Furthermore / In addition<\/i> bổ sung một ý cùng hướng, phù hợp văn viết học thuật. <i>Besides<\/i> ít trang trọng hơn và thường dùng để thêm một lý do (\"ngoài ra\"); không dùng <i>Besides<\/i> để chuyển sang một đối tượng khác — khi đó dùng <i>As for<\/i>."}, {"h": "<b>Otherwise và In other words<\/b>", "html": "<i>Otherwise<\/i> = nếu không thì (<i>Governments must act now; otherwise, the problem will grow<\/i>). <i>In other words<\/i> = nói cách khác, chỉ dùng khi diễn đạt lại <b>cùng một ý<\/b>."}, {"h": "<b>Danh từ tóm tắt hữu ích<\/b>", "html": "<i>this trend, this problem, this change, this approach, such measures, such policies, these regulations, this growing dependence, this rise<\/i>. Chọn danh từ khớp chính xác với ý câu trước."}, {"h": "<b>Khi nào không cần từ nối?<\/b>", "html": "Khi câu sau bắt đầu bằng danh từ tóm tắt câu trước (<i>This rise …<\/i>), mối liên kết đã rõ ràng. Không phải câu nào cũng cần <i>Moreover<\/i> hay <i>In addition<\/i>."}]}], "exercises": [{"title": "Exercise 1 — Fix linkers and reference", "intro": ["<i>Rewrite each sentence or short paragraph: fix the wrong linker, unclear reference or repeated words as hinted.<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Technology makes work faster. Even more, it reduces costs.", "hint": "replace the linker", "answer": "Technology makes work faster. Moreover, it reduces costs.", "alt": "Technology makes work faster. Furthermore, it reduces costs.", "kind": "write"}, {"level": 1, "n": 1, "cue": "Close friendships at work can create tension. Otherwise, comparisons between colleagues can cause jealousy.", "hint": "replace the linker", "answer": "Close friendships at work can create tension. Moreover, comparisons between colleagues can cause jealousy.", "alt": "Close friendships at work can create tension. In addition, comparisons between colleagues can cause jealousy.", "kind": "write"}, {"level": 1, "n": 2, "cue": "The government invested in rural roads. In other words, rural businesses grew.", "hint": "result linker", "answer": "The government invested in rural roads. As a result, rural businesses grew.", "alt": "The government invested in rural roads, which helped rural businesses to grow.", "kind": "write"}, {"level": 1, "n": 3, "cue": "Traditional universities have existed for centuries. Besides, online courses are a much more recent development.", "hint": "As for + N", "answer": "Traditional universities have existed for centuries. As for online courses, these are a much more recent development.", "alt": "Traditional universities have existed for centuries, whereas online courses are a much more recent development.", "kind": "write"}, {"level": 1, "n": 4, "cue": "Governments should regulate online content for children. If this method is effective, they can help children avoid harmful content.", "hint": "summary noun instead of <i>they<\/i>", "answer": "Governments should regulate online content for children. If effective, such regulations can help children avoid harmful content.", "alt": "Governments should regulate online content for children, as such rules can help protect them from harmful material.", "kind": "write"}, {"level": 1, "n": 5, "cue": "AI is spreading quickly. One prominent advantage is that it can replace human repetitive tasks.", "hint": "name the noun instead of <i>it<\/i>", "answer": "AI is spreading quickly. One prominent advantage is that AI can take over repetitive tasks.", "alt": "AI is spreading quickly, and one prominent advantage is that such systems can take over repetitive tasks.", "kind": "write"}, {"level": 1, "n": 6, "cue": "Spending on food remained stable. By contrast, spending on clothes remained unchanged.", "hint": "Similarly / Meanwhile", "answer": "Spending on food remained stable. Similarly, spending on clothes remained unchanged.", "alt": "Spending on food remained stable, and spending on clothes was also unchanged.", "kind": "write"}, {"level": 2, "n": 7, "cue": "Many people rely on technology. In addition, they use apps for everything. Moreover, they cannot remember phone numbers. Also, they rarely read maps.", "hint": "replace the chain of linkers with reference", "answer": "Many people rely heavily on technology, using apps for almost everything. This growing dependence means that many can no longer remember phone numbers or read maps.", "alt": "Many people now use apps for almost everything. As a result of this dependence, many can no longer remember phone numbers or read maps.", "kind": "write"}, {"level": 2, "n": 8, "cue": "Tourism creates jobs. Tourism also brings foreign currency. Tourism also funds conservation.", "hint": "avoid repeating words", "answer": "Tourism creates jobs and brings in foreign currency. In addition, the revenue it generates can fund conservation.", "alt": "Tourism creates jobs and earns foreign currency, some of which can be used to fund conservation.", "kind": "write"}, {"level": 2, "n": 9, "cue": "The number of cars has increased. This has made it worse.", "hint": "clear summary noun", "answer": "The number of cars has increased. This rise has made congestion worse.", "alt": "The rising number of cars has made congestion worse.", "kind": "write"}, {"level": 2, "n": 10, "cue": "Many young people move to cities. They find jobs, but they face high rents, and they live in small flats, and they feel lonely.", "hint": "group the ideas, remove the <i>and … and<\/i> chain", "answer": "Many young people move to cities to find work. However, high rents force many of them into small flats, where they may feel isolated.", "alt": "Young people who move to cities for work often end up in small, expensive flats, where they may feel isolated.", "kind": "write"}, {"level": 2, "n": 11, "cue": "Some schools ban phones. This is good. It helps students. They concentrate better.", "hint": "combine sentences + reference", "answer": "Some schools ban mobile phones, a policy that helps students concentrate better.", "alt": "Some schools ban mobile phones, which helps students to concentrate.", "kind": "write"}, {"level": 2, "n": 12, "cue": "Exams are stressful. On the contrary, they are the fairest way to assess students.", "hint": "Nevertheless", "answer": "Exams are stressful. Nevertheless, they remain the fairest way to assess students.", "alt": "Although exams are stressful, they remain the fairest way to assess students.", "kind": "write"}, {"level": 2, "n": 13, "cue": "Governments should tax sugary drinks. Furthermore, sugar causes obesity.", "hint": "put the reason in the right place (<i>as<\/i>)", "answer": "Governments should tax sugary drinks, as high sugar consumption contributes to obesity.", "alt": "Since high sugar consumption contributes to obesity, governments should tax sugary drinks.", "kind": "write"}, {"level": 3, "n": 14, "cue": "Consequently, a child can potentially become discouraged to schools and eventually, fostering an invisible barrier to parents.", "hint": "rewrite with a clear sequence of results", "answer": "As a result, the child may lose interest in school and, over time, stop sharing problems with his or her parents.", "alt": "As a result, the child may become disengaged from school and gradually stop confiding in his or her parents.", "kind": "write"}, {"level": 3, "n": 15, "cue": "Team members can communicate openly in order to reassign tasks if someone falls behind schedule as long as it helps with the productivity of the team.", "hint": "one main idea + one subordinate clause", "answer": "Open communication allows teams to reassign tasks quickly when someone falls behind, which boosts productivity.", "alt": "When team members communicate openly, tasks can be reassigned quickly if someone falls behind, improving productivity.", "kind": "write"}, {"level": 3, "n": 16, "cue": "Rents have risen faster than wages. This results in the disparity between the average income and the expenditure on essential services, lots of urban inhabitants cannot cover their expenses.", "hint": "fix the comma splice with a comma + result linker", "answer": "Rents have risen faster than wages, meaning that many urban residents cannot cover their essential expenses.", "alt": "Rents have risen faster than wages. As a result, many urban residents cannot afford essential services.", "kind": "write"}, {"level": 3, "n": 17, "cue": "Many people work long hours. This leads to stress. Stress leads to health problems. Health problems cost the government money.", "hint": "old information → new information, combine the chain", "answer": "Long working hours often lead to stress, which in turn can cause health problems that place a burden on public healthcare.", "alt": "Long working hours cause stress, and the resulting health problems place a burden on public healthcare.", "kind": "write"}, {"level": 3, "n": 18, "cue": "Air pollution is a problem in cities. Cars cause it. The government should reduce them.", "hint": "clear reference", "answer": "Air pollution in cities is caused largely by cars, so the government should reduce traffic in urban areas.", "alt": "As cars are the main source of urban air pollution, the government should reduce traffic in cities.", "kind": "write"}, {"level": 3, "n": 19, "cue": "Students should learn financial skills. For example, budgeting. In conclusion, schools should teach it.", "hint": "fix the fragment + linker", "answer": "Students should learn financial skills such as budgeting. For this reason, schools should include money management in the curriculum.", "alt": "Financial skills such as budgeting are essential, so schools should teach money management.", "kind": "write"}]}, {"title": "Exercise 2 — Translate, then rewrite", "intro": ["<i>Translate each sentence into natural English. Then rewrite your translation using the given structure. ● sentences give keywords; ●● and ●●● sentences give only the structure.<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Công nghệ giúp làm việc nhanh hơn. Hơn nữa, nó còn giảm chi phí.", "kind": "translate", "rewriteWith": "<b>Moreover<\/b>", "translation": "Technology makes work faster. What is more, it reduces costs.", "answer": "<b>Technology makes work faster. Moreover, it reduces costs.<\/b>", "alt": "Technology makes work faster. Furthermore, it cuts costs."}, {"level": 1, "n": 1, "cue": "Chính phủ đã đầu tư vào đường sá nông thôn. Kết quả là, các doanh nghiệp ở nông thôn phát triển.", "kind": "translate", "rewriteWith": "<b>As a result<\/b>", "translation": "The government invested in rural roads, and rural businesses grew thanks to this.", "answer": "<b>The government invested in rural roads. As a result, rural businesses grew.<\/b>", "alt": "Government investment in rural roads helped rural businesses to grow."}, {"level": 1, "n": 2, "cue": "Còn về các khóa học trực tuyến, chúng là hình thức mới xuất hiện gần đây hơn nhiều.", "kind": "translate", "rewriteWith": "<b>As for + N<\/b>", "translation": "Online courses, on the other hand, appeared much more recently.", "answer": "<b>As for online courses, these are a much more recent development.<\/b>", "alt": "Online courses, by comparison, are a much more recent development."}, {"level": 1, "n": 3, "cue": "Nếu hiệu quả, những quy định như vậy có thể giúp trẻ tránh được nội dung độc hại.", "kind": "translate", "rewriteWith": "<b>such + N<\/b>", "translation": "If they work, regulations like these can help children avoid harmful content.", "answer": "<b>If effective, such regulations can help children avoid harmful content.<\/b>", "alt": "Such regulations, if effective, can protect children from harmful content."}, {"level": 1, "n": 4, "cue": "Một lợi ích nổi bật là trí tuệ nhân tạo có thể đảm nhận những công việc lặp đi lặp lại.", "kind": "translate", "rewriteWith": "<b>name the noun (do not use <i>it<\/i>)<\/b>", "translation": "An outstanding benefit is that artificial intelligence can do repetitive jobs.", "answer": "<b>One prominent advantage is that AI can take over repetitive tasks.<\/b>", "alt": "A major benefit of AI is that it can take over repetitive work."}, {"level": 1, "n": 5, "cue": "Chi tiêu cho thực phẩm giữ ổn định. Tương tự, chi tiêu cho quần áo không thay đổi.", "kind": "translate", "rewriteWith": "<b>Similarly<\/b>", "translation": "Spending on food stayed stable, and spending on clothes did not change either.", "answer": "<b>Spending on food remained stable. Similarly, spending on clothes remained unchanged.<\/b>", "alt": "Spending on both food and clothes remained stable."}, {"level": 1, "n": 6, "cue": "Số lượng ô tô đã tăng. Sự gia tăng này khiến tình trạng ùn tắc tồi tệ hơn.", "kind": "translate", "rewriteWith": "<b>This + summary noun<\/b>", "translation": "The number of cars has increased, and this has made traffic jams worse.", "answer": "<b>The number of cars has increased. This rise has made congestion worse.<\/b>", "alt": "The rising number of cars has made congestion worse."}, {"level": 2, "n": 7, "cue": "Nhiều người phụ thuộc vào công nghệ. Sự phụ thuộc ngày càng tăng này khiến họ không còn nhớ số điện thoại.", "kind": "translate", "rewriteWith": "<b>This growing dependence<\/b>", "translation": "Many people depend on technology, and because of this they no longer remember phone numbers.", "answer": "<b>Many people rely on technology. This growing dependence means that they can no longer remember phone numbers.<\/b>", "alt": "Many people's growing dependence on technology means they no longer remember phone numbers."}, {"level": 2, "n": 8, "cue": "Thi cử gây căng thẳng. Tuy vậy, đó vẫn là cách đánh giá công bằng nhất.", "kind": "translate", "rewriteWith": "<b>Nevertheless<\/b>", "translation": "Exams are stressful, but they are still the fairest way to assess students.", "answer": "<b>Exams are stressful. Nevertheless, they remain the fairest way to assess students.<\/b>", "alt": "Although exams are stressful, they remain the fairest form of assessment."}, {"level": 2, "n": 9, "cue": "Một số trường cấm điện thoại, một chính sách giúp học sinh tập trung tốt hơn.", "kind": "translate", "rewriteWith": "<b>a policy that<\/b>", "translation": "Some schools ban phones, and this helps students concentrate better.", "answer": "<b>Some schools ban mobile phones, a policy that helps students concentrate better.<\/b>", "alt": "Some schools ban mobile phones, which helps students to concentrate."}, {"level": 2, "n": 10, "cue": "Chính phủ nên đánh thuế đồ uống có đường, vì tiêu thụ nhiều đường góp phần gây béo phì.", "kind": "translate", "rewriteWith": "<b>as + reason<\/b>", "translation": "The government should tax sugary drinks because eating a lot of sugar contributes to obesity.", "answer": "<b>Governments should tax sugary drinks, as high sugar consumption contributes to obesity.<\/b>", "alt": "Since high sugar intake contributes to obesity, governments should tax sugary drinks."}, {"level": 2, "n": 11, "cue": "Du lịch tạo việc làm và mang lại ngoại tệ. Ngoài ra, nguồn thu từ du lịch có thể dùng để bảo tồn thiên nhiên.", "kind": "translate", "rewriteWith": "<b>In addition + avoid repeating words<\/b>", "translation": "Tourism creates jobs and brings in foreign currency. Money from tourism can also be used for nature conservation.", "answer": "<b>Tourism creates jobs and brings in foreign currency. In addition, the revenue it generates can fund conservation.<\/b>", "alt": "Tourism creates jobs and earns foreign currency, part of which can fund conservation."}, {"level": 2, "n": 12, "cue": "Những biện pháp này không chỉ giảm ô nhiễm mà còn cải thiện sức khỏe cộng đồng.", "kind": "translate", "rewriteWith": "<b>These measures<\/b>", "translation": "These measures reduce pollution and also improve public health.", "answer": "<b>These measures not only reduce pollution but also improve public health.<\/b>", "alt": "Such measures reduce pollution and improve public health at the same time."}, {"level": 2, "n": 13, "cue": "Xu hướng này đặc biệt phổ biến ở các thành phố lớn.", "kind": "translate", "rewriteWith": "<b>This trend<\/b>", "translation": "This trend is especially common in big cities.", "answer": "<b>This trend is particularly common in large cities.<\/b>", "alt": "This trend is especially noticeable in major cities."}, {"level": 3, "n": 14, "cue": "Kết quả là, những thiếu niên như vậy có thể mất hứng thú với việc học và dần dần không thể chia sẻ vấn đề với cha mẹ.", "kind": "translate", "rewriteWith": "<b>As a result + clear sequence<\/b>", "translation": "As a result, these teenagers may lose interest in studying and gradually be unable to share their problems with their parents.", "answer": "<b>As a result, such teenagers may lose interest in school and, over time, feel unable to share their problems with their parents.<\/b>", "alt": "As a result, these teenagers may become disengaged from school and gradually stop confiding in their parents."}, {"level": 3, "n": 15, "cue": "Giao tiếp cởi mở giúp nhóm phân công lại công việc nhanh chóng khi ai đó chậm tiến độ, từ đó tăng năng suất.", "kind": "translate", "rewriteWith": "<b>one main idea + one subordinate clause<\/b>", "translation": "Open communication helps a team reassign work quickly when someone is behind schedule, and this increases productivity.", "answer": "<b>Open communication allows teams to reassign tasks quickly when someone falls behind, which boosts productivity.<\/b>", "alt": "When team members communicate openly, tasks can be reassigned quickly, improving productivity."}, {"level": 3, "n": 16, "cue": "Giá thuê nhà tăng nhanh hơn tiền lương, khiến nhiều cư dân thành phố không đủ tiền trang trải chi phí.", "kind": "translate", "rewriteWith": "<b>, meaning that<\/b>", "translation": "Rents are rising faster than wages, so many city residents cannot cover their expenses.", "answer": "<b>Rents have risen faster than wages, meaning that many urban residents cannot cover their expenses.<\/b>", "alt": "Because rents have outpaced wages, many city residents cannot cover their living costs."}, {"level": 3, "n": 17, "cue": "Làm việc nhiều giờ thường gây căng thẳng, điều này có thể dẫn đến các vấn đề sức khỏe gây gánh nặng cho hệ thống y tế công.", "kind": "translate", "rewriteWith": "<b>which in turn<\/b>", "translation": "Working long hours often causes stress, and stress can lead to health problems that burden the public health system.", "answer": "<b>Long working hours often lead to stress, which in turn can cause health problems that place a burden on public healthcare.<\/b>", "alt": "Long hours cause stress, and the resulting health problems put pressure on public healthcare."}, {"level": 3, "n": 18, "cue": "Ô nhiễm không khí ở thành phố chủ yếu do ô tô gây ra, vì vậy chính phủ nên giảm lưu lượng giao thông ở khu vực đô thị.", "kind": "translate", "rewriteWith": "<b>clear reference<\/b>", "translation": "Air pollution in cities is mainly caused by cars, so the government should reduce traffic in urban areas.", "answer": "<b>Air pollution in cities is caused largely by cars, so the government should reduce traffic in urban areas.<\/b>", "alt": "As cars are the main source of urban air pollution, governments should reduce city traffic."}, {"level": 3, "n": 19, "cue": "Học sinh nên học các kỹ năng tài chính như lập ngân sách. Vì lý do này, nhà trường nên đưa việc quản lý tiền vào chương trình học.", "kind": "translate", "rewriteWith": "<b>For this reason<\/b>", "translation": "Students should learn financial skills such as budgeting. Because of this, schools should include money management in the curriculum.", "answer": "<b>Students should learn financial skills such as budgeting. For this reason, schools should include money management in the curriculum.<\/b>", "alt": "Financial skills such as budgeting are essential, so schools should teach money management."}]}, {"title": "Exercise 3 — Find and correct the errors", "intro": ["<i>Some sentences are correct; others have one or more errors. (a) Name the criterion for each error (TR, CC, LR or GRA). (b) Write the correction. (c) Tick ✓ if the sentence is correct.<\/i>"], "items": [{"level": 1, "n": 0, "kind": "fix", "cue": "Even more, relying too much on technology reduces creativity.", "answer": "<s>Even more,<\/s><b> MOREOVER,<\/b> relying too much on technology reduces creativity.", "notes": ["<span class=\"tag CC\">CC<\/span> <i>Even more<\/i> không phải là từ nối."]}, {"level": 1, "n": 1, "kind": "fix", "cue": "Close friendships can create some tensions. Otherwise, these comparisons can cause jealousy.", "answer": "Close friendships can create some tensions. <s>Otherwise,<\/s><b> MOREOVER,<\/b> these comparisons can cause jealousy.", "notes": ["<span class=\"tag CC\">CC<\/span> <i>Otherwise<\/i> chỉ điều kiện; ở đây cần bổ sung ý."]}, {"level": 1, "n": 2, "kind": "fix", "cue": "Traditional universities have existed for centuries. Besides, the online courses are a much more recent development.", "answer": "Traditional universities have existed for centuries. <s>Besides, the online courses are<\/s><b> AS FOR ONLINE COURSES, THEY ARE<\/b> a much more recent development.", "notes": ["<span class=\"tag CC\">CC<\/span> Chuyển sang đối tượng khác → <i>As for<\/i> + N."]}, {"level": 1, "n": 3, "kind": "fix", "cue": "Technology makes work faster. Moreover, it reduces costs.", "answer": "<b>✓ <\/b>Technology makes work faster. Moreover, it reduces costs.", "notes": ["Đúng: <i>Moreover<\/i> bổ sung ý cùng hướng."]}, {"level": 1, "n": 4, "kind": "fix", "cue": "Governments should regulate online content. If this method is effective, they can help children to avoid harmful content.", "answer": "Governments should regulate online content. If this method is effective, <s>they can help children to avoid<\/s><b> SUCH REGULATIONS CAN HELP CHILDREN AVOID<\/b> harmful content.", "notes": ["<span class=\"tag CC\">CC<\/span> <i>they<\/i> không rõ chỉ ai; dùng danh từ tóm tắt."]}, {"level": 1, "n": 5, "kind": "fix", "cue": "One prominent advantage is that it can replace human repetitive tasks which are dangerous or lack workers to do.", "answer": "One prominent advantage is that <s>it can replace human repetitive tasks which are dangerous or lack workers to do<\/s><b> AI CAN TAKE OVER REPETITIVE TASKS THAT ARE DANGEROUS OR FACE LABOUR SHORTAGES<\/b>.", "notes": ["<span class=\"tag CC\">CC<\/span> <i>it<\/i> mơ hồ; mệnh đề quan hệ cũng diễn đạt thiếu tự nhiên."]}, {"level": 1, "n": 6, "kind": "fix", "cue": "Fuel prices rose sharply. In other words, many people started cycling to work.", "answer": "Fuel prices rose sharply. <s>In other words,<\/s><b> AS A RESULT,<\/b> many people started cycling to work.", "notes": ["<span class=\"tag CC\">CC<\/span> Câu sau nêu kết quả, không nhắc lại ý."]}, {"level": 2, "n": 7, "kind": "fix", "cue": "Many people rely on technology. In addition, they use apps for everything. Even more, they cannot remember phone numbers. People also rarely read maps.", "answer": "Many people rely on technology. In addition, they use apps for everything. <s>Even more, they cannot remember phone numbers. People also rarely read maps.<\/s><b> THIS GROWING DEPENDENCE MEANS THAT MANY CAN NO LONGER REMEMBER PHONE NUMBERS OR READ MAPS.<\/b>", "notes": ["<span class=\"tag CC\">CC<\/span> Chuỗi từ nối máy móc; nối bằng danh từ tóm tắt."]}, {"level": 2, "n": 8, "kind": "fix", "cue": "The number of cars has increased. This rise has made congestion worse.", "answer": "<b>✓ <\/b>The number of cars has increased. This rise has made congestion worse.", "notes": ["Đúng: <i>This rise<\/i> quy chiếu rõ ràng."]}, {"level": 2, "n": 9, "kind": "fix", "cue": "Spending on food remained stable. On the contrary, spending on clothes remained unchanged.", "answer": "Spending on food remained stable. <s>On the contrary,<\/s><b> SIMILARLY,<\/b> spending on clothes remained unchanged.", "notes": ["<span class=\"tag CC\">CC<\/span> Không có đối lập; hai xu hướng giống nhau."]}, {"level": 2, "n": 10, "kind": "fix", "cue": "Exams are stressful. On the contrary, they are the fairest way to assess students.", "answer": "Exams are stressful. <s>On the contrary,<\/s><b> NEVERTHELESS,<\/b> they are the fairest way to assess students.", "notes": ["<span class=\"tag CC\">CC<\/span> <i>On the contrary<\/i> dùng để bác bỏ; ở đây cần nhượng bộ."]}, {"level": 2, "n": 11, "kind": "fix", "cue": "Tourism creates jobs. Tourism brings foreign currency. Tourism funds conservation.", "answer": "Tourism creates jobs. <s>Tourism brings foreign currency. Tourism funds conservation.<\/s><b> IT ALSO BRINGS IN FOREIGN CURRENCY, WHICH CAN FUND CONSERVATION.<\/b>", "notes": ["<span class=\"tag CC\">CC<\/span> Lặp từ; dùng đại từ và mệnh đề quan hệ."]}, {"level": 2, "n": 12, "kind": "fix", "cue": "Some schools ban mobile phones, a policy that helps students concentrate better.", "answer": "<b>✓ <\/b>Some schools ban mobile phones, a policy that helps students concentrate better.", "notes": ["Đúng: cụm danh từ đồng vị nối ý gọn gàng."]}, {"level": 2, "n": 13, "kind": "fix", "cue": "Governments should tax sugary drinks. Furthermore, sugar causes obesity.", "answer": "Governments should tax sugary drinks<s>. Furthermore, sugar causes obesity.<\/s><b>, AS HIGH SUGAR CONSUMPTION CONTRIBUTES TO OBESITY.<\/b>", "notes": ["<span class=\"tag CC\">CC<\/span> <i>Furthermore<\/i> bổ sung ý mới; ở đây là lý do cho đề xuất."]}, {"level": 3, "n": 14, "kind": "fix", "cue": "Consequently, a child can potentially become discouraged to schools and eventually, fostering an invisible barrier to parents.", "answer": "<s>Consequently, a child can potentially become discouraged to schools and eventually, fostering an invisible barrier to parents.<\/s><b> AS A RESULT, THE CHILD MAY LOSE INTEREST IN SCHOOL AND, OVER TIME, STOP SHARING PROBLEMS WITH HIS OR HER PARENTS.<\/b>", "notes": ["<span class=\"tag CC\">CC<\/span> Câu chồng chất, không rõ trình tự kết quả.", "<span class=\"tag LR\">LR<\/span> <i>discouraged to<\/i> sai giới từ.", "<span class=\"tag GRA\">GRA<\/span> Cụm V-ing không có chủ thể rõ ràng."]}, {"level": 3, "n": 15, "kind": "fix", "cue": "Cities should cut car use and plant more trees. These measures not only reduce pollution but also improve public health.", "answer": "<b>✓ <\/b>Cities should cut car use and plant more trees. These measures not only reduce pollution but also improve public health.", "notes": ["Đúng: <i>These measures<\/i> quy chiếu rõ ràng."]}, {"level": 3, "n": 16, "kind": "fix", "cue": "Air pollution is a problem in cities. Cars cause it. The government should reduce them.", "answer": "Air pollution is a problem in cities. Cars cause it. <s>The government should reduce them.<\/s><b> THE GOVERNMENT SHOULD THEREFORE REDUCE TRAFFIC IN URBAN AREAS.<\/b>", "notes": ["<span class=\"tag CC\">CC<\/span> <i>them<\/i> không rõ chỉ gì."]}, {"level": 3, "n": 17, "kind": "fix", "cue": "Many young people move to cities, they find jobs, but they face high rents.", "answer": "Many young people move to cities<s>, they find jobs, but they face high rents.<\/s><b> TO FIND WORK, BUT MANY THEN FACE HIGH RENTS.<\/b>", "notes": ["<span class=\"tag GRA\">GRA<\/span> Lỗi nối câu bằng dấu phẩy; gom hai ý bằng <i>to<\/i> + V."]}, {"level": 3, "n": 18, "kind": "fix", "cue": "Long working hours often lead to stress, which in turn can cause health problems.", "answer": "<b>✓ <\/b>Long working hours often lead to stress, which in turn can cause health problems.", "notes": ["Đúng: <i>which in turn<\/i> nối chuỗi nhân quả."]}, {"level": 3, "n": 19, "kind": "fix", "cue": "In conclusion, firstly, technology has advantages. Secondly, it has disadvantages. Lastly, people should use it.", "answer": "In conclusion, <s>firstly, technology has advantages. Secondly, it has disadvantages. Lastly, people should use it.<\/s><b> WHILE TECHNOLOGY BRINGS CLEAR ADVANTAGES, IT SHOULD BE USED IN MODERATION TO AVOID ITS DRAWBACKS.<\/b>", "notes": ["<span class=\"tag CC\">CC<\/span> Kết luận liệt kê máy móc, không tổng hợp ý."]}]}, {"title": "Exercise 4 — Apply to real exam prompts", "intro": ["<i>For each prompt, write two closely linked sentences. ● and ●● sentences use the suggested linker or summary noun; ●●● sentences: choose the linking method yourself (summary nouns preferred).<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Leisure, sports and hobbies · Agree/disagree", "prompt": "<i>Some people believe that governments should ban dangerous sports such as skydiving and rock climbing. To what extent do you agree or disagree?<\/i>", "hint": "Start sentence 2 with <i>Such a ban<\/i>", "answer": "Some governments have considered banning dangerous sports such as skydiving. Such a ban, however, would restrict personal freedom.", "kind": "write"}, {"level": 1, "n": 1, "cue": "Leisure, sports and hobbies · Agree/disagree", "prompt": "<i>Team activities teach people more useful life skills than activities that are done alone. To what extent do you agree or disagree?<\/i>", "hint": "Moreover", "answer": "Team activities teach people to cooperate. Moreover, they help people learn to accept responsibility for shared results.", "kind": "write"}, {"level": 1, "n": 2, "cue": "Science, technology and innovation · Agree/disagree", "prompt": "<i>When humans first landed on the Moon, it was described as a great achievement for humankind. Some people, however, believe that space exploration has little effect on our daily lives. To what extent do you agree or disagree?<\/i>", "hint": "As a result", "answer": "Space research has produced technologies such as satellite navigation. As a result, it affects our daily lives more than many people realise.", "kind": "write"}, {"level": 1, "n": 3, "cue": "Science, technology and innovation · Agree/disagree", "prompt": "<i>Government funding for postgraduate research is limited. Some people believe that this money should be spent only on scientific research rather than on other subjects. To what extent do you agree or disagree?<\/i>", "hint": "This approach", "answer": "Some governments fund only scientific research. This approach may neglect subjects such as history, which help society understand itself.", "kind": "write"}, {"level": 1, "n": 4, "cue": "Science, technology and innovation · Agree/disagree", "prompt": "<i>The rapid development of communication technology, such as smartphones and other mobile devices, has more disadvantages than advantages. To what extent do you agree or disagree?<\/i>", "hint": "Nevertheless", "answer": "Smartphones can distract people and disrupt sleep. Nevertheless, their benefits for communication and safety are considerable.", "kind": "write"}, {"level": 1, "n": 5, "cue": "Education · Agree/disagree", "prompt": "<i>Unemployment is becoming increasingly serious in many countries. Some people believe that primary education is enough for students, while others think secondary education is necessary. To what extent do you agree or disagree?<\/i>", "hint": "This trend", "answer": "Many employers now require at least a secondary school certificate. This trend means that primary education alone is rarely enough to find a stable job.", "kind": "write"}, {"level": 1, "n": 6, "cue": "Education · Agree/disagree", "prompt": "<i>Some people believe that it is no longer necessary to teach children handwriting skills. To what extent do you agree or disagree?<\/i>", "hint": "In addition", "answer": "Handwriting helps young children develop fine motor skills. In addition, it can help them remember what they learn.", "kind": "write"}, {"level": 2, "n": 7, "cue": "Education · Agree/disagree", "prompt": "<i>Everyone should remain in full-time education until the age of 18. To what extent do you agree or disagree?<\/i>", "hint": "However", "answer": "Staying in education until 18 gives young people more qualifications. However, not every student benefits from academic study.", "kind": "write"}, {"level": 2, "n": 8, "cue": "Age, generation and gender · Discuss both views", "prompt": "<i>Some people believe that children should obey rules and do what their parents and teachers tell them, while others think that children who are controlled too much may be unable to deal with problems independently. Discuss both views and give your own opinion.<\/i>", "hint": "Such strict control", "answer": "Some parents control every decision their children make. Such strict control may leave children unable to solve problems independently.", "kind": "write"}, {"level": 2, "n": 9, "cue": "Age, generation and gender · Discuss both views", "prompt": "<i>Some people believe that women should have the same opportunities as men to work in the police and armed forces, while others think women are not suitable for these jobs. Discuss both views and give your own opinion.<\/i>", "hint": "Similarly", "answer": "Women have proved effective as police officers in many countries. Similarly, many serve successfully in the armed forces.", "kind": "write"}, {"level": 2, "n": 10, "cue": "Age, generation and gender · Discuss both views", "prompt": "<i>Some people believe that parents have the greatest influence on a child's development, while others think factors such as friends and television are more important. Discuss both views and give your own opinion.<\/i>", "hint": "By contrast", "answer": "Parents shape young children's values at home. By contrast, friends and social media tend to have a stronger influence during adolescence.", "kind": "write"}, {"level": 2, "n": 11, "cue": "Art and museums · Discuss both views", "prompt": "<i>Some people believe that music plays an important role in society, while others think it is simply a form of entertainment. Discuss both views and give your own opinion.<\/i>", "hint": "This role", "answer": "Music brings people together at festivals and national events. This role goes far beyond simple entertainment.", "kind": "write"}, {"level": 2, "n": 12, "cue": "Art and museums · Discuss both views", "prompt": "<i>Some people believe that anyone can learn to create art, while others think that artistic ability is something people are born with. Discuss both views and give your own opinion.<\/i>", "hint": "these skills", "answer": "Drawing and painting depend largely on observation and technique. Since these skills can be practised, most people can improve with training.", "kind": "write"}, {"level": 2, "n": 13, "cue": "Art and museums · Causes/problems/solutions", "prompt": "<i>In many places, museums and historical sites are visited mainly by tourists rather than local people. Why is this the case, and what can be done to attract more local visitors?<\/i>", "hint": "As for", "answer": "Tourists often visit museums as part of a holiday. As for local residents, many assume they can visit at any time and therefore never go.", "kind": "write"}, {"level": 3, "n": 14, "cue": "Environment · Causes/problems/solutions", "prompt": "<i>The amount of household waste, such as food packaging, is increasing in many countries. What are the causes of this problem, and how can it be solved?<\/i>", "hint": "Two sentences linked by a summary noun or a suitable linker; do not use a chain of <i>In addition … Moreover<\/i>.", "answer": "Much household waste comes from excessive food packaging. To reduce this problem, governments could require manufacturers to use less packaging.", "kind": "write"}, {"level": 3, "n": 15, "cue": "Environment · Advantages/disadvantages", "prompt": "<i>The growing global demand for oil and gas has led to exploration in remote and previously untouched natural areas. Do the advantages of this development outweigh the disadvantages?<\/i>", "hint": "Two sentences linked by a summary noun or a suitable linker; do not use a chain of <i>In addition … Moreover<\/i>.", "answer": "Oil exploration in remote areas can create jobs and lower fuel prices. These benefits, however, come at the cost of damage to fragile ecosystems.", "kind": "write"}, {"level": 3, "n": 16, "cue": "Travelling and tourism · Advantages/disadvantages", "prompt": "<i>It is now possible for scientists and tourists to travel to remote natural environments, such as the South Pole. Do the advantages of this development outweigh the disadvantages?<\/i>", "hint": "Two sentences linked by a summary noun or a suitable linker; do not use a chain of <i>In addition … Moreover<\/i>.", "answer": "Scientific research in Antarctica helps us understand climate change. Tourism there, by contrast, offers few benefits but adds to pollution.", "kind": "write"}, {"level": 3, "n": 17, "cue": "Lifestyle · Positive/negative development", "prompt": "<i>Many people want to buy well-known brands of clothes, cars and other consumer goods. Why is this the case, and is this a positive or negative development?<\/i>", "hint": "Two sentences linked by a summary noun or a suitable linker; do not use a chain of <i>In addition … Moreover<\/i>.", "answer": "Many people buy well-known brands because they associate them with quality and status. This tendency can lead some consumers into debt.", "kind": "write"}, {"level": 3, "n": 18, "cue": "Lifestyle · Positive/negative development", "prompt": "<i>Ambition is an important quality for people who want to succeed in life. How important is ambition, and is it a positive or negative characteristic?<\/i>", "hint": "Two sentences linked by a summary noun or a suitable linker; do not use a chain of <i>In addition … Moreover<\/i>.", "answer": "Ambition motivates people to set goals and work hard. When it becomes excessive, however, it can damage relationships and health.", "kind": "write"}, {"level": 3, "n": 19, "cue": "Economy, money and trade · Two-part question", "prompt": "<i>As economies develop, people in some developing countries become happier, while people in some developed countries become less happy. Why might this happen, and what lessons can be learned from it?<\/i>", "hint": "Two sentences linked by a summary noun or a suitable linker; do not use a chain of <i>In addition … Moreover<\/i>.", "answer": "In developing countries, rising incomes allow people to meet their basic needs, which greatly improves well-being. In wealthier countries, by contrast, further income growth tends to bring little extra happiness.", "kind": "write"}]}, {"title": "Exercise 5 — Untangle stacked sentences", "intro": ["<i>Each original sentence has too many clauses joined together. Rewrite it as one or two clear sentences: one main idea, few subordinate clauses, logical order.<\/i>"], "items": [{"level": 1, "n": 0, "cue": "Many students who live in dormitories which are far from the campus where they study have to wake up early because the buses that go there are slow.", "hint": "one sentence, at most one subordinate clause", "answer": "Many students in distant dormitories have to get up early because the buses to campus are slow.", "alt": "Slow buses force many students living in distant dormitories to get up early.", "kind": "write"}, {"level": 1, "n": 1, "cue": "The government should build more parks in order to help people who live in cities to relax when they finish work if they feel stressed.", "hint": "one sentence, one subordinate clause", "answer": "The government should build more urban parks where residents can relax after work.", "alt": "More urban parks would give city residents a place to relax after work.", "kind": "write"}, {"level": 1, "n": 2, "cue": "Tourism is good because it creates jobs which help local people who are poor to earn money so that they can send their children to school.", "hint": "one short sentence", "answer": "Tourism creates jobs for low-income local people, allowing them to pay for their children's education.", "alt": "By creating jobs for poorer residents, tourism helps them afford their children's education.", "kind": "write"}, {"level": 1, "n": 3, "cue": "Because of the fact that many people use cars which produce emissions that pollute the air, which causes health problems, cities are unhealthy.", "hint": "noun phrase as subject", "answer": "Emissions from the large number of cars in cities pollute the air and cause health problems.", "alt": "Car emissions make city air unhealthy to breathe.", "kind": "write"}, {"level": 1, "n": 4, "cue": "Children who play video games for hours every day which are often violent may become aggressive and this affects their friends who play with them.", "hint": "one sentence, subject is a V-ing phrase", "answer": "Spending hours every day on violent video games may make some children more aggressive towards their friends.", "alt": "Children who play violent games for hours each day may become more aggressive towards their friends.", "kind": "write"}, {"level": 1, "n": 5, "cue": "Online learning is convenient for students who have jobs because they can study whenever they want and wherever they are as long as they have the Internet.", "hint": "one sentence, one reason", "answer": "Online learning suits working students, as they can study at any time and in any place with Internet access.", "alt": "Working students benefit from online learning because they can study anywhere with an Internet connection.", "kind": "write"}, {"level": 1, "n": 6, "cue": "Older people who live alone in the countryside where there are few services often feel lonely because their children have moved to cities to work.", "hint": "one clear sentence", "answer": "Many older people in rural areas live alone and feel lonely, as their children have moved to cities for work.", "alt": "With their children working in cities, many older people in the countryside live alone and feel isolated.", "kind": "write"}, {"level": 2, "n": 7, "cue": "The government should invest in public transport so that people will use it instead of cars which cause congestion and pollution which make cities unpleasant.", "hint": "one sentence + V-ing result phrase", "answer": "Investing in public transport would encourage people to leave their cars at home, reducing congestion and pollution.", "alt": "Better public transport would persuade more people to stop driving, which would ease congestion and pollution.", "kind": "write"}, {"level": 2, "n": 8, "cue": "Students should learn a foreign language because it is useful for their future career and also it helps them to understand other cultures when they travel abroad.", "hint": "one sentence, two parallel benefits", "answer": "Learning a foreign language improves students' career prospects and helps them understand other cultures.", "alt": "A foreign language opens up career opportunities and deepens students' understanding of other cultures.", "kind": "write"}, {"level": 2, "n": 9, "cue": "Advertising that is aimed at children who cannot understand that it is trying to persuade them should be banned because it makes them want unhealthy food.", "hint": "one sentence + a clear reason", "answer": "Advertising aimed at young children should be banned, as they cannot recognise persuasion and are easily drawn to unhealthy food.", "alt": "Since young children cannot recognise persuasive techniques, adverts targeting them, especially for junk food, should be banned.", "kind": "write"}, {"level": 2, "n": 10, "cue": "People who work long hours which are often more than ten hours a day may suffer from stress which can lead to illness which costs money to treat.", "hint": "concise sentence with <i>which<\/i> used once", "answer": "Working more than ten hours a day can cause stress-related illness, which is costly to treat.", "alt": "Very long working days can lead to stress-related illness that is expensive to treat.", "kind": "write"}, {"level": 2, "n": 11, "cue": "Recycling is important because the waste that we produce which ends up in landfill sites takes many years to decompose and it pollutes the soil.", "hint": "one sentence, two reasons", "answer": "Recycling matters because landfill waste takes years to decompose and pollutes the soil.", "alt": "Recycling is important, as waste in landfill sites decomposes slowly and contaminates the soil.", "kind": "write"}, {"level": 2, "n": 12, "cue": "Teachers should be paid more because they have an important role in society since they educate children who will become the workers of the future.", "hint": "one sentence, one reason", "answer": "Teachers deserve higher pay, as they educate the future workforce.", "alt": "Because teachers educate the next generation of workers, they deserve higher salaries.", "kind": "write"}, {"level": 2, "n": 13, "cue": "Many young people cannot buy houses because prices which have risen quickly in recent years are much higher than the salaries that they earn.", "hint": "one sentence with a V-ing result phrase", "answer": "House prices have risen far faster than young people's salaries, putting home ownership out of reach for many.", "alt": "Rapidly rising house prices have left many young people unable to buy a home on their salaries.", "kind": "write"}, {"level": 3, "n": 14, "cue": "Team members can communicate openly in order to reassign tasks if someone falls behind schedule as long as it helps with the productivity of the team.", "hint": "one main idea + one subordinate clause", "answer": "Open communication allows teams to reassign tasks quickly when someone falls behind, which boosts productivity.", "alt": "When team members communicate openly, tasks can be reassigned quickly if someone falls behind, improving productivity.", "kind": "write"}, {"level": 3, "n": 15, "cue": "Consequently, a child can potentially become discouraged to schools and eventually, fostering an invisible barrier to parents.", "hint": "clear sequence of results", "answer": "As a result, the child may lose interest in school and, over time, stop sharing problems with his or her parents.", "alt": "As a result, the child may become disengaged from school and gradually stop confiding in his or her parents.", "kind": "write"}, {"level": 3, "n": 16, "cue": "Social media, which many teenagers use for several hours every day, which can affect their sleep, can make them feel anxious because they compare themselves to others who seem to have perfect lives.", "hint": "split into two sentences", "answer": "Many teenagers spend hours on social media every day. This can disrupt their sleep and make them anxious, as they compare themselves with others who appear to have perfect lives.", "alt": "Heavy social media use can disrupt teenagers' sleep. It may also make them anxious when they compare themselves with others who seem to have perfect lives.", "kind": "write"}, {"level": 3, "n": 17, "cue": "International events, which are expensive to host, which require new stadiums that are often not used afterwards, can bring tourists who spend money if they are well organised.", "hint": "split into two sentences", "answer": "Although international events are expensive to host, they can attract free-spending tourists if well organised. However, the new stadiums they require are often unused afterwards.", "alt": "Well-organised international events can bring in tourist spending. However, they are expensive, and the stadiums built for them are often left empty.", "kind": "write"}, {"level": 3, "n": 18, "cue": "The gap between rich and poor, which has widened in many countries where wages have not risen as fast as profits, can cause social problems such as crime which makes people feel unsafe.", "hint": "split into two sentences", "answer": "In many countries, wages have not kept pace with profits, widening the gap between rich and poor. This inequality can lead to social problems such as crime.", "alt": "As profits have outpaced wages in many countries, inequality has grown. This can fuel social problems such as crime.", "kind": "write"}, {"level": 3, "n": 19, "cue": "Free university education, which would cost governments a lot of money that comes from taxes which everyone pays, would help students from poor families who cannot afford fees.", "hint": "split into two contrasting sentences", "answer": "Free university education would help students from poor families who cannot afford fees. However, it would be costly for taxpayers.", "alt": "Abolishing tuition fees would benefit students from low-income families, but the cost would fall on taxpayers.", "kind": "write"}]}], "after": []}], "parts": [], "guide": [], "index": []}</script>
+<script type="application/json" id="audio">{}</script>
+<script>
+(function(){
+'use strict';
+var D = JSON.parse(document.getElementById('data').textContent);
+var STORE = 'wt2-23';
+var state = load();
+function blank(){ return {draft:{}, sub:{}, choice:{}, seen:{}, sent:{}, dirty:{}, fb:{}}; }
+function load(){ try { var s = JSON.parse(localStorage.getItem(STORE)); return s && s.sub ? s : blank(); } catch(e){ return blank(); } }
+function save(){ try { localStorage.setItem(STORE, JSON.stringify(state)); } catch(e){} }
+
+var $ = function(s, r){ return (r||document).querySelector(s); };
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function dots(n){ return n ? '<span class="lv" title="Level ' + n + '">' + '●'.repeat(n) + '</span>' : ''; }
+function textOf(html){ var t = document.createElement('div'); t.innerHTML = html; return t.textContent; }
+
+/* ---------- recorded audio for the English examples (audio/<id>.mp3, made by make_audio.py) ---------- */
+var AUDIO = JSON.parse(document.getElementById('audio').textContent);
+var player = new Audio(), playing = null;
+function speakBtn(text){
+  var id = AUDIO[text];
+  if (!id) return '';
+  return '<button type="button" class="speak" data-audio="' + id + '" aria-label="Listen: ' + esc(text) + '" title="Listen">🔊</button>';
+}
+function stopAudio(){ player.pause(); if (playing) playing.classList.remove('on'); playing = null; }
+player.addEventListener('ended', stopAudio);
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-audio]'); if (!b) return;
+  var again = playing === b;
+  stopAudio();
+  if (again) return;
+  player.src = 'audio/' + b.getAttribute('data-audio') + '.mp3';
+  playing = b; b.classList.add('on');
+  player.play().catch(stopAudio);
+});
+
+/* ---------- progress ---------- */
+function ids(u){ var out = []; u.exercises.forEach(function(ex, k){ ex.items.forEach(function(it){ out.push(u.num + '-' + (k + 1) + '-' + it.n); }); }); return out; }
+function isDone(id){ return !!(state.sub[id] || state.choice[id] || state.seen[id]); }
+var ALL = [].concat.apply([], D.units.map(ids));
+function updateProgress(){
+  var n = ALL.filter(isDone).length;
+  $('#progressText').textContent = 'Done: ' + n + '/' + ALL.length + ' items';
+  $('#progressBar').style.width = (100 * n / ALL.length) + '%';
+}
+$('#reset').addEventListener('click', function(){
+  if (!confirm('Clear everything you wrote, submitted and chose in this browser?')) return;
+  state = blank(); save(); render();
+});
+
+/* ---------- header and tabs ---------- */
+// One page per unit; D.nav lists every page (index + units) for the tab bar.
+$('#title').textContent = D.cover[0];
+$('#cover').innerHTML = D.cover.slice(1).map(function(c, i, a){
+  return '<p class="standfirst' + (i === a.length - 1 ? ' small' : '') + '">' + esc(c) + '</p>';
+}).join('');
+$('#tabs').innerHTML = D.nav.map(function(t){ return '<a href="' + t.href + '"' + (t.current ? ' aria-current="page"' : '') + '>' + esc(t.label) + '</a>'; }).join('');
+function unitTitle(u){ return u.num === 'review' ? u.name : 'Unit ' + u.num + ' · ' + u.name; }
+
+function route(){
+  return {tab: {unit: D.units[0]}, part: location.hash.replace('#', '') || 'ly-thuyet'};
+}
+var filter = 0;
+
+/* ---------- index page: all units with progress, then the guide ---------- */
+function renderBlocks(list){
+  var s = '', card = '', open = false;
+  function flush(){ if (open) { card += '</ul>'; open = false; } if (card) s += '<div class="card">' + card + '</div>'; card = ''; }
+  list.forEach(function(b){
+    if (b.type === 'h1') { flush(); s += '<h2 style="margin-top:28px">' + esc(b.text) + '</h2>'; }
+    else if (b.type === 'h') { flush(); card = '<h4>' + b.html + '</h4>'; }
+    else if (b.type === 'li') { if (!open) { card += '<ul class="plain">'; open = true; } card += '<li>' + b.html + '</li>'; }
+    else if (b.type === 'table') { flush(); s += renderTable(b); }
+    else { if (open) { card += '</ul>'; open = false; } card += '<p>' + b.html + '</p>'; }
+  });
+  flush();
+  return s;
+}
+function renderIndex(){
+  var s = '<h2>Units</h2>';
+  D.parts.forEach(function(p){
+    s += '<p class="part-title">' + esc(p.title) + '</p><div class="boxes">' + p.units.map(function(n){
+      var u = D.index.find(function(x){ return x.num === n; }), done = 0;
+      try { var st = JSON.parse(localStorage.getItem(u.store)) || {}; done = Object.keys(Object.assign({}, st.sub, st.choice)).length; } catch(e){}
+      return '<a class="card" style="text-decoration:none;color:inherit;display:block;margin:0" href="' + u.href + '"><h4 style="color:var(--heading)">' + esc(unitTitle(u)) + '</h4><span class="note">Done: ' + Math.min(done, u.count) + '/' + u.count + '</span></a>';
+    }).join('') + '</div>';
+  });
+  return s + renderBlocks(D.guide);
+}
+
+/* ---------- theory ---------- */
+function renderTable(b){
+  var vocab = b.head[0] === 'Cụm từ' || b.head[0] === 'Phrase', speakLast = vocab || /câu trả lời mở rộng|extended answer/i.test(b.head[b.head.length - 1]);
+  var rows = b.rows.filter(function(r){ return !filter || !r.level || r.level === filter; });
+  return '<div class="tablewrap"><table><thead><tr>' + b.head.map(function(h){ return '<th scope="col">' + esc(h) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+    rows.map(function(r){
+      return '<tr>' + r.cells.map(function(c, i){
+        if (i === 0 && vocab) return '<td class="phrase">' + dots(r.level) + ' ' + c + '</td>';
+        if (i === r.cells.length - 1 && speakLast) return '<td>' + c + speakBtn(textOf(c)) + '</td>';
+        return '<td' + (vocab && i === 1 ? ' class="muted"' : '') + '>' + c + '</td>';
+      }).join('') + '</tr>';
+    }).join('') + '</tbody></table></div>';
+}
+function sampleSpeech(html){
+  var t = textOf(html), i = t.indexOf(' → ');
+  if (i >= 0) t = t.slice(i + 3);
+  return t.replace(/\s*\([^)]*\)\s*$/, '').replace(/\s*\/[^\/\s]+\/\s*/g, ' ');
+}
+function renderTheory(u){
+  var s = '', boxes = [];
+  u.theory.concat(u.intro, u.after).forEach(function(b){
+    if (b.type === 'sub') s += '<h3>' + esc(b.text) + '</h3>';
+    else if (b.type === 'p') s += '<p>' + b.html + '</p>';
+    else if (b.type === 'table') s += renderTable(b);
+    else if (b.type === 'samples') s += '<div class="card">' + b.items.map(function(x){ return '<div class="sample">' + x + speakBtn(sampleSpeech(x)) + '</div>'; }).join('') + '</div>';
+    else if (b.type === 'mistakes') boxes.push('<div class="card box"><h4>Lỗi cần tránh</h4>' + b.items.map(function(m){
+      return '<div class="mistake"><div class="bad">' + m.bad + '</div><div class="good">' + m.good + '</div><div class="note">' + m.note + '</div></div>';
+    }).join('') + '</div>');
+    else if (b.type === 'choose') boxes.push('<div class="card box"><h4>Chọn cho đúng</h4>' + b.items.map(function(c){
+      return '<div class="mistake"><div>' + c.h + '</div><div class="note">' + c.html + '</div></div>';
+    }).join('') + '</div>');
+    else if (b.type === 'sounds') boxes.push('<div class="card box"><h4>Âm cần luyện</h4>' + b.lines.map(function(l){ return '<p>' + l + '</p>'; }).join('') + '<p class="note">' + b.tip + '</p></div>');
+  });
+  // The first "Mục đích" block goes in a card.
+  s = s.replace(/^<h3>Mục đích<\/h3>((?:<p>[\s\S]*?<\/p>)+)/, '<div class="card"><h4>Mục đích</h4>$1</div>');
+  if (boxes.length) s += '<div class="boxes" style="margin-top:20px">' + boxes.join('') + '</div>';
+  return s;
+}
+
+/* ---------- exercises ---------- */
+var LINES = [['rewriteWith', 'Rewrite with'], ['hint', 'Hint']];
+// The corrected sentence without the struck-through mistakes (error-correction keys).
+function refText(h){ return textOf(String(h).replace(/<s>[\s\S]*?<\/s>/g, '')).replace(/\s+/g, ' ').trim(); }
+function notesHtml(it){
+  return (it.ref ? '<div style="margin-top:6px"><span class="ref">' + esc(it.ref) + '</span></div>' : '') +
+    (it.notes || []).concat(it.note ? [it.note] : []).map(function(n){ return '<div class="note" style="margin-top:6px">' + n + '</div>'; }).join('');
+}
+function answerHtml(it, id){
+  var s = '';
+  if (state.sub[id]) s += '<div class="note">Your answer:</div><div class="mine" lang="en">' + esc(state.sub[id]) + '</div>' + feedbackHtml(it, id);
+  if (it.translation) s += '<div class="main"><span class="label">Translation:</span> ' + it.translation + '</div>';
+  s += '<div class="main">' + (it.suggest ? '<span class="label">Suggestion:</span> ' : it.translation ? '<span class="label">Rewrite:</span> ' : '<span class="label">Answer:</span> ') + it.answer + '</div>';
+  if (it.alt) s += '<div class="alt"><span class="label">Also accepted:</span> ' + it.alt + '</div>';
+  return s + notesHtml(it);
+}
+/* ---------- feedback on Submit: Gemini through the portal, or free quick checks ---------- */
+var checking = {};
+function feedbackHtml(it, id){
+  var f = (state.fb || {})[id];
+  if (checking[id]) return '<div class="fb"><div class="fb-head"><b>Feedback</b><span class="fb-small">Checking your answer…</span></div></div>';
+  if (!f || f.for !== state.sub[id]) return '';
+  if (f.kind === 'ai') {
+    var r = f.data, tag = {great: 'Great', good: 'Good', needs_work: 'Needs work'}[r.verdict] || 'Good';
+    var s = '<div class="fb ' + esc(r.verdict) + '" lang="en"><div class="fb-head"><b>Feedback</b><span class="fb-tag">' + tag + '</span></div><div>' + esc(r.feedback) + '</div>';
+    if (r.corrections.length) s += '<ul>' + r.corrections.map(function(c){
+      return '<li><span class="wrong">' + esc(c.wrong) + '</span> → <span class="right">' + esc(c.right) + '</span>' + (c.why ? ' <span class="fb-small">(' + esc(c.why) + ')</span>' : '') + '</li>';
+    }).join('') + '</ul>';
+    if (r.improved) s += '<div style="margin-top:6px"><span class="label">Better:</span> ' + esc(r.improved) + '</div>';
+    return s + '<div class="fb-small">AI feedback; it can be wrong. Your teacher&rsquo;s comment is the final word.</div></div>';
+  }
+  var c = f.data;
+  return '<div class="fb" lang="en"><div class="fb-head"><b>Quick checks</b></div><ul>' + c.list.map(function(x){
+    return '<li>' + (x.ok ? '✓ ' : '✗ ') + esc(x.text) + '</li>';
+  }).join('') + '</ul>' + (c.why ? '<div class="fb-small">' + esc(c.why) + '</div>' : '') + '</div>';
+}
+function words(t){ return (t.match(/[A-Za-z']+/g) || []); }
+function sentences(t){ return t.split(/[.!?]+(?:\s|$)/).filter(function(x){ return x.trim(); }).length; }
+function quickChecks(it, id){
+  var a = state.sub[id], low = ' ' + a.toLowerCase().replace(/[^a-z' ]+/g, ' ').replace(/\s+/g, ' ') + ' ', list = [];
+  // Lenient: each word of the phrase may change its ending (make → making, affect → affects).
+  var has = function(p){
+    var ws = p.toLowerCase().replace(/[^a-z' ]+/g, ' ').trim().split(/\s+/).filter(Boolean);
+    if (!ws.length) return true;
+    var re = new RegExp(' ' + ws.map(function(w){ return (w.length > 3 ? w.slice(0, Math.max(3, w.length - 2)) : w) + "[a-z']*"; }).join(" (?:[a-z']+ )?"));
+    return re.test(low);
+  };
+  var mine = it.kind === 'translate' ? a.replace(/^[\s\S]*\nRewrite:\s*/, '') : a;
+  // "Start with: …" / "Bắt đầu: …" in the hint: the answer should begin that way.
+  var start = textOf(it.hint || '').match(/Start(?: with)?:\s*([^…\.;]+)/i);
+  if (start) list.push({ok: has(start[1].replace(/\.\.\.|…/g, '')), text: 'Starts with “' + start[1].trim() + '…”'});
+  if (it.kind === 'fix') {
+    var orig = textOf(it.cue).replace(/\s+/g, ' ').trim(), right = refText(it.answer);
+    var same = function(x, y){ return x.toLowerCase().replace(/[^a-z]+/g, '') === y.toLowerCase().replace(/[^a-z]+/g, ''); };
+    if (/^correct\.?$/i.test(mine.trim())) list.push({ok: same(orig, right), text: same(orig, right) ? 'Yes, this sentence was already correct' : 'This sentence has at least one mistake'});
+    else list.push({ok: !same(mine, orig), text: 'You changed the sentence (fixed something)'});
+  }
+  var n = words(mine).length, ref = words(refText(it.answer)).length;
+  if (ref) list.push({ok: n >= ref * 0.6 && n <= ref * 1.6, text: 'Length: ' + n + ' words (the answer has about ' + ref + ')'});
+  if (/\b\w+n't\b|\b(i'm|it's|they're|we're|you're|that's|there's)\b/i.test(mine)) list.push({ok: false, text: 'No contractions in academic writing (do not, it is …)'});
+  list.push({ok: /^[A-Z"“]/.test(mine.trim()) && /[.!?]["”]?$/.test(mine.trim()), text: 'Starts with a capital letter and ends with a full stop'});
+  return list;
+}
+function assess(it, id){
+  var a = state.sub[id];
+  var done = function(kind, data){ state.fb = state.fb || {}; state.fb[id] = {for: a, kind: kind, data: data}; save(); delete checking[id]; if (document.querySelector('.item[data-id="' + id + '"]')) rerenderItem(id); };
+  var fallback = function(why){ done('checks', {list: quickChecks(it, id), why: why}); };
+  if (!API_URL || !token()) return fallback('Sign in to the portal to get AI feedback.');
+  var p = id.split('-'), u = D.units.find(function(x){ return String(x.num) === p[0]; }), ex = u.exercises[+p[1] - 1];
+  checking[id] = 1; rerenderItem(id);
+  apiCall('workbook.assess', {url: location.href.split('#')[0], subject: 'writing', instruction: textOf(ex.intro.join(' ')).slice(0, 600), prompt: promptOf(it),
+    reference: (it.translation ? 'Translation: ' + textOf(it.translation) + '\nRewrite: ' : '') + refText(it.answer) + (it.alt ? '\nAlso accepted: ' + textOf(it.alt) : ''), answer: a})
+    .then(function(res){
+      if (res.ok) return done('ai', res.result);
+      fallback({not_configured: 'AI feedback is not switched on yet.', limit: 'Daily AI feedback limit reached; try again tomorrow.',
+        busy: 'AI feedback is busy right now; submit again in a minute.', error: 'AI feedback is not available right now.'}[res.reason] || '');
+    })
+    .catch(function(e){ fallback(e.code === 'unauthorized' ? 'Sign in to the portal to get AI feedback.' : e.code === 'forbidden' ? 'AI feedback is only for students of this class.' : 'AI feedback is not available right now.'); });
+}
+// Multiple choice: "choice" items have lettered options; "pick" items choose a phrase in brackets.
+function optionsOf(it){
+  return it.kind === 'pick' ? it.picks[0].map(function(p, k){ return {letter: String.fromCharCode(65 + k), text: p}; }) : it.options;
+}
+function correctOf(it){
+  if (it.kind !== 'pick') return it.correct;
+  return optionsOf(it).find(function(o){ return o.text === it.answer; }).letter;
+}
+function choiceResult(it, id){
+  var pick = state.choice[id], ok = pick === correctOf(it);
+  return '<div class="verdict ' + (ok ? 'ok">✓ Correct' : 'no">✗ Not quite. Answer: ' + (it.kind === 'pick' ? esc(it.answer) : it.correct)) + '</div>' + notesHtml(it);
+}
+function renderItem(it, id, i){
+  var head = '<span class="cue">' + (it.kind === 'pick' ? it.cue.replace(/\(\s*[^()]*?\/[^()]*?\s*\)/, '( … )') : it.cue) + '</span>';
+  var lines = LINES.filter(function(l){ return it[l[0]]; }).map(function(l){
+    return '<div><span class="label">' + l[1] + ':</span> ' + (l[0] === 'hint' ? '<span class="hint">' + it.hint + '</span>' : it[l[0]]) + '</div>';
+  }).join('');
+  var s = '<div class="item' + (isDone(id) ? ' done' : '') + '" data-id="' + id + '">' +
+    '<div class="item-head"><span class="num">' + (i + 1) + '</span>' + dots(it.level) + head + '</div>' +
+    (it.prompt ? '<div class="prompt" lang="en">' + it.prompt + '</div>' : '') +
+    (lines ? '<div class="lines">' + lines + '</div>' : '');
+  if (it.kind === 'choice' || it.kind === 'pick') {
+    var pick = state.choice[id], right = correctOf(it);
+    s += '<div class="opts" role="radiogroup" aria-label="Choose one">' + optionsOf(it).map(function(o){
+      var cls = pick ? (o.letter === right ? ' right' : o.letter === pick ? ' wrong' : '') : '';
+      return '<label class="opt' + cls + '"><input type="radio" name="c-' + id + '" value="' + o.letter + '"' + (pick === o.letter ? ' checked' : '') + '>' + (it.kind === 'pick' ? '' : '<b>' + o.letter + '</b>') + '<span>' + o.text + '</span></label>';
+    }).join('') + '</div><div class="work"><div class="actions"><button type="button" class="btn primary" data-choose="' + id + '"' + (pick ? '' : ' disabled') + '>' + (pick ? 'Submit again' : 'Submit') + '</button></div>' +
+      '<div class="answer" id="a-' + id + '"' + (pick ? '' : ' hidden') + '>' + (pick ? choiceResult(it, id) : '') + '</div></div>';
+  } else if (it.kind === 'translate') {
+    var subT = !!state.sub[id], prev = splitTranslate(state.sub[id] || '');
+    var d1 = state.draft[id + '~t'] != null ? state.draft[id + '~t'] : prev[0], d2 = state.draft[id] != null ? state.draft[id] : prev[1];
+    s += '<div class="work"><label class="note" for="t-' + id + '~t">Your translation</label>' +
+      '<textarea id="t-' + id + '~t" data-text="' + id + '~t" rows="2" spellcheck="true" lang="en">' + esc(d1) + '</textarea>' +
+      '<label class="note" for="t-' + id + '">Rewrite it with the structure</label>' +
+      '<textarea id="t-' + id + '" data-text="' + id + '" rows="2" spellcheck="true" lang="en">' + esc(d2) + '</textarea>' +
+      '<div class="actions"><button type="button" class="btn primary" data-submit="' + id + '"' + (d1.trim() && d2.trim() ? '' : ' disabled') + '>' + (subT ? 'Submit again' : 'Submit') + '</button>' +
+      (subT ? '' : '<span class="note">Submit both to see the answer.</span>') + '</div>' +
+      '<div class="answer" id="a-' + id + '"' + (subT ? '' : ' hidden') + '>' + (subT ? answerHtml(it, id) : '') + '</div></div>';
+  } else if (it.kind === 'read') {
+    var seen = !!state.seen[id];
+    s += '<div class="work"><div class="actions"><button type="button" class="btn primary" data-see="' + id + '" aria-expanded="' + seen + '">' + (seen ? 'Hide answer' : 'Show answer') + '</button></div>' +
+      '<div class="answer" id="a-' + id + '"' + (seen ? '' : ' hidden') + '>' + answerHtml(it, id) + '</div></div>';
+  } else {
+    var draft = state.draft[id] != null ? state.draft[id] : (state.sub[id] || '');
+    var sub = !!state.sub[id];
+    s += '<div class="work"><label class="note" for="t-' + id + '">' + (it.kind === 'fix' ? 'Write the corrected sentence (or type <b>Correct</b> if there is no mistake)' : 'Write your answer') + '</label>' +
+      '<textarea id="t-' + id + '" data-text="' + id + '" rows="2" spellcheck="true" lang="en">' + esc(draft) + '</textarea>' +
+      '<div class="actions"><button type="button" class="btn primary" data-submit="' + id + '"' + (draft.trim() ? '' : ' disabled') + '>' + (sub ? 'Submit again' : 'Submit') + '</button>' +
+      (sub ? '' : '<span class="note">Submit your answer to see ' + (it.suggest ? 'a suggestion' : 'the answer') + '.</span>') + '</div>' +
+      '<div class="answer" id="a-' + id + '"' + (sub ? '' : ' hidden') + '>' + (sub ? answerHtml(it, id) : '') + '</div></div>';
+  }
+  return s + '</div>';
+}
+function splitTranslate(sub){
+  var m = /^Translation:\s*([\s\S]*?)\nRewrite:\s*([\s\S]*)$/.exec(sub);
+  return m ? [m[1], m[2]] : ['', sub];
+}
+function findItem(id){
+  var p = id.split('-'), u = D.units.find(function(x){ return String(x.num) === p[0]; });
+  return u.exercises[+p[1] - 1].items.find(function(it){ return it.n === +p[2]; });
+}
+function renderExercise(u, k){
+  var ex = u.exercises[k - 1];
+  var s = '<h3>' + esc(ex.title) + '</h3>' + ex.intro.map(function(p){ return '<p class="lede">' + p + '</p>'; }).join('') +
+    (ex.legend ? '<div class="card">' + ex.legend.map(function(o){ return '<div><b>' + o.letter + '</b> ' + o.text + '</div>'; }).join('') + '</div>' : ''), shown = 0;
+  s += '<div class="send-box" data-ex="' + u.num + '-' + k + '">' + sendBox(u.num + '-' + k) + '</div>';
+  ex.items.forEach(function(it, i){
+    if (filter && it.level !== filter) return;
+    shown++;
+    s += renderItem(it, u.num + '-' + k + '-' + it.n, i);
+  });
+  if (!shown) s += '<p class="empty">No items at this level.</p>';
+  s += '<div class="send-box" data-ex="' + u.num + '-' + k + '">' + sendBox(u.num + '-' + k) + '</div>';
+  return s;
+}
+
+/* ---------- sending finished exercises to the teacher (IELTS Harper Portal) ---------- */
+// This page and the portal are on the same site, so the student's portal sign-in is readable here.
+var API_URL = 'https://script.google.com/macros/s/AKfycbwKm1zvqca2-WO20f49M4mNW2qn9Aq4uxJZ3_bnQrErWPL5TN4jHycXZUQBDJ1W7wWg/exec', PORTAL = 'https://ieltsharper.github.io/portal/';
+var send = {}; // exercise key -> {status: 'sending'|'error'|'forbidden'|'login', message}
+var comments = {}; // exercise key -> {comment, commentAt}
+state.sent = state.sent || {}; state.dirty = state.dirty || {};
+function token(){ try { return localStorage.getItem('portal.session'); } catch(e){ return null; } }
+function apiCall(action, payload){
+  return fetch(API_URL, {method: 'POST', headers: {'Content-Type': 'text/plain;charset=utf-8'},
+    body: JSON.stringify({action: action, token: token(), payload: payload}), redirect: 'follow', credentials: 'omit'})
+    .then(function(r){ return r.json(); })
+    .then(function(env){ if (env.ok) return env.data; var e = new Error(env.error.message); e.code = env.error.code; throw e; });
+}
+function exParts(key){ var p = key.split('-'), u = D.units.find(function(x){ return String(x.num) === p[0]; }); return {u: u, k: +p[1], ex: u.exercises[+p[1] - 1]}; }
+function sendable(ex){ return ex.items.some(function(it){ return it.kind !== 'read'; }); }
+function finished(key){ var x = exParts(key); return x.ex.items.every(function(it){ var id = key + '-' + it.n; return state.sub[id] || state.choice[id]; }); }
+function doneCount(key){ var x = exParts(key); return x.ex.items.filter(function(it){ var id = key + '-' + it.n; return state.sub[id] || state.choice[id]; }).length; }
+function promptOf(it){
+  var head = textOf(it.cue) + (it.prompt ? '\nExam prompt: ' + textOf(it.prompt) : '');
+  var lines = LINES.filter(function(l){ return it[l[0]]; }).map(function(l){ return l[1] + ': ' + textOf(it[l[0]]); });
+  return [head].concat(lines).join('\n');
+}
+function payloadFor(key){
+  var x = exParts(key);
+  return {
+    url: location.href.split('#')[0], lessonTitle: D.cover[0], exercise: key,
+    exerciseTitle: unitTitle(x.u) + ' · ' + x.ex.title,
+    answers: x.ex.items.map(function(it){
+      var id = key + '-' + it.n;
+      if (it.kind === 'choice' || it.kind === 'pick') {
+        var opt = function(l){ var o = optionsOf(it).find(function(o){ return o.letter === l; }); return (it.kind === 'pick' ? '' : l + '. ') + (o ? textOf(o.text) : ''); };
+        return {prompt: promptOf(it), answer: opt(state.choice[id]), model: opt(correctOf(it)), correct: state.choice[id] === correctOf(it)};
+      }
+      return {prompt: promptOf(it), answer: state.sub[id], model: (it.translation ? 'Translation: ' + textOf(it.translation) + '\nRewrite: ' : '') + refText(it.answer) +(it.alt ? '\nAlso accepted: ' + textOf(it.alt) : ''), correct: null};
+    })
+  };
+}
+function sendBox(key){
+  var x = exParts(key);
+  if (!sendable(x.ex) || !API_URL) return '';
+  var c = comments[key], s = send[key] || {}, out = '';
+  if (c && c.comment) out += '<div class="teacher-note"><b>Teacher&rsquo;s feedback</b><div>' + esc(c.comment) + '</div></div>';
+  var msg;
+  if (!token() || s.status === 'login') msg = '<a href="' + PORTAL + '" target="_blank" rel="noopener">Sign in to the portal</a> so your work is sent to your teacher when you finish.';
+  else if (s.status === 'sending') msg = 'Sending to your teacher…';
+  else if (s.status === 'forbidden') msg = 'This exercise is not open to your portal account yet, so it cannot be sent to your teacher.';
+  else if (s.status === 'error') msg = 'Not sent yet (' + esc(s.message) + '). <button type="button" class="btn" data-send="' + key + '">Try again</button>';
+  else if (state.sent[key] && state.dirty[key]) msg = 'You changed your answers after sending. <button type="button" class="btn primary" data-send="' + key + '">Send again to your teacher</button>';
+  else if (state.sent[key]) msg = '✓ Sent to your teacher on ' + esc(new Date(state.sent[key]).toLocaleString('en-GB')) + '.' + (c && c.comment ? '' : ' Your teacher will give feedback in the portal.');
+  else msg = 'Done: ' + doneCount(key) + '/' + x.ex.items.length + '. When you finish them all, this exercise is sent to your teacher automatically.';
+  return out + '<p class="send-msg">' + msg + '</p>';
+}
+function refreshSendBoxes(key){
+  document.querySelectorAll('.send-box[data-ex="' + key + '"]').forEach(function(b){ b.innerHTML = sendBox(key); });
+}
+function sendExercise(key){
+  if (!API_URL || !token()) { refreshSendBoxes(key); return; }
+  send[key] = {status: 'sending'}; refreshSendBoxes(key);
+  apiCall('workbook.submit', payloadFor(key)).then(function(row){
+    state.sent[key] = row.submittedAt; delete state.dirty[key]; save();
+    send[key] = {}; comments[key] = {comment: row.comment, commentAt: row.commentAt};
+  }).catch(function(e){
+    send[key] = e.code === 'unauthorized' ? {status: 'login'} : e.code === 'forbidden' ? {status: 'forbidden'} : {status: 'error', message: e.message || 'network error'};
+  }).then(function(){ refreshSendBoxes(key); });
+}
+function afterAnswer(id){
+  var key = id.split('-').slice(0, 2).join('-');
+  if (!sendable(exParts(key).ex)) return;
+  if (state.sent[key]) { state.dirty[key] = 1; save(); refreshSendBoxes(key); return; }
+  if (finished(key)) sendExercise(key); else refreshSendBoxes(key);
+}
+function loadComments(){
+  if (!D.units.length) return;
+  if (!API_URL || !token()) return;
+  apiCall('workbook.mine', {url: location.href.split('#')[0]}).then(function(rows){
+    rows.forEach(function(r){
+      comments[r.exercise] = {comment: r.comment, commentAt: r.commentAt};
+      if (!state.sent[r.exercise]) { state.sent[r.exercise] = r.submittedAt; save(); }
+    });
+    document.querySelectorAll('.send-box').forEach(function(b){ b.innerHTML = sendBox(b.getAttribute('data-ex')); });
+    // Exercises finished before signing in are sent now.
+    D.units.forEach(function(u){ u.exercises.forEach(function(ex, k){
+      var key = u.num + '-' + (k + 1);
+      if (sendable(ex) && !state.sent[key] && finished(key)) sendExercise(key);
+    }); });
+  }).catch(function(){});
+}
+
+function renderUnit(u, part){
+  var parts = [['ly-thuyet', u.theory.length ? 'A. Theory' : 'Introduction']].concat(u.exercises.map(function(_, k){ return ['bai-tap-' + (k + 1), 'Exercise ' + (k + 1)]; }));
+  if (!parts.some(function(p){ return p[0] === part; })) part = 'ly-thuyet';
+  var s = '<h2>' + esc(unitTitle(u)) + '</h2>';
+  s += '<div class="subnav" role="group" aria-label="Unit sections">' + parts.map(function(p){
+    var n = p[0] === 'ly-thuyet' ? '' : (function(){ var k = +p[0].slice(-1), all = u.exercises[k - 1].items.map(function(it){ return u.num + '-' + k + '-' + it.n; }); return ' <small>' + all.filter(isDone).length + '/' + all.length + '</small>'; })();
+    return '<a class="chip" style="text-decoration:none" href="#' + p[0] + '" aria-pressed="' + (p[0] === part) + '">' + p[1] + n + '</a>';
+  }).join('') + '<span class="filter-label">Level:</span>' +
+    [[0, 'All'], [1, '● 5.0-6.0'], [2, '●● 6.0-6.5'], [3, '●●● 7.0-7.5']].map(function(f){
+      return '<button type="button" class="chip" data-filter="' + f[0] + '" aria-pressed="' + (filter === f[0]) + '">' + f[1] + '</button>';
+    }).join('') + '</div>';
+  s += part === 'ly-thuyet' ? renderTheory(u) : renderExercise(u, +part.slice(-1));
+  var i = parts.findIndex(function(p){ return p[0] === part; });
+  if (i < parts.length - 1) s += '<p style="text-align:right"><a class="btn primary" style="text-decoration:none;display:inline-block" href="#' + parts[i + 1][0] + '">Next: ' + parts[i + 1][1] + ' →</a></p>';
+  return s;
+}
+
+function render(){
+  var r = route();
+  document.querySelectorAll('#tabs a').forEach(function(a){
+    if (a.getAttribute('href') === '#' + r.tab.id) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+  });
+  var m = $('#main');
+  if (!D.units.length) { m.innerHTML = renderIndex(); $('.progress-all').style.display = 'none'; return; }
+  m.innerHTML = renderUnit(r.tab.unit, r.part);
+  updateProgress();
+}
+function rerenderItem(id){
+  var old = document.querySelector('.item[data-id="' + id + '"]'), p = id.split('-');
+  var tmp = document.createElement('div');
+  var item = findItem(id);
+  tmp.innerHTML = renderItem(item, id, D.units.find(function(x){ return String(x.num) === p[0]; }).exercises[+p[1] - 1].items.indexOf(item));
+  old.replaceWith(tmp.firstChild);
+  updateProgress();
+  var chip = document.querySelector('.subnav a[aria-pressed="true"] small');
+  if (chip) { var ex = D.units.find(function(x){ return String(x.num) === p[0]; }).exercises[+p[1] - 1];
+    chip.textContent = ex.items.filter(function(it){ return isDone(p[0] + '-' + p[1] + '-' + it.n); }).length + '/' + ex.items.length; }
+}
+
+/* ---------- events ---------- */
+var lastTab = route().tab.id;
+window.addEventListener('hashchange', function(){
+  render();
+  var t = route().tab.id;
+  window.scrollTo(0, t === lastTab ? Math.min(window.scrollY, $('nav.tabs').offsetTop) : 0);
+  lastTab = t;
+});
+$('#main').addEventListener('click', function(e){
+  var b, id;
+  if ((b = e.target.closest('[data-filter]'))) { filter = +b.getAttribute('data-filter'); var y = window.scrollY; render(); window.scrollTo(0, y); return; }
+  if ((b = e.target.closest('[data-submit]'))) {
+    id = b.getAttribute('data-submit');
+    var t = document.getElementById('t-' + id).value.trim(), tt = document.getElementById('t-' + id + '~t');
+    if (!t || (tt && !tt.value.trim())) return;
+    if (tt) { t = 'Translation: ' + tt.value.trim() + '\nRewrite: ' + t; delete state.draft[id + '~t']; }
+    var changed = state.sub[id] !== t;
+    state.sub[id] = t; delete state.draft[id]; save(); rerenderItem(id);
+    var a = document.getElementById('a-' + id); if (a) a.scrollIntoView({block: 'nearest'});
+    var f = (state.fb || {})[id];
+    if (!f || f.for !== t || f.kind !== 'ai') assess(findItem(id), id);
+    if (changed) afterAnswer(id);
+    return;
+  }
+  if ((b = e.target.closest('[data-choose]'))) {
+    id = b.getAttribute('data-choose');
+    var r = document.querySelector('input[name="c-' + id + '"]:checked');
+    if (!r) return;
+    var changedChoice = state.choice[id] !== r.value;
+    state.choice[id] = r.value; save(); rerenderItem(id);
+    if (changedChoice) afterAnswer(id);
+    return;
+  }
+  if ((b = e.target.closest('[data-send]'))) { sendExercise(b.getAttribute('data-send')); return; }
+  if ((b = e.target.closest('[data-see]'))) {
+    id = b.getAttribute('data-see');
+    if (state.seen[id]) delete state.seen[id]; else state.seen[id] = 1;
+    save(); rerenderItem(id);
+  }
+});
+$('#main').addEventListener('change', function(e){
+  var t = e.target;
+  if (t.matches('input[type="radio"]')) {
+    var id = t.name.slice(2), btn = document.querySelector('[data-choose="' + id + '"]');
+    if (btn) btn.disabled = false;
+  }
+});
+$('#main').addEventListener('input', function(e){
+  var t = e.target;
+  if (t.matches('[data-text]')) {
+    var id = t.getAttribute('data-text');
+    state.draft[id] = t.value; save();
+    var base = id.replace(/~t$/, ''), btn = document.querySelector('[data-submit="' + base + '"]');
+    var all = [document.getElementById('t-' + base), document.getElementById('t-' + base + '~t')].filter(Boolean);
+    if (btn) btn.disabled = !all.every(function(x){ return x.value.trim(); });
+  }
+});
+render();
+loadComments();
+})();
+</script>
+</body>
+</html>
