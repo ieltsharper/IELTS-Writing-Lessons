@@ -1,0 +1,827 @@
+{
+ "title": "IELTS Writing Task 2 · Sentence Writing Workbook",
+ "pages": [
+  {
+   "href": "unit-0.html",
+   "title": "Unit 0 · Diagnostic Test",
+   "exercises": [
+    {
+     "key": "0-1",
+     "title": "Part 1 — Paraphrasing the prompt",
+     "items": 10
+    },
+    {
+     "key": "0-2",
+     "title": "Part 2 — Translate, then rewrite",
+     "items": 10
+    },
+    {
+     "key": "0-3",
+     "title": "Part 3 — Find and correct the errors",
+     "items": 10
+    },
+    {
+     "key": "0-4",
+     "title": "Part 4 — Structure transformation",
+     "items": 10
+    }
+   ]
+  },
+  {
+   "href": "unit-1.html",
+   "title": "Unit 1 · The Paraphrasing Toolkit",
+   "exercises": [
+    {
+     "key": "1-1",
+     "title": "Exercise 1 — Paraphrase with the given technique",
+     "items": 20
+    },
+    {
+     "key": "1-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "1-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "1-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "1-5",
+     "title": "Exercise 5 — Spot the change in meaning",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-2.html",
+   "title": "Unit 2 · Paraphrasing Prompt Frames and Instructions",
+   "exercises": [
+    {
+     "key": "2-1",
+     "title": "Exercise 1 — Rewrite with the given sentence frames",
+     "items": 20
+    },
+    {
+     "key": "2-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "2-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "2-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "2-5",
+     "title": "Exercise 5 — Choose the best opinion sentence",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-3.html",
+   "title": "Unit 3 · Who Does What: People, Institutions and Agents",
+   "exercises": [
+    {
+     "key": "3-1",
+     "title": "Exercise 1 — Name the right party",
+     "items": 20
+    },
+    {
+     "key": "3-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "3-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "3-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "3-5",
+     "title": "Exercise 5 — Choose the right party",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-4.html",
+   "title": "Unit 4 · High-Value Paraphrase Phrases",
+   "exercises": [
+    {
+     "key": "4-1",
+     "title": "Exercise 1 — Choose the correct phrase (set 1)",
+     "items": 20
+    },
+    {
+     "key": "4-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 24
+    },
+    {
+     "key": "4-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "4-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "4-5",
+     "title": "Exercise 5 — Choose the correct phrase (set 2)",
+     "items": 20
+    },
+    {
+     "key": "4-6",
+     "title": "Exercise 6 — Upgrade simple sentences",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-5.html",
+   "title": "Unit 5 · Topic Concept Banks",
+   "exercises": [
+    {
+     "key": "5-1",
+     "title": "Exercise 1 — Choose the accurate expression",
+     "items": 24
+    },
+    {
+     "key": "5-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 24
+    },
+    {
+     "key": "5-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "5-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 24
+    },
+    {
+     "key": "5-5",
+     "title": "Exercise 5 — Academic style and common vocabulary errors",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-6.html",
+   "title": "Unit 6 · Varying How Sentences Begin",
+   "exercises": [
+    {
+     "key": "6-1",
+     "title": "Exercise 1 — Rewrite with the given sentence openings",
+     "items": 20
+    },
+    {
+     "key": "6-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "6-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "6-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "6-5",
+     "title": "Exercise 5 — Choose the best version",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-7.html",
+   "title": "Unit 7 · Expressing Cause, Effect and Reason",
+   "exercises": [
+    {
+     "key": "7-1",
+     "title": "Exercise 1 — Rewrite with the given structure",
+     "items": 20
+    },
+    {
+     "key": "7-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "7-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "7-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "7-5",
+     "title": "Exercise 5 — Choose the correct option",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-8.html",
+   "title": "Unit 8 · Expressing Purpose and Result",
+   "exercises": [
+    {
+     "key": "8-1",
+     "title": "Exercise 1 — Link sentences with purpose / result structures",
+     "items": 20
+    },
+    {
+     "key": "8-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "8-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "8-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "8-5",
+     "title": "Exercise 5 — Purpose or result?",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-9.html",
+   "title": "Unit 9 · Expressing Negation, Difficulty and Limitation",
+   "exercises": [
+    {
+     "key": "9-1",
+     "title": "Exercise 1 — Replace *cannot* and *difficult*",
+     "items": 20
+    },
+    {
+     "key": "9-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "9-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "9-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "9-5",
+     "title": "Exercise 5 — Choose the best version",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-10.html",
+   "title": "Unit 10 · Certainty, Hedging and Modal Verbs",
+   "exercises": [
+    {
+     "key": "10-1",
+     "title": "Exercise 1 — Adjust the level of certainty",
+     "items": 20
+    },
+    {
+     "key": "10-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "10-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "10-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "10-5",
+     "title": "Exercise 5 — Choose the suitable level",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-11.html",
+   "title": "Unit 11 · Time and Change",
+   "exercises": [
+    {
+     "key": "11-1",
+     "title": "Exercise 1 — Rewrite with time and change expressions",
+     "items": 20
+    },
+    {
+     "key": "11-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "11-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "11-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "11-5",
+     "title": "Exercise 5 — Choose the correct time expression",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-12.html",
+   "title": "Unit 12 · Saying More with Fewer Words",
+   "exercises": [
+    {
+     "key": "12-1",
+     "title": "Exercise 1 — Make sentences more concise",
+     "items": 20
+    },
+    {
+     "key": "12-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "12-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "12-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "12-5",
+     "title": "Exercise 5 — Count the verbs: write more concisely",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-13.html",
+   "title": "Unit 13 · Relative Clauses",
+   "exercises": [
+    {
+     "key": "13-1",
+     "title": "Exercise 1 — Join sentences with relative clauses",
+     "items": 20
+    },
+    {
+     "key": "13-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "13-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "13-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "13-5",
+     "title": "Exercise 5 — Relative pronouns and commas",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-14.html",
+   "title": "Unit 14 · Participle Clauses and Absolute Phrases",
+   "exercises": [
+    {
+     "key": "14-1",
+     "title": "Exercise 1 — Rewrite with participle clauses",
+     "items": 20
+    },
+    {
+     "key": "14-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "14-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "14-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-15.html",
+   "title": "Unit 15 · Conditional Sentences",
+   "exercises": [
+    {
+     "key": "15-1",
+     "title": "Exercise 1 — Rewrite with conditionals",
+     "items": 20
+    },
+    {
+     "key": "15-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "15-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "15-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "15-5",
+     "title": "Exercise 5 — Choose the suitable conditional form",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-16.html",
+   "title": "Unit 16 · Inversion for Emphasis",
+   "exercises": [
+    {
+     "key": "16-1",
+     "title": "Exercise 1 — Rewrite with inversion",
+     "items": 20
+    },
+    {
+     "key": "16-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "16-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "16-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "16-5",
+     "title": "Exercise 5 — Choose the correct word order",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-17.html",
+   "title": "Unit 17 · Inverted Conditionals",
+   "exercises": [
+    {
+     "key": "17-1",
+     "title": "Exercise 1 — Convert between if-sentences and inverted sentences",
+     "items": 20
+    },
+    {
+     "key": "17-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "17-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "17-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-18.html",
+   "title": "Unit 18 · Cleft Sentences and Emphatic Structures",
+   "exercises": [
+    {
+     "key": "18-1",
+     "title": "Exercise 1 — Rewrite with cleft sentences / emphasis structures",
+     "items": 20
+    },
+    {
+     "key": "18-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "18-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "18-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-19.html",
+   "title": "Unit 19 · Passives, Reporting Structures and Noun Clauses",
+   "exercises": [
+    {
+     "key": "19-1",
+     "title": "Exercise 1 — Rewrite with passive / reporting / noun clauses",
+     "items": 20
+    },
+    {
+     "key": "19-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "19-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "19-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "19-5",
+     "title": "Exercise 5 — Active or passive?",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-20.html",
+   "title": "Unit 20 · Contrast, Concession and Comparison",
+   "exercises": [
+    {
+     "key": "20-1",
+     "title": "Exercise 1 — Join sentences with contrast / comparison structures",
+     "items": 20
+    },
+    {
+     "key": "20-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "20-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "20-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "20-5",
+     "title": "Exercise 5 — Choose the correct linker",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-21.html",
+   "title": "Unit 21 · Position, Topic, Support and Example Sentences",
+   "exercises": [
+    {
+     "key": "21-1",
+     "title": "Exercise 1 — Write sentences by function",
+     "items": 20
+    },
+    {
+     "key": "21-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "21-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "21-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "21-5",
+     "title": "Exercise 5 — Extend the example",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-22.html",
+   "title": "Unit 22 · Task Response Errors in Sentences",
+   "exercises": [
+    {
+     "key": "22-1",
+     "title": "Exercise 1 — Diagnose reasoning errors",
+     "items": 20
+    },
+    {
+     "key": "22-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "22-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "22-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "22-5",
+     "title": "Exercise 5 — Choose the best version",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-23.html",
+   "title": "Unit 23 · Coherence and Cohesion Errors",
+   "exercises": [
+    {
+     "key": "23-1",
+     "title": "Exercise 1 — Fix linkers and reference",
+     "items": 20
+    },
+    {
+     "key": "23-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "23-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "23-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "23-5",
+     "title": "Exercise 5 — Untangle stacked sentences",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-24.html",
+   "title": "Unit 24 · Lexical Resource Errors",
+   "exercises": [
+    {
+     "key": "24-1",
+     "title": "Exercise 1 — Confusable words and collocations",
+     "items": 20
+    },
+    {
+     "key": "24-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "24-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "24-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "24-5",
+     "title": "Exercise 5 — Choose the correct word form",
+     "items": 20
+    },
+    {
+     "key": "24-6",
+     "title": "Exercise 6 — Choose the academic style",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "unit-25.html",
+   "title": "Unit 25 · Grammatical Range and Accuracy Errors",
+   "exercises": [
+    {
+     "key": "25-1",
+     "title": "Exercise 1 — Agreement, verb patterns and articles",
+     "items": 20
+    },
+    {
+     "key": "25-2",
+     "title": "Exercise 2 — Translate, then rewrite",
+     "items": 20
+    },
+    {
+     "key": "25-3",
+     "title": "Exercise 3 — Find and correct the errors",
+     "items": 20
+    },
+    {
+     "key": "25-4",
+     "title": "Exercise 4 — Apply to real exam prompts",
+     "items": 20
+    },
+    {
+     "key": "25-5",
+     "title": "Exercise 5 — Fix fragments",
+     "items": 20
+    }
+   ]
+  },
+  {
+   "href": "final-review.html",
+   "title": "Final Review · Final Review",
+   "exercises": [
+    {
+     "key": "review-1",
+     "title": "Part A — Introduction: paraphrase and opinion",
+     "items": 8
+    },
+    {
+     "key": "review-2",
+     "title": "Part B — Translate, then rewrite",
+     "items": 12
+    },
+    {
+     "key": "review-3",
+     "title": "Part C — Find and correct the errors",
+     "items": 15
+    },
+    {
+     "key": "review-4",
+     "title": "Part D — Structure transformation",
+     "items": 15
+    }
+   ]
+  }
+ ]
+}

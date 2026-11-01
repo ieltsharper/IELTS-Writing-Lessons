@@ -108,7 +108,17 @@ def main(src, out_dir, store, env_path=None):
                 .replace('__AUDIO__', '{}')
                 .replace('__DATA__', js(page_data)))
         (out / name).write_text(page, encoding='utf-8', newline='\n')
-    print('wrote', len(pages), 'pages to', out)
+    # exercises.json: the portal's "Quyền nộp bài" screen lists these exercises so the teacher can
+    # choose who sends which ones (read-only exercises are never sent).
+    catalog = {'title': data['cover'][0] + ' · ' + data['cover'][1], 'pages': [
+        {'href': name, 'title': f"{lab} · {u['name']}", 'exercises': [
+            {'key': f"{u['num']}-{k}", 'title': ex['title'], 'items': len(ex['items'])}
+            for k, ex in enumerate(u['exercises'], 1)
+            if any(it['kind'] != 'read' for it in ex['items'])]}
+        for name, lab, u in pages if u is not None]}
+    (out / 'exercises.json').write_text(json.dumps(catalog, ensure_ascii=False, indent=1) + '\n',
+                                        encoding='utf-8', newline='\n')
+    print('wrote', len(pages), 'pages and exercises.json to', out)
 
 
 if __name__ == '__main__':
