@@ -409,7 +409,7 @@ function assess(it, id){
     .then(function(res){
       if (res.ok) return done('ai', res.result);
       fallback({not_configured: 'AI feedback is not switched on yet.', limit: 'AI feedback has run out for now; try again later.',
-        busy: 'AI feedback is busy right now; submit again in a minute.', error: 'AI feedback is not available right now.'}[res.reason] || '');
+        busy: 'AI feedback is busy right now; submit again in a minute.', error: 'AI feedback is not available right now' + (res.detail ? ' (' + res.detail + ')' : '') + '.'}[res.reason] || '');
     })
     .catch(function(e){ fallback(e.code === 'unauthorized' ? 'Sign in to the portal to get AI feedback.' : 'AI feedback is not available right now.'); });
 }
